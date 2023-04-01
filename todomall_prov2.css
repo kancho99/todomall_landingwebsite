@@ -1,0 +1,1420 @@
+body { 
+    margin: 0 auto;
+    font-family:'Pretendard';
+justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color:white; 
+}
+
+/* 네비게이션  */
+.navbackground {
+    background: #21A365; backdrop-filter: blur(8px);
+    z-index: 10000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    z-index: 1000;
+    max-width:1280px;
+    width:100%;
+    
+}
+
+.navbar_logo {
+    padding: 18px 42px;
+}
+
+.navbar_menu {
+    display:flex;
+    list-style: none;
+    padding-left:0px;
+    align-items:center;
+    padding: 0px 42px;
+    margin:0;
+    max-width: 1280px;
+}
+
+.navbar_menu li{
+    padding:20px 24px;
+    white-space: nowrap;
+}
+
+
+.navbar_menu li:hover{
+    transform:scale(1.2);
+    filter:blur(0);
+    text-decoration: none;
+}
+
+.navbar_toggleButton {
+    position:absolute;
+    right: 14px;
+    top: 14px;
+    display:none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .navbar_logo{
+        padding:14px 24px;
+    }
+    .navbar_menu {
+        flex-direction: column;
+        align-items: right;
+        display:none;
+    }
+    .navbar_toggleButton {
+        display:block; 
+    }
+    .navbar_menu.active{
+        display: flex;
+        padding:0px;
+        align-items: flex-end;
+        position: absolute;
+        right: 5px;
+        top:35px;
+    }
+}
+
+/* 헤더  */
+.backgroundcolorgreen {
+    background: linear-gradient(174.16deg, #21A365 15.22%, #0F844C 158.48%);
+    width: 100%;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom:0px;
+    align-items: flex-end;
+    flex-wrap:wrap;
+    width: 100%;
+    max-width: 1280px;
+
+}
+
+.header_imgmobile {
+    display:none;
+    justify-content: center;
+    margin:auto;
+}
+.header_imgbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+
+.header_img{
+    max-width: 654px;
+    width:100%;
+    height: auto ;
+}
+
+
+.header h1 {
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 160px;
+    padding-left:44px;
+    padding-bottom:20px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    color: #ffff;
+    word-break: keep-all;
+}
+.header h2 {
+    margin: 0px;
+    padding-left:44px;
+    padding-bottom: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    /* identical to box height, or 180% */
+    letter-spacing: -0.01em;
+    color: #ffff;
+    word-break: keep-all;
+}
+
+.header a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width:150px;
+    margin-left:44px;
+    margin-bottom: 108px;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    color: #21A365;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+.header_menu a img{
+    width: 24px;
+    height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        justify-content: center;
+        text-align: center;
+        height:100vh;
+    }
+    .header_img{
+       display:none;
+    }
+
+    .header_imgmobile{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+    }
+
+    .header h1{
+        padding-left: 0px;
+        padding-top: 100px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 52px;
+        /* identical to box height, or 144% */
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
+    .header h2{
+        padding:12px 54px 32px 54px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+
+    }
+    .header a{
+        justify-content: center;
+        margin:auto;
+        margin-bottom: 52px;
+        margin-top: 42px;
+        padding: 12px 0px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        /* identical to box height, or 175% */
+
+        letter-spacing: -0.01em;
+    }
+    .header a img{
+        width: 24px;
+        height: 28px;
+    }
+}
+
+/* 투두몰 프로가 무엇인가요  */
+
+.whatispro {
+    display:flex;
+    justify-content:center;
+}
+
+.whatispro_inner {
+    max-width: 1280px;
+    width:100%;
+    justify-content: flex-start;
+}
+.whatispro_text {
+    margin: 160px auto 32px 42px;
+}
+.whatispro_text h1 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    /* identical to box height, or 162% */
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.whatispro_text p{
+    margin: 0px;
+    padding: 8px 0px 80px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.whatispro_text h2 {
+    margin:0px;
+    padding-bottom:32px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.whatispro_card{
+    display: flex;
+    justify-content: space-between; gap:21px;
+    padding: 0px 42px 140px 42px; 
+}
+.whatispro_cardbackground {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+   
+
+}
+.whatispro_cardtext{
+    padding: 40px 38px 40px 24px;
+}
+
+.whatispro_card h1 {
+    margin:0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.01em;
+
+    color: #21A365;
+
+}
+.whatispro_card h2{
+    margin:0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: -0.01em;
+
+    /* gray/gray_800 */
+
+    color: #31363E;
+
+}
+.whatispro_card p {
+    margin:0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    /* gray/gray_700 */
+    color: #4F5562;
+}
+
+@media screen and (max-width: 480px) {
+    .whatispro_text{
+        margin: 120px 69px 32px 24px;
+    }
+    .whatispro_text h1{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .whatispro_text p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .whatispro_text h2{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .whatispro_card{
+        flex-direction: column;
+        padding: 0px 24px 120px 24px;
+        gap: 16px;
+    }
+}
+
+
+/* 투두몰과 성장하고 있습니다  */
+
+.growth_background{
+    background: linear-gradient(0deg, #1E2024, #1E2024), #242931;
+    color:#FFFFFF;
+    display: flex;
+    justify-content:center;
+    text-align: start;
+    word-break: break-all;
+
+
+}
+.growth_backgroundinner{
+    max-width: 1280px;
+    width: 100%;
+   
+}
+.growth_background p, h1{
+    margin: 0px;
+}
+.growth_text{
+    padding-left: 42px;
+}
+.growth_text h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    margin-top: 160px;
+}
+.growth_text h2{
+    margin: 0px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+}
+
+
+
+
+
+.growth_numbers{
+    display: flex;
+    word-break: keep-all;
+    overflow: hidden;
+}
+.growth_numbers h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+}
+.growth_numbers p {
+    padding-bottom: 3px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+}
+.growth_numbers h3{
+    padding-top:4px;
+    margin:0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+.growth_numbersbox1{
+    padding: 62px 0px 166px 42px;
+}
+
+.growth_numbersbox1top{
+    display: flex;
+    align-items: end;
+}
+.growth_numbersbox2{
+    padding: 62px 155px 166px 115px;
+}
+.growth_numbersbox2top{
+    display: flex;
+    align-items: end;
+}
+.growth_numbersbox3{
+    padding: 62px 149px 166px 0px;
+}
+.growth_numbersbox3top{
+    display: flex;
+    align-items: end;
+}
+.growth_numbersbox4{
+    padding: 62px 0px 166px 0px;
+}
+.growth_numbersbox4top{
+    display: flex;
+    align-items: end;
+}
+
+
+@media screen and (max-width: 480px){
+    .growth_background{
+        justify-content: flex-start;
+    }
+    .growth_numbers{
+        flex-direction: column;
+
+    }
+    .growth_text p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .growth_text h2{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .growth_numbers h1{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .growth_numbers p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .growth_numbers h3{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .growth_text{
+        padding-left: 24px;
+    }
+    .growth_text h4{
+        margin-top: 120px;
+        margin-bottom: 0px;
+    }
+    .growth_numbersbox1{
+        padding: 78px 0px 68px 24px;
+    }
+    .growth_numbersbox2{
+        padding: 0px 0px 68px 24px;
+    }
+    .growth_numbersbox3{
+        padding: 0px 0px 68px 24px;
+    }
+    .growth_numbersbox4{
+        padding: 0px 0px 146px 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 투두몰 프로들은 이런 활동을 하게 됩니다. */
+.activity {
+    overflow:hidden;
+    background-color: #fafafd;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.activity_inner {
+    text-align: start;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.activity_inner h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 162%;
+    letter-spacing: -0.01em;
+    color: #242931;
+    padding: 200px 0 8px 0 ;
+}
+.activity_inner h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.activity_inner p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.activity_inner h4{
+    display: none;
+}
+.activity_textimgbox p, h2, h3{
+    margin:0px;
+}
+.activity img{
+    width: 520px;
+    height: 360px;
+}
+
+.activity_todoclass{
+    display: flex;
+    margin:120px 0 120px 0;
+    flex-flow: row wrap;
+}
+
+.activity_todoclass_text {
+    align-self: flex-end;
+    text-align: start;
+    margin: 0 0 0 40px;
+}
+.activity_todoclass_textname{
+    display: flex;
+    align-items: flex-end;
+
+}
+.activity_todoclass_textname h2{
+    padding-bottom: 8px;
+}
+.activity_todoclass_textname h3{
+    padding-bottom: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+.activity_todochat{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+
+}
+
+.activity_todochat_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:end;
+    text-align: end;
+    margin: 0 40px 0 0; 
+    flex-wrap: nowrap;
+}
+
+.activity_todochat_textname{
+    display: flex;
+    align-items: flex-end;
+}
+
+.activity_todochat_textname h2{
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.activity_todochat_textname h3{
+    padding-bottom:11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #242931;
+}
+.activity_todochat_text h4{
+    display:none;
+}
+
+.activity_lecture {
+    display: flex;
+    margin:120px 0 200px 0;
+    justify-content: center;
+}
+.activity_lecture_text {
+    margin: 0 0 0 40px;
+    align-self: flex-end;
+    text-align: start;
+}
+.activity_lecture_textname {
+    display: flex;
+    align-items: flex-end;
+
+}
+.activity_lecture_textname h2{
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+.activity_lecture_textname h3{
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+.benefits {
+    display: flex;
+    justify-content: center;
+}
+.left-image{
+    width: 550px;
+    height: 550px;
+}
+
+.right_images{
+    display: flex;
+    background-color: red;
+}
+.top-image{
+    width: 550px;
+    height: 265px;
+    align-items:flex-end;
+    padding-left: 20px;
+}
+
+.bottom-images{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.bottom-image {
+    width: 265px;
+    height: 265px;
+}
+
+@media screen and (max-width: 480px){
+
+    .activity_todoclass{
+        padding : 0px 24px 52px 24px;
+    }
+    .activity_textimgbox {
+        justify-content: center;
+    }
+    .activity br {
+        display: none;
+    }
+    br.brtag {
+        display: inline;
+    }
+    .activity_inner{
+        margin: 0px;
+    }
+    .activity_inner h1{
+        display:none;
+    }
+    .activity_inner h4{
+        display: flex;
+        margin: 0px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        padding-top: 120px;
+        padding-left:24px;
+        padding-bottom:0px;
+    }
+    .activity_inner p{
+        margin:0px;
+        padding: 8px 24px 52px 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        word-break: break-all;
+    }
+    .activity_todoclass {
+        margin:0px;
+        flex-direction: column-reverse;
+    }
+
+    .activity_todoclass_text {
+        margin: 0 0 0 0px;
+    }
+
+
+    .activity_todoclass p{
+        padding:0px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        
+    }
+
+    .activity_todoclass_textname h2{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .activity_todoclass_textname h3{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .activity_todoclass_text p{
+        padding: 0px 0px 16px 0px;
+    } 
+    .activity_lecture{
+        margin:0px;
+        flex-direction: column-reverse;
+    }
+    .activity_todoclass img{
+        height: auto;
+        width: 100%;
+
+    }
+   
+
+ .activity_lecture{
+    justify-content:center;
+ }
+ .activity_todochat{
+    justify-content: center;
+ }
+ .activity_todoclass{
+    justify-content: center;
+ }
+    .activity_todochat{
+        padding: 0px 24px;
+    }
+    .activity_todochat_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items:start;
+        text-align: start;
+        margin: 0 0px 0 0; 
+        flex-wrap: nowrap;
+    }
+    .activity_todochat_textname h2{
+        display: none;
+    }
+    .activity_todochat_textname h4{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 0px 0px 4px 0px;
+    }
+    .activity_todochat_textname h3{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 8px;
+    }
+    .activity_todochat_text p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0px 0px 16px 0px;
+        
+    }
+
+    .activity_todochat_textname{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .activity_todochat img {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 52px 0px;
+        margin: 0px;
+
+    }
+    .activity_lecture {
+        padding:0px 24px 156px 24px;
+    }
+
+    .activity_lecture_textname h2{
+        padding:0px 0px 4px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .activity_lecture_textname h3{
+        padding: 0px 0px 8px 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .activity_lecture_text p {
+        padding:0px 0px 16px 0px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .activity_lecture_text {
+        margin: 0 0 0 0px;
+    }
+    .activity_lecture img{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    }
+
+
+
+    /*투두몰 프로 활동 혜택. */
+
+    .profits_background {
+        background-color: #1E2024;
+        color: #FFFFFF;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .profits_inner{
+        max-width: 1280px;
+        margin: 160px 0px 140px 0px;
+
+    }
+
+    .profits_inner h1{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+        letter-spacing: -0.01em;
+    }
+    .profits_inner h2{ 
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 52px;
+        letter-spacing: -0.01em;
+        padding-bottom: 32px;
+
+    }
+    .profits_inner h3{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        padding-top: 16px; 
+        padding-bottom: 4px;
+    }
+
+    .profits_inner h4{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+    }
+    .profits_background h4{
+        margin:0px;
+    }
+
+    .profits_innerimgbox {
+        display: flex;
+        justify-content: space-between; gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .profits_innerimgbox img {
+        width: 285px;
+    }
+    .profits_innerimgbox div{
+        width: 285px;
+    }
+
+    @media screen and (max-width: 480px){
+
+        br{
+            display:none;
+        }
+
+        .profits_inner{
+            margin: 120px 0px;
+
+        }
+        .profits_innerimgbox{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+        .profits_inner h1{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .profits_inner h2{ 
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 36px;
+            padding-bottom: 52px;
+    
+        }
+        .profits_inner h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 36px;
+            padding-top: 16px; 
+            padding-bottom: 4px;
+        }
+    
+        .profits_inner h4{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+        
+    }
+}
+
+    .prorgister h1, h2, h3, h4, h5{
+        margin: 0px;
+
+    }
+
+    .proregister {
+        display: flex;
+        background: #FAFAFA;
+        color: #242931;
+        justify-content: center;
+    }
+
+    .proregister_inner{
+        max-width: 1280px;
+        width: 100%;
+        padding: 160px 42px 203px 42px;
+    
+
+    }
+
+    .proregister_innercard{
+        display: flex;
+        justify-content: space-between;
+        gap: 21px;
+        flex-wrap: wrap;
+    }
+
+
+    .proregister_innercardbox {
+        background: #FFFFFF;
+        border-radius: 2px;
+        width: 386px;
+        height: 172px;
+    }
+    .proregister_inner img {
+        width: 24px;
+        height: 24px;
+    }
+    .proregister_innercardboxhead {
+        display: flex;
+    }
+    .proregister_innercardboxin {
+        padding: 32px 0px 32px 24px;
+    }
+
+    .proregister h1{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+    }
+    .proregister h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 52px;
+        /* identical to box height, or 162% */
+
+        letter-spacing: -0.01em;
+        padding-bottom: 32px;
+    }
+    .proregister h3{ 
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+        letter-spacing: -0.01em;
+    }
+    .proregister h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        /* identical to box height, or 140% */
+
+        letter-spacing: -0.01em;
+        padding-top: 4px;
+        padding-bottom: 8px;
+
+    }
+    .proregister h5{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* or 157% */
+
+        letter-spacing: 0.01em;
+
+    }
+
+    @media screen and (max-width: 480px){
+
+
+
+    .proregister_inner {
+        margin: 142px 24px 120px;
+        padding:0px;
+    }
+    
+    .proregister_innercard{
+        gap:16px;
+    }
+
+    .proregister h1{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .proregister h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .proregister h3{ 
+        font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+    }
+    .proregister h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 4px;
+        padding-bottom: 8px;
+
+    }
+    .proregister h5{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+
+    }
+
+    .proregister_innercardbox {
+
+        width: 342px;
+        height: 172px;
+    }
+    .proregister_innercardboxin {
+        padding: 32px 24px;
+    }
+    }
+
+
+        /*자주 묻는 질문들. */
+
+        .questions_background br {
+            display: none;
+        }
+
+        .questions_background {
+            display: flex;
+            justify-content: center;
+        }
+        .questions_backgroundinner{
+            max-width: 1280;
+            width: 100%;
+            padding: 160px 42px;
+        }
+
+        .questions_backgroundinner h1 {
+            padding-bottom: 32px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 52px;
+            /* identical to box height, or 162% */
+            
+            letter-spacing: -0.01em;
+            
+            color: #242931;
+            
+        }
+      /*자주 묻는 질문들. 토글 */
+    input[id*="answer"]{
+        display: none;
+
+    }
+    input[id*="answer"] + label {
+        display: block;
+        padding: 8px 0px;
+        border-bottom: 1px solid #EAEEF5;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        color: #242931;
+
+        cursor: pointer;
+        position: relative;
+
+    }
+
+    input[id*="answer"] + label img{
+
+        position: absolute;
+        top: 50%;
+        right:0px;
+        margin-top: -12px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+    }
+    input[id*="answer"]:checked + label img{
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+
+    input[id*=answer] + label + div {
+        max-height: 0;
+        transition: all .35s;
+        overflow: hidden;
+    
+    }
+    input[id*=answer] + label + div h2{
+        display: inline-block;
+        padding:20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em; 
+        color: #242931;
+    }
+    input[id*=answer]:checked +label+div {
+        max-height: 100px;
+    }
+
+
+    @media screen and (max-width: 480px){
+         .questions_background br {
+            display: inline-block
+        }
+        .questions_backgroundinner h1{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+            /* identical to box height, or 167% */
+            letter-spacing: -0.01em;
+            color: #242931;
+        }
+        input[id*="answer"] + label {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            letter-spacing: -0.01em;
+
+            color: #242931;
+        }
+
+        .questions_backgroundinner{
+            padding: 120px 24px;
+        
+        }
+    }
+
+    .bottombanner_background {
+        width: 100%;
+        background-image: url(img/bottom_banner.png);
+        background-size: cover;
+        height: 320px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .bottombanner_inner{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 1280px;
+        width: 100%;
+        text-align: center;
+        padding: 64px 0px 69px;
+    }
+    .bottombanner_inner img{
+        width: 24px;
+        height: 24px;
+    }
+    .bottombanner_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 162px;
+        border-bottom: #ffffff solid 1px;
+    }
+
+    .bottombanner_inner h1{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+    }
+
+    .bottombanner_inner h2{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        /* identical to box height, or 180% */
+        
+        letter-spacing: -0.01em;
+        padding: 4px 0px 42px 0px;
+    }
+
+    .bottombanner_inner h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        /* identical to box height, or 167% */
+        
+        letter-spacing: -0.01em;
+        
+    }
+    .bottombanner_inner br{
+        display:none;
+    }
+
+    @media screen and (max-width: 480px) {
+        .bottombanner_inner {
+            padding: 40px 0px 51px 0px;
+        }
+        .bottombanner_inner h1{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 36px;
+            /* or 180% */
+
+            text-align: center;
+            letter-spacing: -0.01em;
+
+        }
+        .bottombanner_inner h2{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            text-align: center;
+            letter-spacing: -0.01em;
+            padding:8px 0px 48px 0px;
+            
+        }
+        .bottombanner_button h3{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 40px;
+            /* identical to box height, or 250% */
+            letter-spacing: -0.01em;
+        }
+        .bottombanner_button{
+            width: 120px;
+        }
+        .bottombanner_inner br{
+            display:block;
+        }
+        
+    }
+
+
+
+
+    .footer_outside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_inner {
+        max-width: 1280px;
+        width: 100%;
+        padding: 52px 0px 52px 42px;
+    }
+    .footer_inner p {
+        margin: 28px 0px 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: -0.01em;
+
+        /* gray/gray_700 */
+
+        color: #4F5562;
+    }
+    .footer_inner h1{
+        display: none;
+    }
+    .footer_inner h2{
+        display: none;
+    }
+    .footer_inner h3{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+        letter-spacing: -0.01em;
+
+        /* gray/gray_700 */
+
+        color: #4F5562;
+    }
+
+    @media screen and (max-width: 480px) {
+        .footer_inner br{
+            display: block;
+        }
+        .footer_inner{
+            display: flex;
+            flex-direction: column;
+            padding: 48px 59px 48px 24px;
+        }
+        .footer_inner img{
+            width: 105px;
+            height: 20px;
+            padding-bottom:24px;
+        }
+        .footer_inner p {
+            display: none;
+        }
+        .footer_inner h1{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: -0.01em;
+
+            color: #4F5562;
+            padding-bottom:12px;
+        }
+        .footer_inner h2{
+            display: inline-block;
+            /* pretendard_50 */
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 30px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: -0.01em;
+
+            /* gray/gray_700 */
+
+            color: #4F5562;
+            padding-bottom: 16px;
+        }
+
+    }

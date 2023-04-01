@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todomall_prov2.css">
+    <script src="todomall_prov2.js" defer></script>
+    <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
+</head>
+<body>
+<!--네비게이션바-->
+<nav class="navbackground">
+
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <img src="img/todomall_logo.svg" alt="logo">
+        </div>
+            <ul class="navbar_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">프로센터</a></li>
+                    <li><a href="#">기업제휴문의</a></li>
+            </ul>
+
+        <a href="#" class="navbar_toggleButton"><img src="img/icn_menu.svg" alt="toggle"></a>
+    </nav>
+</nav>
+
+<!--헤더-->
+<div class="backgroundcolorgreen">
+    <div class="header">  
+        <div class="header_menu">
+            <h1> 당신의 <strong>전문성</strong>있는<br> <strong>업무 도구</strong>는 무엇인가요?</h1>
+            <h2> 쉽고 빠른 클래스 제작부터 강연 기회까지 얻어가세요!</h2>
+           <div> <img src="img/img_mockupv2_mobile.png" class="header_imgmobile"> </div>
+            <a href="#">프로지원하기 <img src="img/right_arrow.png"></a>   
+        </div>
+        <div class="header_imgbox">
+            <img src="img/mockup_header.png" class="header_img">
+        </div>
+    </div>
+</div> 
+
+<!--투두몰 프로가 무엇인가요?-->
+
+<section class="whatispro">
+    <div class="whatispro_inner">
+        <div class="whatispro_text">
+            <h1>투두몰 프로가 무엇인가요?</h1>
+            <p>투두몰과 함께 지식 교류 생태계를 만드는 사람을 의미합니다</p>
+            <h2>프로님의 일정과 시간에 맞춰 3가지 활동 중<br>원하는 방법의 프로 활동을 할 수 있습니다</h2>
+        </div>
+        <div class="whatispro_card">
+            <div class="whatispro_cardbackground">
+                <div class="whatispro_cardtext">
+                    <h1>Todo Class</h1>
+                    <h2>투두클래스</h2>
+                    <p>영상 촬영 없이, 오직 글과 그림만으로 제작하는 투두클래스<br>자신의 전문성이 담긴 투두리스트와 가이드를 작성해보세요!</p>
+                </div>
+            </div>
+
+            <div class="whatispro_cardbackground">
+                <div class="whatispro_cardtext">
+                <h1>Todo Chat</h1>
+                <h2>투두챗</h2>
+                <p>클래스 제작 없이, 시간을 들이지 않고 판매하는 투두챗
+                    <br>구매한 후에 제작하는 간단한 투두리스트와 짧은 온라인 코칭!</p>
+                </div>
+            </div>
+            
+            <div class="whatispro_cardbackground">
+                <div class="whatispro_cardtext">
+                    <h1>Lecture Proposal</h1>
+                    <h2>강연제안</h2>
+                    <p>투두에 특화된 기업 교육 및 강연
+                        <br>투두몰 프로가 되어 누구보다 빠르게 제안을 받아보세요!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--투두몰과 성장하고 있습니다-->
+
+<section class="growth_background">
+    <div class="growth_backgroundinner">
+        <div class="growth_text">
+            <h4>오늘도 많은 2030 사회초년생이</h4>
+            <h2>투두몰과 함께 성장하고 있습니다.</h2>
+        </div>
+
+       <div class="growth_numbers">
+            <div class="growth_numbersbox1">
+                <div class="growth_numbersbox1top">
+                    <h1>5.4</h1>
+                    <p>&nbsp;배</p>
+                </div>
+                <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+            </div>
+
+            <div class="growth_numbersbox2">
+                <div class="growth_numbersbox2top">
+                    <h1>174</h1>
+                    <p>&nbsp;명</p>
+                </div>
+                <h3>주간 클래스 도전 유저</h3>
+            </div>
+            <div class="growth_numbersbox3">
+                <div class="growth_numbersbox3top">
+                    <h1>146</h1>
+                    <p>&nbsp;개</p>
+                </div>
+                <h3>주간 미션 인증 수</h3>
+            </div>
+            <div class="growth_numbersbox4">
+                <div class="growth_numbersbox4top">
+                    <h1>84</h1>
+                    <p>&nbsp;%</p>
+                </div>
+                <h3>첫 번째 미션 달성율</h3>
+            </div>
+
+       </div>
+               
+    </div>
+</section>
+
+<!--투두몰 프로들은 이런 활동을 하게 됩니다.-->
+<div class="activity">
+    <div class="activity_inner">
+        <h1>투두몰 프로들은 이런 활동을 하게됩니다.</h1>
+        <h4>투두몰 프로들은<br class="brtag">이런 활동들을 하게 됩니다.</h4>
+        <p id="activity_inner_p">업무도구(피그마, 엑셀, 포토샵 등)에 대한 나만의 지식과 팁을 사람들에게 다양한 방법으로 공유할 수 있습니다.<br>Todo에 기반한 학습을 추구하며 배우는 유저들에게는 실직적인 성과물을 만들 수 있도록 합니다. </p>
+        <div class="activity_textimgbox">
+            <div class="activity_todoclass">
+                <img class="activity_webimg" src="img/todoclass2.png">
+                <div class="activity_todoclass_text">
+                        <div class="activity_todoclass_textname">
+                            <h2>투두클래스&nbsp;</h2>
+                            <h3>(Todo-Class)</h3>
+                        </div>
+                     <p>크게 3~4개의 세션과 각 세션안에 유저가 차근차근 따라할 수 있는 투두리스트가 있습니다.<br>한 개의 투두는 개인의 페이스의 맞춰 학습할 수 있는 글과 사진으로 된 가이드를 작성합니다.<br>투두클래스를 제작하는데 하루 평균 2시간 내외로 1~2주내 완성됩니다. </p>
+                </div>
+            </div>
+            <div class="activity_todochat">
+                <div class="activity_todochat_text">
+                    <div class="activity_todochat_textname">     
+                    <h4>투두챗&nbsp;</h4>
+                    <h3>(Todo-Chat)&nbsp;</h3>
+                    <h2>투두챗</h2>
+                    </div>
+                    <p>1대1 상담을 진행되는 온라인 코칭입니다. 고객이 이루고자 하는 목표가 무엇인지 파악한 후,<br>그에 맞는 투두리스트를 준비합니다. 복잡한 가이드북, 영상이 아닌 투두리스트와 참고 링크로<br> 빠른 준비 및 코칭이 가능합니다. 온라인 코칭은 30분씩 총 2회 진행됩니다.</p>
+                
+                </div>
+                    <img class="activity_webimg" src="img/todochat2.png" alt="">
+            </div>
+            <div class="activity_lecture">
+                <img class="activity_webimg" src="img/lecture2.png" alt="">
+                <div class="activity_lecture_text">   
+                    <div class="activity_lecture_textname">
+                        <h2>강연제안&nbsp;</h2>
+                        <h3>(Lecture-Proposal)</h3>
+                    </div>          
+                    <p>각종 툴에 대한 전문성을 지닌 사람으로 투두몰과 함께 강연활동을 합니다.<br>투두몰에서 진행하는 기업 교육 및 일반 강연 시, 제안을 가장 빠르게 받아보실 수 있으며,<br> 강연 제안에 응하실 경우 담당 매니저가 개인 브랜딩 및 집중 케어를 도와드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--투두몰 프로 활동 혜택.-->
+
+<div class="profits_background">
+    <div class="profits_inner">
+
+        <div class="profits_innertext">
+            <h1>투두몰과 함께하면 뭐가 좋은데?</h1>
+            <h2>투두몰 프로 활동 혜택</h2>
+        </div>
+
+            <div class="profits_innerimgbox">
+                <div>
+                    <img src="img/profits_networking.png">
+                    <h3>네트워킹</h3>
+                    <h4>투두몰과 협력 중인 기업 및 전문지식을 갖춘<br> 사람들과의 교류를 통해 새로운 인맥과 기회를<br> 만들 수 있어요.</h4>
+                </div>
+                <div>
+                    <img src="img/profits_marketing.png">
+                    <h3>홍보 대행</h3>
+                    <h4>홍보를 통한 플랫폼 선정부터 타겟 분석에서<br> 카피까지, 프로님은 교육에만 전념하실 수 있도록<br> 도와드립니다.</h4>
+                </div>
+                <div>
+                    <img src="img/profits_money.png">
+                    <h3>빠르고 쉬운 수익 창출</h3>
+                    <h4>투두몰은 지식교류 생태계 활성화를 위해<br> 보다 쉽고 빠른 제작활동을 추구합니다.</h4>
+                </div>
+                <div>
+                    <img src="img/profits_branding.png">
+                    <h3>퍼스널 브랜딩</h3>
+                    <h4>클래스 제작과 기업 교육 및 강연 활동으로 자신의<br> 가치를 높일 수 있습니다.</h4>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+
+<!--투두몰 프로 등록 방법.-->
+<div class="proregister">
+    <div class="proregister_inner">
+        <div class="proregister_innertext">
+            <h1>지금 투두몰 프로로 합류하세요</h1>
+            <h2>투두몰 프로 등록 방법</h2>
+        </div>
+        <div class="proregister_innercard">
+            <div class="proregister_innercardbox">
+                <div class="proregister_innercardboxin">
+                    <div class="proregister_innercardboxhead"> 
+                        <img src="img/apply_mail.png" alt="">
+                        <h3>&nbsp;STEP 01</h3>
+                    </div>
+                    <h4>프로 지원하기</h4>
+                    <h5>아래 프로 지원하기를 클릭하여 양식에 맞게<br> 작성해주세요</h5>
+                </div>
+            </div>
+            <div class="proregister_innercardbox">
+                <div class="proregister_innercardboxin">
+                    <div class="proregister_innercardboxhead"> 
+                        <img src="img/apply_look.png" alt="">
+                        <h3>&nbsp;STEP 02</h3>
+                    </div>
+                    <h4>심사</h4>
+                    <h5>작성해주신 내용을 바탕으로 투두몰 기준에 적합한 지<br> 심사 과정을 거치게 돼요</h5>
+                 </div>
+            </div>
+            <div class="proregister_innercardbox">
+                <div class="proregister_innercardboxin">
+                    <div class="proregister_innercardboxhead" > 
+                        <img src="img/apply_write.png" alt="">
+                        <h3>&nbsp;STEP 03</h3>
+                    </div>
+                    <h4>프로 합류</h4>
+                    <h5>프로 선정이 되면 프로 지원 시,<br> 작성해주신 내용을 바탕으로 관련자료를 보내드려요</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--자주 묻는 질문-->
+
+<div class="questions_background">
+    <div class="questions_backgroundinner">
+       <h1> 자주 묻는 질문</h1>
+
+       <div class="questions_toggle">
+            <input type="checkbox" id="answer1">
+            <label for="answer1">정확히 어떤 분야의 프로를 모집하며, <br> 어느정도의 전문성을 가져야 하나요?<img src="img/toggle.png" alt=""></label>
+            <div><h2>질문에 대한 답 기획이 필요합니다</h2></div>
+
+            <input type="checkbox" id="answer2">
+            <label for="answer2">한 번도 클래스를 제작해 본 적이 없는데 <br>괜찮은가요?<img src="img/toggle.png" alt=""></label>
+            <div><h2>질문에 대한 답 기획이 필요합니다 쁍뺩쁍 빵빵아! 옥지야!질문에 대한 답 기획이 필요합니다 쁍뺩쁍 빵빵아! 옥지야!</h2></div>
+
+            <input type="checkbox" id="answer3">
+            <label for="answer3">투두 클래스를 제작하는데 얼마만큼의 <br>시간과 비용이 발생하나요?<img src="img/toggle.png" alt=""></label>
+            <div><h2>질문에 대한 답 기획이 필요합니다 쁍뺩쁍 빵빵아! 옥지야!</h2></div>
+
+            <input type="checkbox" id="answer4">
+            <label for="answer4">프로가 되면, 개인정보가 노출되는 <br>것인가요?<img src="img/toggle.png" alt=""></label>
+            <div><h2>질문에 대한 답 기획이 필요합니다</h2></div>
+
+            <input type="checkbox" id="answer5">
+            <label for="answer5">투두몰은 어떤 이유에서 쉽고 빠른가요?<img src="img/toggle.png" alt=""></label>
+            <div><h2>질문에 대한 답 기획이 필요합니다</h2></div>
+       </div>
+    </div>
+</div>
+
+<!--투두몰 프로로 합류하고 전문성을 확산시켜 보세요!-->
+
+<div class="bottombanner_background">
+    <div class="bottombanner_inner">
+        <h1>투두몰 프로로 합류하고 <br>전문성을 확산시켜 보세요!</h1>
+        <h2>투두몰은 프로님의 쉽고 편한 활동을 위해 <br>최선을 다하고 있습니다.</h2>
+        <a class="bottombanner_button" href="#">
+            <h3>&nbsp; 프로지원하기 </h3><img src="img/toggle_white.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!--footer-->
+
+<footer> 
+    <div class="footer_outside">
+        <div class="footer_inner">
+        <img src="img/todomall_logo_footer.svg" alt="">
+            <p> 마이플랜잇 │ 사업자등록번호 :  274-12-01980 │ 대표 : 최현권 │ 개인정보담당자 : 이명성<br>
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL : 010-2154-3992 │ 메일 : hello@todomall.kr</p>
+                <h1>마이플랜잇</h1>
+                <h2>
+                 대표 : 최현권 │ 사업자등록번호 :  274-12-01980 <br> 주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br>
+                 TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br>
+                 개인정보담당자 : 이명성
+                </h2>
+            <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

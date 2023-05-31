@@ -14,6 +14,118 @@ a{
 
 p, h1, h2, h3, h4, h5, h6 {margin: 0px;}
 
+/* 팝업  */
+
+@keyframes popup {
+    from{
+        right: -1600px;
+    }
+    to{
+        right:16;
+    }
+}
+
+
+.popupbackground {
+    position: fixed;
+    bottom: 90px;
+    right: 16px;
+
+    width: 280px;
+
+    background: #F5F9FE;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    color: #242931;
+    animation: popup 1.5s ease-in-out;
+}
+.popup_inner {
+    padding: 16px 16px;
+}
+.popup_uppertext {
+    display: flex;
+    align-items: center;
+}
+.popupbackground h1 {
+    font-weight: 800;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.02em;
+padding-left: 10px;
+}
+.popupbackground h2, h3, h4 {
+    font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+}
+.popupbackground h2 {
+    padding: 12px 0 12px;
+}
+.popupbackground h3 {
+    padding: 0 0 12px;
+}
+
+.popupbackground h5{
+    padding-top: 12px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+
+/* main/blue_500 */
+
+color: #43A0F5;
+}
+
+.popupbackground_mobile {
+    display:none;
+}
+
+@media screen and (max-width: 480px) {
+    .popupbackground {
+        display: none;
+    }
+    .popupbackground_mobile {
+        display: flex;
+        position: fixed;
+        bottom: 16px;
+        left: 16px;
+
+        width: 75%;
+        height: 6%;
+
+        background: #F5F9FE;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        animation: glow 1.5s ease-in-out;
+
+    }
+    .popup_mobileinner {
+        display: flex;
+        align-items: center;
+    }
+    .popup_mobileinner h1 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: -0.025em;
+
+        /* gray/gray_900 */
+
+        color: #242931;
+    }
+    
+    .popup_mobileinner img {
+        padding: 10px 8px 10px 14px;
+    }
+
+}
+
+
+
 /* 네비게이션  */
 .navbackground {
     background: rgba(67, 160, 245, 0.9);

@@ -2,7 +2,4 @@ User-agent: *
 
 Allow: /
 Disallow: https://edu.todomall.kr/
-Sitemap: https://todomall.kr/
-Sitemap: https://todomall.kr/index.html
-Sitemap: https://todomall.kr/pro_todomall.html
-Sitemap: https://todomall.kr/company_todomall.html
+Sitemap: https://todomall.kr/sitemap.xml

@@ -375,6 +375,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 0 40px 200px 40px; 
+    gap:8px;
 }
 .whatispro_cardbackground {
     background: #FFFFFF;
@@ -384,7 +385,7 @@ a{
 
 }
 .whatispro_cardtext{
-    padding: 40px 38px 40px 24px;
+    padding: 40px 258px 40px 24px;
 }
 
 .whatispro_card h1 {
@@ -421,6 +422,7 @@ a{
     /* or 157% */
     /* gray/gray_700 */
     color: #4F5562;
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -453,6 +455,9 @@ a{
         padding: 0px 24px 160px 24px;
         gap: 16px;
     }
+    .whatispro_cardtext{
+      padding: 40px 38px 40px 24px;
+  }
 }
 
 
@@ -755,7 +760,7 @@ a{
   .activity_lecture img{
     width: 520px;
     height: 278px;
-    padding-bottom: 160px;;
+  
   }
   
   @media screen and (max-width: 480px) {

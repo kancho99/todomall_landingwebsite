@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+Disallow: https://edu.todomall.kr/
+Sitemap: https://todomall.kr/sitemap.xml

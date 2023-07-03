@@ -328,3 +328,83 @@ h3 {
     display: inline-block;
   }
 }
+
+/* 캐러셀 */
+
+.slide_box {
+  margin: 500px 0 0 700px;
+  border: rgb(255, 14, 135) 3px dotted;
+  width: 100px;
+  height: 100px;
+  /* overflow: hidden; */
+}
+
+.slide_item {
+  background-color: rgb(255, 215, 187);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: larger;
+  border: rgb(165, 165, 165) 0.5px solid;
+}
+.slide_list {
+  width: 900px;
+  display: flex;
+  height: 100px;
+}
+button {
+  margin-left: 610px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}

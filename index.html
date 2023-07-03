@@ -1,419 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>투두몰ㅣ일잘러의 투두리스트를 훔치다</title>
 
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <meta property="og:url" content="todomall.kr">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png">
-    <meta property = "og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta property = "og:description" content="사수가 없는 당신을 위한 성장 체크리스트">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta property="og:url" content="todomall.kr" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png"
+    />
+    <meta property="og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      property="og:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
-    <meta name = "description" content = "사수가 없는 당신을 위한 성장 체크리스트">
-    <meta name = "keywords" content = "교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터">
-    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta name="twitter:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <meta
+      name="description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <meta
+      name="keywords"
+      content="교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터"
+    />
+    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      name="twitter:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
 
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Hotjar Tracking Code for https://todomall.oopy.io/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3004690,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3004690, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMMZ4VG');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NMMZ4VG");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<meta name="naver-site-verification" content="476ae0d78eab7fbb7a6565c961a405db8f3ea9c6" />
-<meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-<meta name="twitter:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-<meta name="google-site-verification" content="MrffPBPMv4dUPjigZS6gRVviA9ChTxerceoGt01LBN4" />
-<meta name="facebook-domain-verification" content="ee539abvc0ibfohyixabqaw4lsz4wq" />
-<meta name="facebook-domain-verification" content="7ck4npg7yihe0y58rxfwb1ymjz0ior" />
-
-</head>
-<body>
-
+    <meta
+      name="naver-site-verification"
+      content="476ae0d78eab7fbb7a6565c961a405db8f3ea9c6"
+    />
+    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      name="twitter:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <meta
+      name="google-site-verification"
+      content="MrffPBPMv4dUPjigZS6gRVviA9ChTxerceoGt01LBN4"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="ee539abvc0ibfohyixabqaw4lsz4wq"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="7ck4npg7yihe0y58rxfwb1ymjz0ior"
+    />
+  </head>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <body>
     <!--팝업-->
-    <a href="https://edu.todomall.kr/?utm_source=todomall&utm_medium=popup" class="popupbackground">
-        <div class="popup_inner">
-            <div class="popup_uppertext">
-                <img src="img/popup_todomall_logo.png" style="width:20px;height:20px;">
-                <h1>Todomall</h1>
-            </div>
-            <div class="popup_maintext">
-                <h2>투두몰 런칭 기념 이벤트 🔥</h2>
-                <h3>길고 지루한 강의는 이제 그만!</h3>
-                <h4>💰무료 클래스부터 💰반값 할인까지<br>업무 스킬을 단번에 성장시켜 보세요 </h4>
-                <h5>🔗edu.todomall.kr</h5>
-            </div>
+    <a
+      href="https://edu.todomall.kr/?utm_source=todomall&utm_medium=popup"
+      class="popupbackground"
+    >
+      <div class="popup_inner">
+        <div class="popup_uppertext">
+          <img
+            src="img/popup_todomall_logo.png"
+            style="width: 20px; height: 20px"
+          />
+          <h1>Todomall</h1>
         </div>
+        <div class="popup_maintext">
+          <h2>투두몰 런칭 기념 이벤트 🔥</h2>
+          <h3>길고 지루한 강의는 이제 그만!</h3>
+          <h4>
+            💰무료 클래스부터 💰반값 할인까지<br />업무 스킬을 단번에 성장시켜
+            보세요
+          </h4>
+          <h5>🔗edu.todomall.kr</h5>
+        </div>
+      </div>
     </a>
-       <!--팝업 모바일 -->
- <a href="https://edu.todomall.kr/?utm_source=todomall&utm_medium=popup" class="popupbackground_mobile">
-    <div class="popup_mobileinner">
-        <img src="img/popup_todomall_logo.png" style="width:32px; height:32px;">
-        <h1>투두몰 런칭 기념 70% 할인 🔥 </h1>
-    </div>
- </a>
+    <!--팝업 모바일 -->
+    <a
+      href="https://edu.todomall.kr/?utm_source=todomall&utm_medium=popup"
+      class="popupbackground_mobile"
+    >
+      <div class="popup_mobileinner">
+        <img
+          src="img/popup_todomall_logo.png"
+          style="width: 32px; height: 32px"
+        />
+        <h1>투두몰 런칭 기념 70% 할인 🔥</h1>
+      </div>
+    </a>
 
-      <!--카카오채널톡-->
-  <a href="http://pf.kakao.com/_xhSxjExj/chat" id="kakao_channeltalk"style="width:56px;height:56px;position:fixed;bottom:16px;right:16px;pointer-events:auto" target="_blank" rel="noreferrer">
-    <img src="img/kakao_channeltalk.png" style="width:100%;height:100%;border-radius:100%;box-shadow:0 0 12px 4px rgba(0,0,0,0.1)">
-</a>
-
+    <!--카카오채널톡-->
+    <a
+      href="http://pf.kakao.com/_xhSxjExj/chat"
+      id="kakao_channeltalk"
+      style="
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: auto;
+      "
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="img/kakao_channeltalk.png"
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+        "
+      />
+    </a>
 
     <!--네비게이션바-->
-<nav class="navbackground">
-
-    <nav class="navbar">
+    <nav class="navbackground">
+      <nav class="navbar">
         <div class="navbar_logo">
-           <a href="index.html"><img src="img/todomall_logo.svg" alt="logo"></a>
+          <a href="index.html"
+            ><img src="img/todomall_logo.svg" alt="logo"
+          /></a>
         </div>
-            <ul class="navbar_menu">
-                    <li><a href="https://edu.todomall.kr/">투두몰</a></li>
-                    <li><a href="pro_todomall.html">프로지원</a></li>
-                    <li><a href="company_todomall.html">기업제휴</a></li>
-                    <li><a href="https://myplanit.oopy.io/">회사소개</a></li>
-                    <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
-            </ul>
+        <ul class="navbar_menu">
+          <li><a href="https://edu.todomall.kr/">투두몰</a></li>
+          <li><a href="pro_todomall.html">프로지원</a></li>
+          <li><a href="company_todomall.html">기업제휴</a></li>
+          <li><a href="https://myplanit.oopy.io/">회사소개</a></li>
+          <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
+        </ul>
 
-        <a href="#" class="navbar_toggleButton"><img src="img/icn_menu.svg" alt="toggle"></a>
+        <a href="#" class="navbar_toggleButton"
+          ><img src="img/icn_menu.svg" alt="toggle"
+        /></a>
+      </nav>
     </nav>
-</nav>
 
-  <!--모바일 네비게이션-->
+    <!--모바일 네비게이션-->
 
-  <nav class="nav_mobile">
-    <a href="index.html"><img src="Img/todomall_logo.svg" alt=""></a>
+    <nav class="nav_mobile">
+      <a href="index.html"><img src="Img/todomall_logo.svg" alt="" /></a>
 
-<input type="checkbox" id="nav_toggle">
-<label for="nav_toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
+      <input type="checkbox" id="nav_toggle" />
+      <label for="nav_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-<div class="nav_sidebar">
-    <ul class="nav_sidebartext">
-        <a href="https://edu.todomall.kr/">투두몰</a>
-        <a href="pro_todomall.html">프로지원</a>
-        <a href="company_todomall.html">기업제휴</a>
-        <!-- <a href="https://www.todomall.kr/myplanit">회사소개</a>
+      <div class="nav_sidebar">
+        <ul class="nav_sidebartext">
+          <a href="https://edu.todomall.kr/">투두몰</a>
+          <a href="pro_todomall.html">프로지원</a>
+          <a href="company_todomall.html">기업제휴</a>
+          <!-- <a href="https://www.todomall.kr/myplanit">회사소개</a>
         <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
-    </ul>
-</div>
-<div id="background_nav"></div>
-</nav>
+        </ul>
+      </div>
+      <div id="background_nav"></div>
+    </nav>
 
-<!--배너-->
+    <!--배너-->
 
-<section class="banner_background">
-    <div class="banner_inner">
+    <section class="banner_background">
+      <div class="banner_inner">
         <div class="banner_innercontents">
-            <div class="banner_innertext">
-                <h1><span class="right">일잘러의</span><br>
-                    투두리스트를 훔치다</h1>
-                <h2> 
-                    피그마, 노션 등 다양한 오피스 툴 클래스를 투두몰 앱에서 만날 수 있어요
-                </h2>
-                <a href="https://edu.todomall.kr/" class="banner_innerbutton"> 
-                    <h3>웹으로 먼저 만나보기</h3>
-                    <img src="img/main_arrowicon_blue.png">
-                </a>
-            </div>
+          <div class="banner_innertext">
+            <h1>
+              <span class="right">일잘러의</span><br />
+              투두리스트를 훔치다
+            </h1>
+            <h2>
+              피그마, 노션 등 다양한 오피스 툴 클래스를 투두몰 앱에서 만날 수
+              있어요
+            </h2>
+            <a href="https://edu.todomall.kr/" class="banner_innerbutton">
+              <h3>웹으로 먼저 만나보기</h3>
+              <img src="img/main_arrowicon_blue.png" />
+            </a>
+          </div>
 
-            <div class="banner_imgbox">
-                <img src="img/main_banner_mockup.png" alt="">
-            </div>
-
+          <div class="banner_imgbox">
+            <img src="img/main_banner_mockup.png" alt="" />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--투두몰과 성장하고 있습니다-->
 
-<!--투두몰과 성장하고 있습니다-->
-
-<section class="growth_background">
-    <div class="growth_backgroundinner">
+    <section class="growth_background">
+      <div class="growth_backgroundinner">
         <div class="growth_text">
-            <h4>오늘도 많은 2030 사회초년생이</h4>
-            <h2>투두몰과 함께 성장하고 있습니다</h2>
+          <h4>오늘도 많은 2030 사회초년생이</h4>
+          <h2>투두몰과 함께 성장하고 있습니다</h2>
         </div>
 
-       <div class="growth_numbers">
-            <div class="growth_numbersbox1">
-                <div class="growth_numbersbox1top">
-                    <h1>6.4</h1>
-                    <p>&nbsp;배</p>
-                </div>
-                <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+        <div class="growth_numbers">
+          <div class="growth_numbersbox1">
+            <div class="growth_numbersbox1top">
+              <h1>6.4</h1>
+              <p>&nbsp;배</p>
             </div>
+            <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+          </div>
 
-            <div class="growth_numbersbox2">
-                <div class="growth_numbersbox2top">
-                    <h1>174</h1>
-                    <p>&nbsp;명</p>
-                </div>
-                <h3>주간 클래스 도전 유저</h3>
+          <div class="growth_numbersbox2">
+            <div class="growth_numbersbox2top">
+              <h1>174</h1>
+              <p>&nbsp;명</p>
             </div>
-            <div class="growth_numbersbox3">
-                <div class="growth_numbersbox3top">
-                    <h1>146</h1>
-                    <p>&nbsp;개</p>
-                </div>
-                <h3>주간 미션 인증 수</h3>
+            <h3>주간 클래스 도전 유저</h3>
+          </div>
+          <div class="growth_numbersbox3">
+            <div class="growth_numbersbox3top">
+              <h1>146</h1>
+              <p>&nbsp;개</p>
             </div>
-            <div class="growth_numbersbox4">
-                <div class="growth_numbersbox4top">
-                    <h1>84</h1>
-                    <p>&nbsp;%</p>
-                </div>
-                <h3>첫 번째 미션 달성율</h3>
+            <h3>주간 미션 인증 수</h3>
+          </div>
+          <div class="growth_numbersbox4">
+            <div class="growth_numbersbox4top">
+              <h1>84</h1>
+              <p>&nbsp;%</p>
             </div>
+            <h3>첫 번째 미션 달성율</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       </div>
-               
-    </div>
-</section>
+    <!--기존 학습은 왜 이렇게 지루했을까요?-->
 
-
-
-<!--기존 학습은 왜 이렇게 지루했을까요?-->
-    
-<section class="boring_background">
-    <div class="boring_inner">
+    <section class="boring_background">
+      <div class="boring_inner">
         <div class="boring_innerbox">
-        <!-- <h1>이거 하나 배우는데 50시간이 넘게 든다고..?</h1> -->
-        <h2>기존 학습은 왜 이렇게 지루했을까요?</h2>
-        <div class="boring_cardbox">
+          <!-- <h1>이거 하나 배우는데 50시간이 넘게 든다고..?</h1> -->
+          <h2>기존 학습은 왜 이렇게 지루했을까요?</h2>
+          <div class="boring_cardbox">
             <div class="boring_cardbackground">
-                <div class="boring_cardinner">
-                    <h3>또 새로운 도전?</h3>
-                    <h4>새로운 걸 배우고 싶지만 어디서부터<br>
-                        시작할지 몰라 막막해요!</h4>
-                        <div class="boring_imgbox">
-                        <img src="img/main_edu-book.png" alt="">
-                        </div>
+              <div class="boring_cardinner">
+                <h3>또 새로운 도전?</h3>
+                <h4>
+                  새로운 걸 배우고 싶지만 어디서부터<br />
+                  시작할지 몰라 막막해요!
+                </h4>
+                <div class="boring_imgbox">
+                  <img src="img/main_edu-book.png" alt="" />
                 </div>
+              </div>
             </div>
 
             <div class="boring_cardbackground">
-                <div class="boring_cardinner">
-                    <h3>내 집중력은 15분인데...</h3>
-                    <h4>강의 영상을 100시간씩 보는건<br>
-                        너무 힘들어요.</h4>
-                        <div class="boring_imgbox">
-                        <img src="img/main_edu-time.png" alt="">
-                        </div>
+              <div class="boring_cardinner">
+                <h3>내 집중력은 15분인데...</h3>
+                <h4>
+                  강의 영상을 100시간씩 보는건<br />
+                  너무 힘들어요.
+                </h4>
+                <div class="boring_imgbox">
+                  <img src="img/main_edu-time.png" alt="" />
                 </div>
+              </div>
             </div>
 
             <div class="boring_cardbackground">
-                <div class="boring_cardinner">
-                    <h3>내가 뭘 배운거지?</h3>
-                    <h4>열심히 공부해도 당장 보이는<br>
-                        성과가 없어 흥미를 잃었어요.</h4>
-                        <div class="boring_imgbox">
-                        <img src="img/main_edu-apm.png" alt="">
-                        </div>
+              <div class="boring_cardinner">
+                <h3>내가 뭘 배운거지?</h3>
+                <h4>
+                  열심히 공부해도 당장 보이는<br />
+                  성과가 없어 흥미를 잃었어요.
+                </h4>
+                <div class="boring_imgbox">
+                  <img src="img/main_edu-apm.png" alt="" />
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
-        </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-<!--투두몰과 함께 일잘러를 따라 학습하세요!-->
-<section class="learnwith_background">
-    <div class="learnwith_inner">
+    <!--투두몰과 함께 일잘러를 따라 학습하세요!-->
+    <section class="learnwith_background">
+      <div class="learnwith_inner">
         <div class="learnwith_innercontent">
-            <div class="learnwith_text">
-                <h1>일잘러의 투두리스트를 훔치다!</h1>
-                <h2>투두몰과 함께 일잘러를 따라 학습해요</h2>
+          <div class="learnwith_text">
+            <h1>일잘러의 투두리스트를 훔치다!</h1>
+            <h2>투두몰과 함께 일잘러를 따라 학습해요</h2>
+          </div>
+
+          <div class="learnwith_imagebox">
+            <div class="learnwith_imagebox_edu">
+              <h3>
+                다운받은 <br />
+                일잘러의 투두가<br />
+                내 학습함에!
+              </h3>
+              <img src="img/main_mockup_edu.png" alt="" />
             </div>
 
-            <div class="learnwith_imagebox">
-                <div class="learnwith_imagebox_edu">
-                    <h3>다운받은 <br>
-                        일잘러의 투두가<br>
-                        내 학습함에!</h3>
-                    <img src="img/main_mockup_edu.png" alt="">
-                </div>
-
-                <div class="learnwith_imagebox_store">
-                        <div class="learnwith_store_text">
-                            <h4>투두몰 스토어</h4>
-                            <h5>일잘러의 다양한 업무 노하우를 투두몰에서<br>
-                                만날 수 있어요.</h5>
-                        </div>
-                    <img src="img/main_mockup_store.png" alt="">
-                </div>
+            <div class="learnwith_imagebox_store">
+              <div class="learnwith_store_text">
+                <h4>투두몰 스토어</h4>
+                <h5>
+                  일잘러의 다양한 업무 노하우를 투두몰에서<br />
+                  만날 수 있어요.
+                </h5>
+              </div>
+              <img src="img/main_mockup_store.png" alt="" />
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--새로운 투두리스트가 도착했어요!-->
 
-
-<!--새로운 투두리스트가 도착했어요!-->
-
-<section class="newtodo_background">
-    <div class="newtodo_inner">
+    <section class="newtodo_background">
+      <div class="newtodo_inner">
         <div class="newtodo_innercontents">
-            <div class="newtodo_textbox">
-                <div class="newtodo_textbox_ringbox">
-                    <h1>띵동!</h1>
-                    <img src="img/main_ring.svg">
-                </div>
-                    <h2>새로운 투두리스트가<br>도착했어요!</h2>
-                    <h3>더 이상 어떤걸 해야할 지 몰라 헤매지 마세요!<br>
-                        매일 해야하는 일만 체계적으로 나눠서 알려드릴게요.</h3>
+          <div class="newtodo_textbox">
+            <div class="newtodo_textbox_ringbox">
+              <h1>띵동!</h1>
+              <img src="img/main_ring.svg" />
             </div>
-            <div class="newtodo_imgbox">
-                <img src="img/main_newtodo_letter.png" class="newtodo_letterimg">
-            </div>
+            <h2>새로운 투두리스트가<br />도착했어요!</h2>
+            <h3>
+              더 이상 어떤걸 해야할 지 몰라 헤매지 마세요!<br />
+              매일 해야하는 일만 체계적으로 나눠서 알려드릴게요.
+            </h3>
+          </div>
+          <div class="newtodo_imgbox">
+            <img src="img/main_newtodo_letter.png" class="newtodo_letterimg" />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--짧게 쪼개진 투두리스트로 학습해요-->
+    <!--짧게 쪼개진 투두리스트로 학습해요-->
 
-<section class="short_background">
-    <div class="short_inner">
+    <section class="short_background">
+      <div class="short_inner">
         <div class="short_innercontents">
-            <div class="short_text">
-                <h1>집중력을 잃어버리기 전에</h1>
-                <h2>짧게 쪼개진 투두리스트로 학습해요</h2>
+          <div class="short_text">
+            <h1>집중력을 잃어버리기 전에</h1>
+            <h2>짧게 쪼개진 투두리스트로 학습해요</h2>
+          </div>
+          <div class="short_cardbox">
+            <div class="short_cardboxinner">
+              <div class="short_cardboxtext">
+                <h3>Concise & Actionable Learning</h3>
+                <h4>
+                  누구나 따라할 수 있게 <br />
+                  쉽게 알려줄게요
+                </h4>
+                <h5>
+                  일잘러의 투두리스트에서 필요한 내용만 쏙쏙 뽑은 클래스로<br />
+                  업무노하우를 차근차근 학습해요
+                </h5>
+              </div>
+
+              <div class="short_carboximg">
+                <img
+                  src="img/main_learnwith_notion.png"
+                  class="shortimg_notion"
+                />
+                <!-- <h6>* 랜딩 페이지 만들고 데이터 분석하기 클래스의 일부 내용 입니다.</h6> -->
+              </div>
             </div>
-            <div class="short_cardbox">
-                <div class="short_cardboxinner">
-                    <div class="short_cardboxtext">
-                        <h3>Concise & Actionable Learning</h3>
-                        <h4>누구나 따라할 수 있게 <br>
-                            쉽게 알려줄게요</h4>
-                        <h5>일잘러의 투두리스트에서 필요한 내용만 쏙쏙 뽑은 클래스로<br> 업무노하우를 차근차근 학습해요</h5>
-                    </div>
 
-                    <div class="short_carboximg">
-                        <img src="img/main_learnwith_notion.png" class="shortimg_notion">
-                        <!-- <h6>* 랜딩 페이지 만들고 데이터 분석하기 클래스의 일부 내용 입니다.</h6> -->
-                    </div>
-                </div>
+            <div class="short_cardboxinner_mid">
+              <div class="short_cardboxtext_mid">
+                <h3>Experiential Learning</h3>
+                <h4>
+                  미션을 수행하며 <br />
+                  빠르게 성과를 만들어요
+                </h4>
+                <h5>
+                  눈으로만 보는게 아닌, 직접 따라 작업하며 바로 완성되는
+                  작업물로<br />멈추지 않는 배움을 느껴봐요
+                </h5>
+              </div>
 
-                <div class="short_cardboxinner_mid">
-                    <div class="short_cardboxtext_mid">
-                        <h3>Experiential Learning</h3>
-                        <h4>미션을 수행하며 <br>
-                            빠르게 성과를 만들어요</h4>
-                        <h5>눈으로만 보는게 아닌, 직접 따라 작업하며 바로 완성되는 작업물로<br>멈추지 않는 배움을 느껴봐요</h5>
-                    </div>
-
-                    <div class="short_carboximg">
-                        <img src="img/learnwith_figma.svg" class="shortimg_figma">
-                    </div>
-                </div>
-
-                <div class="short_cardboxinner">
-                    <div class="short_cardboxtext">
-                        <h3>Time-bound Learning</h3>
-                        <h4>나중에 해야지..는<br>
-                            통하지 않아요</h4>
-                        <h5>더 이상 미루지 마세요! 투두몰이 인증 마감 기한을 정해 계속<br>알려드릴게요</h5>
-                    </div>
-
-                    <div class="short_carboximg">
-                        <img src="img/learnwith_figma_login.svg" class="shortimg_figma_login">
-                    </div>
-                </div>
-
+              <div class="short_carboximg">
+                <img src="img/learnwith_figma.svg" class="shortimg_figma" />
+              </div>
             </div>
+
+            <div class="short_cardboxinner">
+              <div class="short_cardboxtext">
+                <h3>Time-bound Learning</h3>
+                <h4>
+                  나중에 해야지..는<br />
+                  통하지 않아요
+                </h4>
+                <h5>
+                  더 이상 미루지 마세요! 투두몰이 인증 마감 기한을 정해 계속<br />알려드릴게요
+                </h5>
+              </div>
+
+              <div class="short_carboximg">
+                <img
+                  src="img/learnwith_figma_login.svg"
+                  class="shortimg_figma_login"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--Office Tool을 손쉽게 배워봐요-->
 
-<!--Office Tool을 손쉽게 배워봐요-->
-
-<section class="easylearn_background">
-    <div class="easylearn_inner">
+    <section class="easylearn_background">
+      <div class="easylearn_inner">
         <div class="easylearn_innercontents">
-            <h1>투두몰에서 다양한</h1>
-            <h2>Office Tool을 손쉽게 배워봐요</h2>
-            <img src="img/main_tool_imgs.png" alt="">
+          <h1>투두몰에서 다양한</h1>
+          <h2>Office Tool을 손쉽게 배워봐요</h2>
+          <img src="img/main_tool_imgs.png" alt="" />
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--일잘러의 투두리스트를 확인하세요!-->
+    <!--일잘러의 투두리스트를 확인하세요!-->
 
-<section class="check_background">
-    <div class="check_inner">
+    <section class="check_background">
+      <div class="check_inner">
         <div class="check_innercontents">
-            <div class="check_textbox">
-                <img src="img/main_mockupimg_mobile.png" class="check_imgmobile">
-                <h1>지금 투두몰을 설치하고</h1>
-                <h2>일잘러의 투두리스트를 확인하세요!</h2>
-                <a href="https://edu.todomall.kr/" class="check_innerbutton"> 
-                    <h3>웹으로 먼저 만나보기</h3>
-                    <img src="img/main_arrowicon_white.png">
-                </a>
-            </div>
+          <div class="check_textbox">
+            <img src="img/main_mockupimg_mobile.png" class="check_imgmobile" />
+            <h1>지금 투두몰을 설치하고</h1>
+            <h2>일잘러의 투두리스트를 확인하세요!</h2>
+            <a href="https://edu.todomall.kr/" class="check_innerbutton">
+              <h3>웹으로 먼저 만나보기</h3>
+              <img src="img/main_arrowicon_white.png" />
+            </a>
+          </div>
 
-            <div>
-                <img src="img/main_mockupimg_pc.png" class="check_imgpc">
-            </div>
-
+          <div>
+            <img src="img/main_mockupimg_pc.png" class="check_imgpc" />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--footer-->
 
-<!--footer-->
-
-<footer> 
-    <div class="footer_outside">
+    <footer>
+      <div class="footer_outside">
         <div class="footer_inner">
-        <img src="img/todomall_logo_footer.svg" alt="">
-            <p> 마이플랜잇 │ 사업자등록번호 :  274-12-01980 │ 대표 : 최현권 │ 개인정보담당자 : 이명성<br>
-            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL : 010-2154-3992 │ 메일 : hello@todomall.kr</p>
-                <h1>마이플랜잇</h1>
-                <h2>
-                 대표 : 최현권 │ 사업자등록번호 :  274-12-01980 <br> 주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br>
-                 TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br>
-                 개인정보담당자 : 이명성
-                </h2>
-            <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
+          <img src="img/todomall_logo_footer.svg" alt="" />
+          <p>
+            마이플랜잇 │ 사업자등록번호 : 274-12-01980 │ 대표 : 최현권 │
+            개인정보담당자 : 이명성<br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL
+            : 010-2154-3992 │ 메일 : hello@todomall.kr
+          </p>
+          <h1>마이플랜잇</h1>
+          <h2>
+            대표 : 최현권 │ 사업자등록번호 : 274-12-01980 <br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br />
+            TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br />
+            개인정보담당자 : 이명성
+          </h2>
+          <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-
-</body>
-</html> 
+  </body>
+</html>

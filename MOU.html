@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MOU.css" />
     <link rel="stylesheet" href="global.css" />
     <noscript data-n-css></noscript>
     <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
@@ -37,6 +38,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <!-- Start Body -->
   <body>
@@ -45,13 +47,13 @@
         class="flex-container"
         style="
           height: 64px;
-          border-bottom: 1px #ebebeb;
+          border-bottom: 1px solid #ebebeb;
           align-items: center;
-          display: fixed;
+          margin-bottom: 10px;
         "
       >
         <img
-          alt="[object Object]"
+          alt="todomall_logo"
           loading="lazy"
           width="147"
           height="28"
@@ -63,27 +65,30 @@
             height: 24px;
             margin-bottom: 1rem;
           "
-          src="image/todomall-logo.svg"
+          src="img/todomall_logo.svg"
         />
-        <div style="display: flex; flex-direction: row; align-items: center">
-          <a href="https://edu.todomall.kr/">
-            <h5 style="color: #333333; margin-left: 1.5rem">투두몰</h5> </a
-          ><a href="https://edu.todomall.kr/pro_todomall">
-            <h5 style="color: #333333; margin-left: 1.5rem">프로지원</h5>
-          </a>
-          <a href="https://edu.todomall.kr/company_todomall">
-            <h5 style="color: #333333; margin-left: 1.5rem">기업제휴</h5>
-          </a>
-          <a href="https://edu.todomall.kr/MOU">
-            <h5 style="color: #333333; margin-left: 1.5rem">MOU</h5> </a
-          ><a href="https://myplanit.oopy.io/"
-            ><h5 style="color: #333333; margin-left: 1.5rem">회사 소개</h5></a
-          >
-        </div>
+          <nav class="nav_items">
+            <a href="https://todomall.kr/">
+              <h5 >투두몰</h5>
+            </a>
+            <a href="https://edu.todomall.kr/pro_todomall">
+              <h5>프로지원</h5>
+            </a>
+            <a href="https://edu.todomall.kr/company_todomall">
+              <h5>기업제휴</h5>
+            </a>
+            <a href="https://edu.todomall.kr/company_todomall">
+              <h5>MOU</h5>
+            </a>
+            <a href="https://myplanit.oopy.io/">
+              <h5 >회사 소개</h5>
+            </a>
       </div>
+      <!-- nav  끝 -->
+
       <div class="grid-container">
         <div>
-          <h5>
+          <h5 style="color: #6C7487;">
             기업 보육 기관 및 기업의 담당자님<br />투두몰을 통해 교육 콘텐츠를
             제공해 보세요
           </h5>
@@ -92,47 +97,50 @@
           </h1>
           <h5>현재 제휴는 무료로 진행중입니다</h5>
           <div style="height: 1rem"></div>
-          <div>
+          <div style="display: inline-flex;
+          align-items: flex-start;
+          gap: 42px;">
             <button
               style="
-                margin-right: 0.5rem;
-                background-color: #e8f7ff;
-                color: #43a0f5;
-                padding: 1rem 1.5rem;
-                border-radius: 2.25rem;
-                border: 0;
-              "
-            >
-              <h5 style="color: #43a0f5">서비스 소개서 받기</h5></button
-            ><button
-              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #333333;
                 color: #ffffff;
-                padding: 1rem 1.5rem;
+                padding: 1rem 1rem 1rem 1.5rem;
                 border-radius: 2.25rem;
                 border: 0;
               "
             >
               <h5 style="color: #ffffff">미팅하기</h5>
+              <img src="img/arrowicon_white.png" alt="arrowicon_white" style="width: 24px; height: 24px;"/>
+            </button>
+            <button
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e8f7ff;
+                color: #43a0f5;
+                padding: 1rem 1rem 1rem 1.5rem;
+                border-radius: 2.25rem;
+                border: 0;
+                "
+            >
+              <h5 style="color: #43a0f5">서비스 소개서 받기</h5>
+              <img src="img/arrowicon_blue.png" alt="arrowicon_blue" style="width: 24px; height: 24px;"/>
             </button>
           </div>
         </div>
-        <img
-          alt="[object Object]"
-          loading="lazy"
-          width="1308"
-          height="868"
-          decoding="async"
-          data-nimg="1"
-          style="
-            color: transparent;
-            max-width: 640px;
-            max-height: 480px;
-            object-fit: contain;
-          "
-          src="Img/main_banner_mockup.png"
-          alt=""
-        />
+        <!-- Carousel 시작 -->
+        
+        <div class="swiper-container swiper-container-horizontal">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+        
+        <!-- Carousel 끝 -->
       </div>
     </div>
     <div style="width: 100vw; background-color: #f7f9fc; padding-top: 2rem">
@@ -660,4 +668,9 @@
   </body>
 </html>
 
-<script src="/transition.js" />
+<script src="/carousel.js" />
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              populateCarousel();
+            });
+          </script>

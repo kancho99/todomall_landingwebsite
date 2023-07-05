@@ -1,12 +1,20 @@
-/* Carousel 시작 */
+.banner-container {
+  display: grid;
+  width: 1080px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  margin-bottom: 1rem;
+}
+
+/* Carousel PC 시작 */
 
 .swiper-container {
   display: flex;
-  max-width: 783px;
   width: 539px;
   height: 570px;
-  border-radius: 36px;
-  border: 1px solid #e8f7ff;
   background-color: #fff;
   overflow: hidden;
 }
@@ -23,6 +31,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 36px;
+  border: 1px solid #e8f7ff;
 }
 
 .swiper-slide-next {
@@ -40,8 +50,51 @@ h4,
 h6 {
   margin: 0;
 }
+/* Carousel PC 끝 */
 
-/* Carousel 끝 */
+/* Carousel Mobile 시작 */
+@media screen and (max-width: 480px) {
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 480px;
+    height: auto;
+  }
+
+  .swiper-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 28px;
+    padding-left: 20px;
+  }
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .classInfoBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 14px 16px 18px 18px;
+  }
+}
+/* Carousel Mobile 끝 */
 
 .nav_items {
   width: 340px;

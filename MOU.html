@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="MOU.css" />
+    <link rel="stylesheet" href="global.css" />
+    <noscript data-n-css></noscript>
     <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -19,7 +19,6 @@
       property="og:description"
       content="사수가 없는 당신을 위한 성장 체크리스트"
     />
-
     <meta
       name="description"
       content="사수가 없는 당신을 위한 성장 체크리스트"
@@ -33,7 +32,6 @@
       name="twitter:description"
       content="사수가 없는 당신을 위한 성장 체크리스트"
     />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -42,179 +40,623 @@
   </head>
   <!-- Start Body -->
   <body>
-    <!--카카오채널톡-->
-    <a
-      href="http://pf.kakao.com/_xhSxjExj/chat"
-      id="kakao_channeltalk"
-      style="
-        width: 56px;
-        height: 56px;
-        position: fixed;
-        bottom: 16px;
-        right: 16px;
-        pointer-events: auto;
-      "
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img
-        src="img/kakao_channeltalk.png"
+    <div>
+      <div
+        class="flex-container"
         style="
-          width: 100%;
-          height: 100%;
-          border-radius: 100%;
-          box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+          height: 64px;
+          border-bottom: 1px #ebebeb;
+          align-items: center;
+          display: fixed;
         "
-      />
-    </a>
-
-    <!--네비게이션바-->
-    <nav class="navbackground">
-      <nav class="navbar">
-        <div class="navbar_logo">
-          <a href="index.html"
-            ><img src="img/todomall_logo.svg" alt="logo"
-          /></a>
-        </div>
-        <ul class="navbar_menu">
-          <li><a href="https://edu.todomall.kr/">투두몰</a></li>
-          <li><a href="pro_todomall.html">프로지원</a></li>
-          <li><a href="company_todomall.html">기업제휴</a></li>
-          <li><a href="https://myplanit.oopy.io/">회사소개</a></li>
-          <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
-        </ul>
-
-        <a href="#" class="navbar_toggleButton"
-          ><img src="img/icn_menu.svg" alt="toggle"
-        /></a>
-      </nav>
-    </nav>
-
-    <!--모바일 네비게이션-->
-
-    <nav class="nav_mobile">
-      <a href="index.html"><img src="Img/todomall_logo.svg" alt="" /></a>
-
-      <input type="checkbox" id="nav_toggle" />
-      <label for="nav_toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <div class="nav_sidebar">
-        <ul class="nav_sidebartext">
-          <a href="https://edu.todomall.kr/">투두몰</a>
-          <a href="pro_todomall.html">프로지원</a>
-          <a href="company_todomall.html">기업제휴</a>
-          <a href="https://myplanit.oopy.io/">회사소개</a>
-          <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
-        </ul>
-      </div>
-      <div id="background_nav"></div>
-    </nav>
-
-    <!--헤더-->
-
-    <div class="header_background">
-      <div class="header_inner">
-        <div class="header_menu">
-          <h1>
-            당신의 <strong>전문성 있는</strong> <br />
-            <strong>업무 도구</strong>는 무엇인가요?
-          </h1>
-          <h2>
-            쉽고 빠른 클래스 제작부터 강연 기회까지
-            <br class="brmobile" />얻어가세요!
-          </h2>
-          <a href="https://tally.so/r/3xXj05">
-            <h3>프로지원하기</h3>
-            <img src="img/right_arrow.png" alt="" />
+      >
+        <img
+          alt="[object Object]"
+          loading="lazy"
+          width="147"
+          height="28"
+          decoding="async"
+          data-nimg="1"
+          style="
+            color: transparent;
+            width: auto;
+            height: 24px;
+            margin-bottom: 1rem;
+          "
+          src="image/todomall-logo.svg"
+        />
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <a href="https://edu.todomall.kr/">
+            <h5 style="color: #333333; margin-left: 1.5rem">투두몰</h5> </a
+          ><a href="https://edu.todomall.kr/pro_todomall">
+            <h5 style="color: #333333; margin-left: 1.5rem">프로지원</h5>
           </a>
+          <a href="https://edu.todomall.kr/company_todomall">
+            <h5 style="color: #333333; margin-left: 1.5rem">기업제휴</h5>
+          </a>
+          <a href="https://edu.todomall.kr/MOU">
+            <h5 style="color: #333333; margin-left: 1.5rem">MOU</h5> </a
+          ><a href="https://myplanit.oopy.io/"
+            ><h5 style="color: #333333; margin-left: 1.5rem">회사 소개</h5></a
+          >
         </div>
-        <div class="header_img">
-          <img src="/Img/mockup_header.png" alt="" />
+      </div>
+      <div class="grid-container">
+        <div>
+          <h5>
+            기업 보육 기관 및 기업의 담당자님<br />투두몰을 통해 교육 콘텐츠를
+            제공해 보세요
+          </h5>
+          <h1 style="margin-top: 0.5rem; margin-bottom: 1rem">
+            투두몰과의<br />제휴를 통해<br />모든 클래스를<br />자유롭게 수강
+          </h1>
+          <h5>현재 제휴는 무료로 진행중입니다</h5>
+          <div style="height: 1rem"></div>
+          <div>
+            <button
+              style="
+                margin-right: 0.5rem;
+                background-color: #e8f7ff;
+                color: #43a0f5;
+                padding: 1rem 1.5rem;
+                border-radius: 2.25rem;
+                border: 0;
+              "
+            >
+              <h5 style="color: #43a0f5">서비스 소개서 받기</h5></button
+            ><button
+              style="
+                background-color: #333333;
+                color: #ffffff;
+                padding: 1rem 1.5rem;
+                border-radius: 2.25rem;
+                border: 0;
+              "
+            >
+              <h5 style="color: #ffffff">미팅하기</h5>
+            </button>
+          </div>
+        </div>
+        <img
+          alt="[object Object]"
+          loading="lazy"
+          width="1308"
+          height="868"
+          decoding="async"
+          data-nimg="1"
+          style="
+            color: transparent;
+            max-width: 640px;
+            max-height: 480px;
+            object-fit: contain;
+          "
+          src="Img/main_banner_mockup.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div style="width: 100vw; background-color: #f7f9fc; padding-top: 2rem">
+      <div class="container">
+        <div style="margin-bottom: 2rem">
+          <h5 style="color: #439ff5">성과</h5>
+          <h3 style="margin-bottom: 0.5rem">성장의 도우미가 되어줄 플랫폼</h3>
+          <h5>
+            오늘도 많은 2030 직장인들이<br />투두몰과 함께 성장하고 있습니다
+          </h5>
+        </div>
+        <div>
+          <div class="grid-container-third">
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>최OO님 인터뷰</h5>
+                <h6>
+                  투두몰에서 공부할 때는 상대적으로 아는 내용과 모르는 내용을
+                  구분해서 듣기가 편하고, 불필요한 강의 시간도 없어서 좋아요.
+                </h6>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>김OO님 인터뷰</h5>
+                <h6>
+                  여러 인터넷에서 얻을 수 있는 정보들에서는 상세한 액션을 이렇게
+                  스텝 바이 스텝으로 소개하지 않는데, 투두몰에서는 상세한 흐름을
+                  알 수 있어서 좋았어요.
+                </h6>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>전OO님 인터뷰</h5>
+                <h6>
+                  처음 봤을때 투두리스트를 완료해야 다음 강의를 열 수 있다는
+                  점이 매력적으로 느껴졌고 강의를 완강을 하게 만들기때문에
+                  만족스러운 부분이예요.
+                </h6>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>이OO님 인터뷰</h5>
+                <h6>
+                  최신 흐름에 맞춰서 마케터에게 필요한 역량을 주제로 콘텐츠를
+                  제공하는 게 좋았고 이것저것 끼워팔지 않고 컴팩트한 교육이
+                  좋네요.
+                </h6>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>유OO님 인터뷰</h5>
+                <h6>
+                  여러 인터넷에서 얻을 수 있는 정보들에서는 상세한 액션을 이렇게
+                  스텝 바이 스텝으로 소개하지 않는데, 투두몰에서는 그 점이
+                  안정적인거같아요.
+                </h6>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 2.25rem;
+                background-color: #ffffff;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div style="padding: 1rem">
+                <h5>박OO님 인터뷰</h5>
+                <h6>
+                  학습을 하면서는 스트레스 받는 일이 많잖아요, 놀다가도 딱
+                  삼십분만 집중하면 인증까지 다 끝낼 수 있고 하고 나면 결과물도
+                  나오고 해서 뿌듯해요.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="grid-container-fourth" style="text-align: center">
+            <div>
+              <h2>8.8배</h2>
+              <h6>기존 교육 콘텐츠 대비 완주율</h6>
+            </div>
+            <div>
+              <h2>1000+</h2>
+              <h6>인증된 성과물 갯수</h6>
+            </div>
+            <div>
+              <h2>7일</h2>
+              <h6>완강에 필요한 시간</h6>
+            </div>
+            <div>
+              <h2>84%</h2>
+              <h6>첫 번째 미션 달성률</h6>
+            </div>
+          </div>
+        </div>
+        <div style="height: 4rem"></div>
+      </div>
+    </div>
+    <div>
+      <div class="flex-container">
+        <div>
+          <div style="margin-bottom: 2rem">
+            <h5 style="color: #439ff5">콘텐츠</h5>
+            <h3 style="margin-bottom: 0.5rem">
+              차근차근 따라하고<br />미션을 인증하며 배우는<br />경험 학습
+              솔루션
+            </h3>
+            <h5>
+              나에게 필요없는 이론까지 꼭 배워야 할까요?<br />투두몰은 해야 할
+              것만 쏙쏙 뽑아서 알려드립니다<br />유저들은 투두리스트를 따라하고
+              미션을 인증하면서<br />능동적으로 서비스를 이용하게 되어요
+            </h5>
+          </div>
+        </div>
+        <img
+          alt="트로피 사진"
+          loading="lazy"
+          width="880"
+          height="880"
+          decoding="async"
+          data-nimg="1"
+          style="color: transparent; width: 320px; height: 320px; float: right"
+          srcset="
+            /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrophys.bde2855a.png&amp;w=1080&amp;q=75 1x,
+            /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrophys.bde2855a.png&amp;w=1920&amp;q=75 2x
+          "
+          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrophys.bde2855a.png&amp;w=1920&amp;q=75"
+        />
+      </div>
+      <div class="container">
+        <div style="margin-bottom: 2rem">
+          <h5 style="color: #439ff5">차별화</h5>
+          <h2 style="margin-bottom: 0.5rem">
+            투두몰의<br />경험 마케팅은<br />다릅니다
+          </h2>
+          <h5></h5>
+        </div>
+        <div class="grid-container">
+          <div style="margin-top: 1rem">
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              src="/_next/static/media/mutual.ad87cba1.svg"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>명확한 타겟팅</h4>
+            <h5>
+              불특정 다수에게 제공되는 타 광고들에<br />대비해 높은 유입효과를
+              기대할 수 있어요
+            </h5>
+          </div>
+          <div>
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              src="/_next/static/media/search-plus.28b3f628.svg"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>유저 유입 채널</h4>
+            <h5>
+              서비스에 입문하고 싶은 유저가 자연스럽게 서비스를<br />경험하도록
+              만들기에 이후 높은 전환율을 기대할 수 있어요
+            </h5>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div style="margin-top: 1rem">
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              src="/_next/static/media/mail.b559a6b8.svg"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>충성고객 달성</h4>
+            <h5>
+              서비스를 보다 깊게 활용하도록 유도하므로<br />소비자와 브랜드
+              사이에 더 강한 연결이 가능해요
+            </h5>
+          </div>
+          <div>
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              src="/_next/static/media/gallery.4fea57a5.svg"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>쉬운 컨텐츠 제작</h4>
+            <h5>
+              커리큘럼이 결과물 중심이면 클래스를 수강 시<br />위와 같은 경험
+              마케팅의 효과들을 경험할 수 있어요
+            </h5>
+          </div>
+        </div>
+        <div style="height: 4rem"></div>
+        <div style="margin-bottom: 2rem">
+          <h5 style="color: #439ff5">강점</h5>
+          <h3 style="margin-bottom: 0.5rem">
+            2030 유저를 서비스 가입부터 락인까지
+          </h3>
+          <h5></h5>
+        </div>
+        <div class="grid-container-third">
+          <div style="border-radius: 2.25rem; border-width: 10px">
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="768"
+              height="518"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                display: block;
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+                padding: 0;
+                margin: 0;
+                border-radius: 2.25rem 2.25rem 0rem 0rem;
+              "
+              srcset="
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto4.feed97da.png&amp;w=828&amp;q=75  1x,
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto4.feed97da.png&amp;w=1920&amp;q=75 2x
+              "
+              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto4.feed97da.png&amp;w=1920&amp;q=75"
+            />
+            <div
+              style="
+                display: block;
+                padding: 1.5rem 1.5rem;
+                border: none;
+                border-radius: 0rem 0rem 2.25rem 2.25rem;
+                background-color: #f7f9fc;
+              "
+            >
+              <h5 style="margin-bottom: 0.125rem; color: #333333">
+                2030 타겟 유저에 집중
+              </h5>
+              <h6>
+                2030 사회초년생부터 대학생과 취준생까지 모두 타겟팅 해보세요.
+              </h6>
+            </div>
+          </div>
+          <div
+            style="
+              display: block;
+              border-radius: 2.25rem 2.25rem 0rem 0rem;
+              border-color: #eef6fa;
+            "
+          >
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="768"
+              height="518"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                display: block;
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 2.25rem 2.25rem 0rem 0rem;
+              "
+              srcset="
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto5.cc016945.png&amp;w=828&amp;q=75  1x,
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto5.cc016945.png&amp;w=1920&amp;q=75 2x
+              "
+              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto5.cc016945.png&amp;w=1920&amp;q=75"
+            />
+            <div
+              style="
+                display: block;
+                padding: 1.5rem 1.5rem;
+                border-radius: 0rem 0rem 2.25rem 2.25rem;
+                background-color: #f7f9fc;
+              "
+            >
+              <h5 style="margin-bottom: 0.125rem; color: #333333">
+                다양한 시나리오 경험
+              </h5>
+              <h6>
+                자사 서비스를 주제로 클래스를 만들면 고객에게 원하는 다양한
+                경험을 제공할 수 있습니다.
+              </h6>
+            </div>
+          </div>
+          <div
+            style="
+              display: block;
+              border-radius: 2.25rem;
+              border-color: #eef6fa;
+            "
+          >
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="772"
+              height="518"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                display: block;
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 2.25rem 2.25rem 0rem 0rem;
+              "
+              srcset="
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto6.52bcc114.png&amp;w=828&amp;q=75  1x,
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto6.52bcc114.png&amp;w=1920&amp;q=75 2x
+              "
+              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto6.52bcc114.png&amp;w=1920&amp;q=75"
+            />
+            <div
+              style="
+                display: block;
+                padding: 1.5rem 1.5rem;
+                border-radius: 0rem 0rem 2.25rem 2.25rem;
+                background-color: #f7f9fc;
+              "
+            >
+              <h5 style="margin-bottom: 0.125rem; color: #333333">
+                서비스의 활용 유도
+              </h5>
+              <h6>
+                클래스를 수강하는 과정에서 유저가 서비스를 설치하고 직접
+                사용하도록 유도합니다
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div style="height: 4rem"></div>
+        <div style="margin-bottom: 2rem">
+          <h5 style="color: #439ff5">솔루션</h5>
+          <h2 style="margin-bottom: 0.5rem">
+            투두몰과 함께<br />고민을 해결하세요
+          </h2>
+          <h5></h5>
+        </div>
+        <div class="grid-container">
+          <div style="margin-top: 1rem">
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              srcset="
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook.d63fd5f8.png&amp;w=256&amp;q=75 1x,
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook.d63fd5f8.png&amp;w=384&amp;q=75 2x
+              "
+              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook.d63fd5f8.png&amp;w=384&amp;q=75"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>고객 서비스 사용 추적</h4>
+            <h5>고객이 우리 서비스를<br />어떻게 사용하는지 알고 싶어요</h5>
+          </div>
+          <div>
+            <img
+              alt="[object Object]"
+              loading="lazy"
+              width="160"
+              height="160"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+              "
+              srcset="
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnote.02983b6e.png&amp;w=256&amp;q=75 1x,
+                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnote.02983b6e.png&amp;w=384&amp;q=75 2x
+              "
+              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnote.02983b6e.png&amp;w=384&amp;q=75"
+            />
+            <h5 style="color: #1ca876"></h5>
+            <h4>효과적인 전달</h4>
+            <h5>우리만의 콘텐츠를 유저에게<br />효과적으로 전달하고싶어요</h5>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- 캐러셀 -->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    <div style="height: 4rem"></div>
+    <div class="center-container">
+      <div>
+        <h5>투두몰은 프로님의 쉽고 편한 활동을 위해 최선을 다하고 있습니다</h5>
+        <h2>투두몰 프로로 합류하고<br />전문성을 확산시켜보세요</h2>
+        <div style="height: 1rem"></div>
+        <img
+          alt="[object Object]"
+          loading="lazy"
+          width="1564"
+          height="124"
+          decoding="async"
+          data-nimg="1"
+          style="
+            color: transparent;
+            max-width: 100%;
+            object-fit: contain;
+            margin-bottom: 1rem;
+          "
+          src="/_next/static/media/app-image-line.02c6c854.svg"
         />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      </head>
-      <body>
-        <div class="container">
-          <h2>Carousel Example</h2>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li
-                data-target="#myCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img
-                  src="https://placehold.co/600x400/orange/white"
-                  alt="Los Angeles"
-                />
-                <div class="carousel-caption"></div>
-              </div>
-
-              <div class="item">
-                <img
-                  src="https://placehold.co/600x400/red/white"
-                  alt="Chicago"
-                />
-                <div class="carousel-caption"></div>
-              </div>
-
-              <div class="item">
-                <img
-                  src="https://placehold.co/600x400/red/black"
-                  alt="New York"
-                />
-                <div class="carousel-caption"></div>
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a
-              class="left carousel-control"
-              href="#myCarousel"
-              data-slide="prev"
-            >
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="right carousel-control"
-              href="#myCarousel"
-              data-slide="next"
-            >
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+        <div>
+          <button
+            style="
+              margin-right: 1rem;
+              background-color: #e8f7ff;
+              color: #43a0f5;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+            <h5 style="color: #43a0f5">서비스 소개서 받기</h5>
+          </button>
+          <button
+            style="
+              background-color: #333333;
+              color: #ffffff;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+            <h5 style="color: #ffffff">미팅하기</h5>
+          </button>
         </div>
-      </body>
-    </html>
+      </div>
+    </div>
   </body>
 </html>
 

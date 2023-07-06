@@ -12,25 +12,23 @@ function populateCarousel() {
 
         slide.setAttribute("data-swiper-autoplay", "2000");
 
-        if (mediaQuery.matches) {
-          slide.style.width = "277px";
-        }
         const thumbnail = document.createElement("img");
         if (mediaQuery.matches) {
-          thumbnail.style.width = "277px";
-          thumbnail.style.height = "175.245px";
-          thumbnail.style.maxWidth = "277px";
-          thumbnail.style.borderRadius = "36px 36px 0 0";
-          thumbnail.style.objectFit = "fill";
-        } else {
-          //           width: 539px;
-          // height: 341px;
+          // Mobile
           thumbnail.style.width = "100%";
-          thumbnail.style.height = "341px";
+          thumbnail.style.height = "45%";
+          thumbnail.style.minHeight = "175px";
+          thumbnail.style.minWidth = "100%";
+          thumbnail.style.borderRadius = "36px 36px 0 0";
+          thumbnail.style.objectFit = "cover";
+        } else {
+          // PC
+          thumbnail.style.width = "100%";
+          thumbnail.style.height = "100%";
           thumbnail.style.minHeight = "341px";
           thumbnail.style.minWidth = "100%";
           thumbnail.style.borderRadius = "36px 36px 0 0";
-          thumbnail.style.objectFit = "contain";
+          thumbnail.style.objectFit = "cover";
         }
 
         thumbnail.src = item.thumbnail_url_text;
@@ -90,14 +88,23 @@ function populateCarousel() {
         swiperWrapper.appendChild(slide);
       });
 
-      // Initialize Swiper
-      new Swiper(".swiper-container", {
-        slidesPerView: mediaQuery ? 1.5 : 1.2,
-        spaceBetween: mediaQuery ? 20 : 33,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
+      if (mediaQuery.matches) {
+        new Swiper(".swiper-container", {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      } else {
+        new Swiper(".swiper-container", {
+          slidesPerView: 1.1,
+          spaceBetween: 33,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      }
     })
     .catch((error) => {
       console.log("Error:", error);

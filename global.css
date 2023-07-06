@@ -223,44 +223,44 @@
     text-align: left;
   }
   .container {
-    width: calc(100%-2rem);
+    width: calc(100%-4rem);
     display: flex;
     flex-direction: column;
-    margin: 0rem 1rem;
+    margin: 0rem 1.5rem;
   }
 
   .grid-container {
     display: flex;
-    width: calc(100%-2rem);
+    width: calc(100%-4rem);
     flex-direction: column;
-    margin: 0rem 1rem;
+    margin: 0rem 1.5rem;
     height: auto;
   }
 
   .grid-container-third {
     display: flex;
-    width: calc(100%-2rem);
+    width: calc(100%-4rem);
     margin: 0rem;
     flex-direction: column;
   }
 
   .CARDLIST {
     display: flex;
-    width: calc(100%-2rem);
+    width: calc(100%-4rem);
     flex-direction: column;
   }
 
   .CARDLIST > img {
-    margin: 0rem 1rem;
+    margin: 0rem 1.5rem;
   }
 
   .CARDLIST > h6 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
 
   .grid-container-fourth {
-    width: calc(100%-2rem);
-    margin: 0rem;
+    width: calc(100%-4rem);
+    margin: 0rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
@@ -269,7 +269,7 @@
 
   .flex-container {
     display: flex;
-    width: calc(100%-2rem);
+    width: calc(100%-4rem);
     margin: 0 1rem;
     flex-direction: column;
     justify-content: flex-start;
@@ -278,7 +278,7 @@
 
   .center-container {
     display: flex;
-    width: calc(100%-1.5rem);
+    width: calc(100%-4rem);
     margin: 0rem 1rem;
     text-align: center;
     align-items: center;
@@ -286,7 +286,7 @@
   }
 
   .header-container {
-    width: calc(100%-1.5rem);
+    width: calc(100%-4rem);
     margin: 0rem 1rem;
     display: flex;
     align-items: center;

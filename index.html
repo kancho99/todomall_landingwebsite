@@ -219,7 +219,7 @@
     <div 
     id="desktop_navigation"
       style="
-        width: 100vw;
+        width: 100%;
         background-color: #ffffff;
         border-bottom-style: solid;
         border-bottom-color: #ebebeb;
@@ -271,7 +271,7 @@
     <!-- Mobile Navigation Header -->
     <div id="mobile_navigation"
       style="
-        width: 100vw;
+        width: 100%;
         border-bottom-style: solid;
         border-bottom-color: #ebebeb;
         border-bottom-width: 1px;
@@ -283,7 +283,7 @@
         backdrop-filter: blur(10px);
         overflow: hidden;
         transition-property: height;
-        transition-duration: 2s;
+        transition-duration: 0.5s;
       "
     >
       <div class="header-container"" style="margin-top: 18px; justify-content:space-between" >
@@ -342,6 +342,8 @@
         <div></div>
         <div style="margin-bottom: 3rem">
         <button
+        type="button" 
+         onclick="window.location.href='https://edu.todomall.kr/';"
           style="
             background-color: #333333;
             color: #ffffff;
@@ -361,7 +363,7 @@
     </div>
   </div>
 <!-- 성장 -->
-<div style="width: 100vw; background-color: #f7f9fc; padding-top: 2rem">
+<div style="width: 100%; background-color: #f7f9fc; padding-top: 2rem">
   <div class="container">
     <div style="margin-bottom: 1rem; margin-top: 1rem">
       <h5 style="color: #439ff5">성과</h5>
@@ -510,13 +512,14 @@
 </div>
 <div>
    <!-- 기존의 문제점 -->
-   <div class="container" style="margin-top:2rem;margin-bottom: 2rem">
+   <div class="container" style="margin-top : 3rem; margin-bottom: 1rem">
      <h5 style="color: #439ff5">문제점</h5>
      <h3 style="margin-bottom: 0.5rem">
        기존 학습에는 무엇이 부족했을까요?
      </h3>
      <h5></h5>
    </div>
+   <div class="container">
    <div class="grid-container-third" style="margin-bottom: 5rem">
      <div style="border-radius: 2.25rem; border-width: 10px">
        <img
@@ -545,6 +548,7 @@
            border: none;
            border-radius: 0rem 0rem 2.25rem 2.25rem;
            background-color: #f7f9fc;
+           margin-bottom: 1rem;
          "
        >
          <h5 style="margin-bottom: 0.125rem; color: #333333">
@@ -585,6 +589,7 @@
            padding: 1.5rem 1.5rem;
            border-radius: 0rem 0rem 2.25rem 2.25rem;
            background-color: #f7f9fc;
+           margin-bottom: 1rem;
          "
        >
          <h5 style="margin-bottom: 0.125rem; color: #333333">
@@ -625,6 +630,7 @@
            padding: 1.5rem 1.5rem;
            border-radius: 0rem 0rem 2.25rem 2.25rem;
            background-color: #f7f9fc;
+           margin-bottom: 1rem;
          "
        >
          <h5 style="margin-bottom: 0.125rem; color: #333333">
@@ -636,6 +642,7 @@
        </div>
      </div>
    </div>
+  </div>
 <div class="grid-container">
   <div>
     <div>
@@ -651,26 +658,48 @@
             <h2 style="margin-bottom:0.5rem">투두몰 스토어</h2><h5>일잘러의 다양한 업무 노하우를<br/>클래스로 구매하고 학습할 수 있어요<br/>투두몰과 함께 일잘러를 따라 학습해보세요</h5></div></div></div>
             <div class="flex-container" style="margin-top:2rem;margin-bottom: 2rem;"><div><div style="margin-bottom:2rem">
               <h5 style="color:#439FF5">띵동!</h5><h3 style="margin-bottom:0.5rem">새로운<br/>투두리스트가<br/>도착했어요</h3><h5>더이상 어떤 걸 해야할 지 몰라 헤메지 마세요!<br/>매일 꼭 해야하는 공부만 체계적으로 나눠서 알려드릴게요</h5></div></div>
-            <img src="img/alarm-graphic.png" alt="알림 그래픽" loading="lazy" width="822" height="802" decoding="async" data-nimg="1" style="color:transparent;width:320px;height:320px;float:right"/></div>
+            <img src="img/alarm-graphic.png" alt="알림 그래픽" loading="lazy" width="822" height="802" decoding="async" data-nimg="1" style="color:transparent;width:320px;height:320px;float:right;object-fit: contain;"/></div>
             <div class="container">
               <div style="margin-bottom:2rem"><h5 style="color:#439FF5">집중력을 잃어버리기 전에</h5>
                 <h2 style="margin-bottom:0.5rem">짧게 쪼개진<br/>투두리스트로 학습해요</h2></div></div><div class="grid-container">
-                  <img src="img/ui1.png" alt="UI 이미지" loading="lazy" width="1158" height="672" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:320px" 40&amp;q=75 2x"/><div><div style="height:4rem"></div><div style="margin-bottom:2rem"><h5 style="color:#439FF5">인지와 활동 중심 학습</h5><h3 style="margin-bottom:0.5rem">아주 쉽게 알려줄게요<br/>누구나 따라할 수 있도록요</h3>
-                    <h5>필요한 내용만 쏙쏙 뽑은 클래스로 차근차근 학습해요</h5></div></div><div><div style="height:4rem"></div><div style="height:4rem"></div><div style="height:4rem"></div><div style="margin-bottom:2rem"><h5 style="color:#439FF5">실험 중심적 학습</h5><h3 style="margin-bottom:0.5rem">미션을 수행하며<br/>빠르게 성과를 만들어봐요</h3><h5>수업만 들어도 바로 완성되는 작업물,<br/>멈추지 않는 성장과 배움을 느껴보세요</h5></div></div>
-                    <img src="img/ui2.png" alt="UI 이미지" loading="lazy" width="1040" height="1056" decoding="async" data-nimg="1" style="color:transparent;width:480px;height:auto"/><img src="img/ui3.png" alt="UI 이미지" loading="lazy" width="1166" height="1048" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:440px" /><div>
-                    <div style="height:4rem"></div><div style="margin-bottom:2rem"><h5 style="color:#439FF5">시간 내 학습</h5><h3 style="margin-bottom:0.5rem">나중에 해야지... 는<br/>통하지 않아요</h3><h5>부족한 의지를 끌어올릴 수 있도록<br/>투두몰이 학습 관리까지 도와드릴게요</h5></div></div></div>
-                    <div style="height:4rem"></div>
-                    <div class="center-container" style="margin-bottom:4rem"><div>
+                  <img src="img/ui1.png" alt="UI 이미지" loading="lazy" width="1158" height="672" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:320px;object-fit: contain;" 40&amp;q=75 2x"/><div><div style="height:4rem"></div><div style="margin-bottom:2rem"><h5 style="color:#439FF5">인지와 활동 중심 학습</h5><h3 style="margin-bottom:0.5rem">아주 쉽게 알려줄게요<br/>누구나 따라할 수 있도록요</h3>
+                    <h5>필요한 내용만 쏙쏙 뽑은 클래스로 차근차근 학습해요</h5>
+                  </div>
+                </div>
+                <div>
+                  </div>
+                    <div style="margin-bottom:2rem"><h5 style="color:#439FF5">실험 중심적 학습</h5><h3 style="margin-bottom:0.5rem">미션을 수행하며<br/>빠르게 성과를 만들어봐요</h3><h5>수업만 들어도 바로 완성되는 작업물,<br/>멈추지 않는 성장과 배움을 느껴보세요</h5></div></div>
+                    <img src="img/ui2.png" alt="UI 이미지" loading="lazy" width="1040" height="1056" decoding="async" data-nimg="1" style="color:transparent;width:480px;height:auto"/>
+                    <img src="img/ui3.png" alt="UI 이미지" loading="lazy" width="1166" height="1048" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:440px;object-fit: contain;" />
+                    <div class="container">
+                      <div style="height:4rem">
+                      </div>
+                      <div style="margin-bottom:2rem"
+                      ><h5 style="color:#439FF5">시간 내 학습</h5><h3 style="margin-bottom:0.5rem">
+                        나중에 해야지... 는
+                        <br/>
+                        통하지 않아요
+                      </h3>
+                      <h5>부족한 의지를 끌어올릴 수 있도록
+                        <br/>
+                        투두몰이 학습 관리까지 도와드릴게요
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                    <div class="center-container" style="margin-top: 6rem; margin-bottom: 8rem""><div>
                       <h2>다양한 오피스툴을<br/>손쉽게 배워봐요</h2><div style="height:1rem"></div>
                     <img src="img/app-image-line.svg" alt="오피스 툴 아이콘" loading="lazy" width="1564" height="124" decoding="async" data-nimg="1" style="color:transparent;max-width:100%;min-width:800px;object-fit:contain;margin-bottom:1rem"/><div>
                       <button
-            style="
-              margin-right: 1rem;
-              background-color: #e8f7ff;
-              color: #43a0f5;
-              padding: 1rem 1.5rem;
-              border-radius: 2.25rem;
-              border: 0;
+                      type="button" 
+                      onclick="window.location.href='https://edu.todomall.kr/';"
+                      style="
+                            margin-right: 1rem;
+                            background-color: #e8f7ff;
+                            color: #43a0f5;
+                            padding: 1rem 1.5rem;
+                            border-radius: 2.25rem;
+                            border: 0;
             "
           >
           <div style="display:flex;align-items: center;">
@@ -679,11 +708,15 @@
             height="24"/>
           </div>
           </button>
-                    </div></div></div></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 <!-- footer -->
 <div
 style="
-  width: 100vw;
+  width: 100%;
   background-color: #f7f9fc;
   padding-top: 2rem;
   padding-bottom: 4rem;

@@ -234,17 +234,19 @@
         backdrop-filter: blur(10px);
       "
     >
-      <div class="flex-container" style="margin-top: 14px">
+    <div class="header-container" style="margin-top: 14px; align-items: center;">
+      <div style="margin:0rem"><a href="https://todomall.kr/" style="margin:0" >
         <img
-          src="img/todomall_logo.svg"
-          alt="logo"
-          loading="lazy"
-          width="100px"
-          height="20px"
-          decoding="async"
-          data-nimg="1"
-          style="color: transparent; margin: auto 0;"
-        />
+        src="img/todomall_logo.svg"
+        alt="logo"
+        loading="lazy"
+        width="100px"
+        height="20px"
+        decoding="async"
+        data-nimg="1"
+        style="color: transparent;"
+      />
+      </a></div>
         <div 
         class="navbar_menu"
         style="display: flex; flex-direction: row; align-items: center">
@@ -284,7 +286,8 @@
         transition-duration: 2s;
       "
     >
-      <div class="flex-container" style="margin-top: 18px; width:100%; align-items: center;" >
+      <div class="header-container"" style="margin-top: 18px; justify-content:space-between" >
+        <div><a href="https://todomall.kr/" >
         <img
           src="img/todomall_logo.svg"
           alt="logo"
@@ -293,8 +296,8 @@
           height="20px"
           decoding="async"
           data-nimg="1"
-          style="color: transparent; margin-left: 1rem"
-        />
+          style="color: transparent;"
+        /></a></div>
         <div style="margin-right: 1rem">
           <input type="checkbox" id="toggle" hidden/>
           <label for="toggle" id="label">
@@ -324,7 +327,7 @@
      <!-- 네비게이션 공백 -->
     <section style="height:56px"></section>
     <!-- Hero with CTA button Section -->
-    <div class="grid-container" style="margin-top: 1rem; margin-bottom: 1rem">
+    <div class="CTA" style="margin-top: 1rem; margin-bottom: 1rem">
       <div>
         <h1 style="margin-top: 0.5rem; margin-bottom: 1rem; line-break: auto">
           일잘러의
@@ -335,7 +338,7 @@
           <br />
           학습하다
         </h1>
-        <h5 style="margin-bottom: 1rem">피그마, 노션 등 다양한 오피스 툴 클래스를 투두몰에서 만나보세요</h5>
+        <h5 style="margin-bottom: 1rem">피그마, 노션 등 다양한 오피스 툴 클래스를 <br/> 투두몰에서 만나보세요</h5>
         <div></div>
         <div style="margin-bottom: 3rem">
         <button
@@ -354,11 +357,9 @@
         </button>
         </div>
       </div>
-      <img src="img/main_banner_mockup.png" style="width:100%;overflow:hidden"/>
+      <img id="MAINHERO"src="img/main_banner_mockup.png" style="width:100%; overflow:hidden; z-index:-1; object-fit: contain; max-height: 500px"/>
     </div>
   </div>
-
-    <!--투두몰과 성장하고 있습니다-->
 <!-- 성장 -->
 <div style="width: 100vw; background-color: #f7f9fc; padding-top: 2rem">
   <div class="container">
@@ -373,7 +374,7 @@
     </div>
     <div>
       <div class="grid-container-third">
-        <div
+        <div class="SURPLUS"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -390,7 +391,7 @@
             </h6>
           </div>
         </div>
-        <div
+        <div class="SURPLUS"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -409,6 +410,7 @@
           </div>
         </div>
         <div
+        class="INTERVIEWCARD"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -427,6 +429,7 @@
           </div>
         </div>
         <div
+        class="INTERVIEWCARD"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -443,7 +446,7 @@
             </h6>
           </div>
         </div>
-        <div
+        <div class="SURPLUS"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -460,7 +463,7 @@
             </h6>
           </div>
         </div>
-        <div
+        <div class="SURPLUS"
           style="
             border-radius: 2.25rem;
             background-color: #ffffff;
@@ -481,25 +484,23 @@
       <div
         class="grid-container-fourth"
         style="
-          text-align: center;
           margin-top: 1rem;
-          margin-bottom: 3rem;
-          padding-bottom: 3rem;
+          margin-bottom: rem;
         "
       >
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h2>8.8배</h2>
           <h6>기존 교육 콘텐츠 대비 완주율</h6>
         </div>
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h2>1000+</h2>
           <h6>인증된 성과물 갯수</h6>
         </div>
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h2>7일</h2>
           <h6>완강에 필요한 시간</h6>
         </div>
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h2>84%</h2>
           <h6>첫 번째 미션 달성률</h6>
         </div>
@@ -509,7 +510,7 @@
 </div>
 <div>
    <!-- 기존의 문제점 -->
-   <div class="container" style="margin-bottom: 2rem">
+   <div class="container" style="margin-top:2rem;margin-bottom: 2rem">
      <h5 style="color: #439ff5">문제점</h5>
      <h3 style="margin-bottom: 0.5rem">
        기존 학습에는 무엇이 부족했을까요?
@@ -659,8 +660,9 @@
                     <img src="img/ui2.png" alt="UI 이미지" loading="lazy" width="1040" height="1056" decoding="async" data-nimg="1" style="color:transparent;width:480px;height:auto"/><img src="img/ui3.png" alt="UI 이미지" loading="lazy" width="1166" height="1048" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:440px" /><div>
                     <div style="height:4rem"></div><div style="margin-bottom:2rem"><h5 style="color:#439FF5">시간 내 학습</h5><h3 style="margin-bottom:0.5rem">나중에 해야지... 는<br/>통하지 않아요</h3><h5>부족한 의지를 끌어올릴 수 있도록<br/>투두몰이 학습 관리까지 도와드릴게요</h5></div></div></div>
                     <div style="height:4rem"></div>
-                    <div class="center-container" style="margin-bottom:4rem"><div><h5></h5><h2>다양한 오피스툴을<br/>손쉽게 배워봐요</h2><div style="height:1rem"></div>
-                    <img src="img/app-image-line.svg" alt="오피스 툴 아이콘" loading="lazy" width="1564" height="124" decoding="async" data-nimg="1" style="color:transparent;max-width:100%;object-fit:contain;margin-bottom:1rem"/><div>
+                    <div class="center-container" style="margin-bottom:4rem"><div>
+                      <h2>다양한 오피스툴을<br/>손쉽게 배워봐요</h2><div style="height:1rem"></div>
+                    <img src="img/app-image-line.svg" alt="오피스 툴 아이콘" loading="lazy" width="1564" height="124" decoding="async" data-nimg="1" style="color:transparent;max-width:100%;min-width:800px;object-fit:contain;margin-bottom:1rem"/><div>
                       <button
             style="
               margin-right: 1rem;
@@ -689,6 +691,7 @@ style="
 >
 <div class="container">
   <img
+    style="width:100px;color: #8a93ab; margin-bottom: 1rem"
     src="img/todomall_logo_footer.svg"
     alt="logo"
     loading="lazy"
@@ -696,7 +699,6 @@ style="
     height="20"
     decoding="async"
     data-nimg="1"
-    style="color: #8a93ab; width: auto; height: 24px; margin-bottom: 1rem"
   />
   <h6>
     마이플랜잇 │ 사업자등록번호 : 274-12-01980 │ 대표 : 최현권 │

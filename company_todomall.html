@@ -1,351 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="company_todomall.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
     <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
+    <script src="myscript.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta property="og:url" content="todomall.kr" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png"
+    />
+    <meta property="og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      property="og:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <meta property="og:url" content="todomall.kr">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png">
-    <meta property = "og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta property = "og:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-
-    <meta name = "description" content = "사수가 없는 당신을 위한 성장 체크리스트">
-    <meta name = "keywords" content = "교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터">
-    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta name="twitter:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-
-</head>
-<body>
-
-      <!--카카오채널톡-->
-  <a href="http://pf.kakao.com/_xhSxjExj/chat" id="kakao_channeltalk"style="width:56px;height:56px;position:fixed;bottom:16px;right:16px;pointer-events:auto" target="_blank" rel="noreferrer">
-    <img src="img/kakao_channeltalk.png" style="width:100%;height:100%;border-radius:100%;box-shadow:0 0 12px 4px rgba(0,0,0,0.1)">
-</a>
-
-      <!--네비게이션바-->
-<nav class="navbackground">
-
-    <nav class="navbar">
-        <div class="navbar_logo">
-           <a href="index.html"><img src="img/todomall_logo.svg" alt="logo"></a>
-        </div>
-            <ul class="navbar_menu">
-                    <li><a href="https://edu.todomall.kr/">투두몰</a></li>
-                    <li><a href="pro_todomall.html">프로지원</a></li>
-                    <li><a href="company_todomall.html">기업제휴</a></li>
-                    <li><a href="https://myplanit.oopy.io/">회사소개</a></li>
-                    <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
-            </ul>
-
-        <a href="#" class="navbar_toggleButton"><img src="img/icn_menu.svg" alt="toggle"></a>
-    </nav>
-</nav>
-
-  <!--모바일 네비게이션-->
-
-  <nav class="nav_mobile">
-    <a href="index.html"><img src="Img/todomall_logo.svg" alt=""></a>
-
-<input type="checkbox" id="nav_toggle">
-<label for="nav_toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
-
-<div class="nav_sidebar">
-    <ul class="nav_sidebartext">
-        <a href="https://edu.todomall.kr/">투두몰</a>
-        <a href="pro_todomall.html">프로지원</a>
-        <a href="company_todomall.html">기업제휴</a>
-        <a href="https://myplanit.oopy.io/">회사소개</a>
-        <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
-    </ul>
-</div>
-<div id="background_nav"></div>
-</nav>
-
-
-<!--배너-->
-
-<div class="banner_background">
-    <div class="banner_inner">
-        <div class="banner_innertext">
-            <h1>Office Tool 경험 마케팅으로</h1>
-            <h2> 
-                2030 사회초년생이<br class="banner_brpc">
-                <span class="yellow">서비스를 직접 경험</span>하도록 <br class="banner_brpc">
-                만들어보세요
-            </h2>
-
-
-                <div class="banner_innerbutton">
-                    <a href="https://tally.so/r/3lajDv" class="banner_innerbutton_file"> 
-                        <h3>서비스 소개서 받기</h3>
-                        <img src="img/arrowicon_blue.png" class="arrow_icon">
-                    </a>
-                    <a href="https://calendly.com/myplanit/meeting" class="banner_innerbutton_meet"> 
-                        <h3>미팅하기</h3>
-                        <img src="img/arrowicon_white.png" class="arrow_icon">
-                    </a>
-                </div>
-        </div>
-
-        <div class="banner_imgbox">
-            <img src="img/company_bannermockup.png" alt="">
-        </div>
-    </div>
-</div>
-
+    <meta
+      name="description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <meta
+      name="keywords"
+      content="교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터"
+    />
+    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      name="twitter:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+  </head>
+  <body>
     
-<!--투두몰과 성장하고 있습니다-->
-
-<section class="growth_background">
-    <div class="growth_backgroundinner">
-        <div class="growth_text">
-            <h4>오늘도 많은 2030 사회초년생이</h4>
-            <h2>투두몰과 함께 성장하고 있습니다</h2>
+    <!--카카오채널톡-->
+    <a
+      href="http://pf.kakao.com/_xhSxjExj/chat"
+      id="kakao_channeltalk"
+      style="
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: auto;
+      "
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="img/kakao_channeltalk.png"
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+        "
+      />
+    </a>
+    <!-- Desktop Navigation Header -->
+    <div 
+    id="desktop_navigation"
+      style="
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom-style: solid;
+        border-bottom-color: #ebebeb;
+        border-bottom-width: 1px;
+        height: 56px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+      "
+    >
+    <div class="header-container" style="margin-top: 14px; align-items: center;">
+      <div style="margin:0rem"><a href="https://todomall.kr/" style="margin:0" >
+        <img
+        src="img/todomall_logo.svg"
+        alt="logo"
+        loading="lazy"
+        width="100px"
+        height="20px"
+        decoding="async"
+        data-nimg="1"
+        style="color: transparent;"
+      />
+      </a></div>
+        <div 
+        class="navbar_menu"
+        style="display: flex; flex-direction: row; align-items: center">
+          <a href="https://edu.todomall.kr/">
+            <h5 style="color: #333333; margin-left: 1.5rem">투두몰</h5>
+          </a>
+          <a href="https://todomall.kr/pro_todomall.html">
+            <h5 style="color: #333333; margin-left: 1.5rem">프로지원</h5>
+          </a>
+          <a href="https://todomall.kr/company_todomall.html">
+            <h5 style="color: #333333; margin-left: 1.5rem">기업제휴</h5>
+          </a>
+          <a href="https://todomall.kr/MOU.html">
+            <h5 style="color: #333333; margin-left: 1.5rem">MOU</h5>
+          </a>
+          <a href="https://myplanit.oopy.io/">
+            <h5 style="color: #333333; margin-left: 1.5rem">회사 소개</h5>
+          </a>
         </div>
-
-       <div class="growth_numbers">
-            <div class="growth_numbersbox1">
-                <div class="growth_numbersbox1top">
-                    <h1>6.4</h1>
-                    <p>&nbsp;배</p>
-                </div>
-                <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
-            </div>
-
-            <div class="growth_numbersbox2">
-                <div class="growth_numbersbox2top">
-                    <h1>174</h1>
-                    <p>&nbsp;명</p>
-                </div>
-                <h3>주간 클래스 도전 유저</h3>
-            </div>
-            <div class="growth_numbersbox3">
-                <div class="growth_numbersbox3top">
-                    <h1>146</h1>
-                    <p>&nbsp;개</p>
-                </div>
-                <h3>주간 미션 인증 수</h3>
-            </div>
-            <div class="growth_numbersbox4">
-                <div class="growth_numbersbox4top">
-                    <h1>84</h1>
-                    <p>&nbsp;%</p>
-                </div>
-                <h3>첫 번째 미션 달성율</h3>
-            </div>
-
-       </div>
-               
+      </div>
     </div>
-</section>
-
-
-<!--차근차근 따라하고 학습하는 경험학습솔루션-->
-
-<div class="solution_background">
-    <div class="solution_inner">
-        <div class="solution_innertext">
-            <h1>차근차근 따라하고 <br>미션을 인증하며 배우는<br> 경험 학습 솔루션</h1>
-            <h2> 
-                쓸모없는 이론을 꼭 배워야 할까요? 투두몰은 해야 할 것만 쏙쏙 뽑아서 알려드립니다.
-                <br>유저들은 투두리스트를 따라하고 미션을 인증하며 능동적으로 서비스를 이용해요.
+    <!-- Mobile Navigation Header -->
+    <div id="mobile_navigation"
+      style="
+        width: 100%;
+        border-bottom-style: solid;
+        border-bottom-color: #ebebeb;
+        border-bottom-width: 1px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        transition-property: height;
+        transition-duration: 0.5s;
+      "
+    >
+      <div class="header-container"" style="margin-top: 18px; justify-content:space-between" >
+        <div><a href="https://todomall.kr/" >
+        <img
+          src="img/todomall_logo.svg"
+          alt="logo"
+          loading="lazy"
+          width="100px"
+          height="20px"
+          decoding="async"
+          data-nimg="1"
+          style="color: transparent;"
+        /></a></div>
+        <div style="margin-right: 1rem">
+          <input type="checkbox" id="toggle" hidden/>
+          <label for="toggle" id="label">
+            <img alt="메뉴 아이콘" src="img/menu_icon.svg"></img>
+          </label>
+          <div class="menu" style="display: flex; flex-direction: column; align-items: left;
+          position: absolute; top: 56px; right: 0; left: 0; width:100vw;">
+            <a href="https://edu.todomall.kr/" >
+              <h5 style="color: #333333; margin: 0.5rem 1rem 0.5rem 1rem">투두몰</h5>
+            </a>
+            <a href="https://edu.todomall.kr/pro_todomall">
+              <h5 style="color: #333333; margin: 0.5rem 1rem 0.5rem 1rem">프로지원</h5>
+            </a>
+            <a href="https://edu.todomall.kr/company_todomall">
+              <h5 style="color: #333333; margin: 0.5rem 1rem 0.5rem 1rem">기업제휴</h5>
+            </a>
+            <a href="https://edu.todomall.kr/MOU">
+              <h5 style="color: #333333; margin: 0.5rem 1rem 0.5rem 1rem">MOU</h5>
+            </a>
+            <a href="https://myplanit.oopy.io/">
+              <h5 style="color: #333333; margin: 0.5rem 1rem 0.5rem 1rem">회사 소개</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 네비게이션 공백 -->
+    <section style="height:56px"></section>
+      <!-- Hero with CTA button Section -->
+      <div class="CTA" style="margin-top: 1rem; margin-bottom: 1rem">
+        <div>
+          <h5>
+            오피스 툴 경험 마케팅으로
+            <br />
+            결과를 만들어내보세요
+          </h5>
+          <h1 style="margin-top: 0.5rem; margin-bottom: 1rem; line-break: auto">
+            2030
+            <br />
+            사회초년생이
+            <br />
+            서비스를 직접
+            <br />
+            경험하도록
+          </h1>
+          <h5 style="margin-bottom: 1rem">현재 제휴는 무료로 진행중입니다</h5>
+          <div></div>
+          <div style="margin-bottom: 3rem">
+            <button
+            type="button" 
+            onclick="window.location.href='https://tally.so/r/3lajDv';"
+            style="
+              margin-right: 1rem;
+              background-color: #e8f7ff;
+              color: #43a0f5;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+          <div style="display:flex;align-items: center;">
+            <h5 style="color: #43a0f5">서비스 소개서 받기</h5>
+            <img src="img/arrowicon_blue.png" width="24"
+            height="24"/>
+          </div>
+          </button>
+          <button
+          type="button" 
+            onclick="window.location.href='https://calendly.com/myplanit/meeting?month=2023-07';"
+            style="
+              background-color: #333333;
+              color: #ffffff;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+          <div style="display:flex;align-items: center;">
+            <h5 style="color: #ffffff">미팅하기</h5>
+            <img src="img/arrowicon_white.png" width="24"
+            height="24"/></div>
+          </button>
+          </div>
+        </div>
+        <img class="HERO" src="img/main1.png" style="width:100%; overflow:hidden"/>
+      </div>
+    </div>
+<!-- 성장 -->
+<div style="width: 100%; background-color: #f7f9fc; padding-top: 2rem">
+  <div class="container">
+    <div style="margin-bottom: 1rem; margin-top: 1rem">
+      <h5 style="color: #439ff5">성과</h5>
+      <h3 style="margin-bottom: 0rem">성장의 도우미가 되어줄 플랫폼</h3>
+      <h5>
+        오늘도 많은 2030 직장인들이
+        <br />
+        투두몰과 함께 성장하고 있습니다
+      </h5>
+    </div>
+    <div>
+      <div class="grid-container-third">
+        <div class="SURPLUS"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">최OO님 인터뷰</h5>
+            <h6>
+              투두몰에서 공부할 때는 상대적으로 아는 내용과 모르는 내용을
+              구분해서 듣기가 편하고, 불필요한 강의 시간도 없어서 좋아요.
+            </h6>
+          </div>
+        </div>
+        <div class="SURPLUS"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">김OO님 인터뷰</h5>
+            <h6>
+              여러 인터넷에서 얻을 수 있는 정보들에서는 상세한 액션을 이렇게
+              스텝 바이 스텝으로 소개하지 않는데, 투두몰에서는 상세한 흐름을
+              알 수 있어서 좋았어요.
+            </h6>
+          </div>
+        </div>
+        <div
+        class="INTERVIEWCARD"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">전OO님 인터뷰</h5>
+            <h6>
+              처음 봤을때 투두리스트를 완료해야 다음 강의를 열 수 있다는
+              점이 매력적으로 느껴졌고 강의를 완강을 하게 만들기때문에
+              만족스러운 부분이예요.
+            </h6>
+          </div>
+        </div>
+        <div
+        class="INTERVIEWCARD"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">이OO님 인터뷰</h5>
+            <h6>
+              최신 흐름에 맞춰서 마케터에게 필요한 역량을 주제로 콘텐츠를
+              제공하는 게 좋았고 이것저것 끼워팔지 않고 컴팩트한 교육이
+              좋네요.
+            </h6>
+          </div>
+        </div>
+        <div class="SURPLUS"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">유OO님 인터뷰</h5>
+            <h6>
+              여러 인터넷에서 얻을 수 있는 정보들에서는 상세한 액션을 이렇게
+              스텝 바이 스텝으로 소개하지 않는데, 투두몰에서는 그 점이
+              안정적인거같아요.
+            </h6>
+          </div>
+        </div>
+        <div class="SURPLUS"
+          style="
+            border-radius: 2.25rem;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="padding: 1rem">
+            <h5 style="margin-bottom: 0.25rem">박OO님 인터뷰</h5>
+            <h6>
+              학습을 하면서는 스트레스 받는 일이 많잖아요, 놀다가도 딱
+              삼십분만 집중하면 인증까지 다 끝낼 수 있고 하고 나면 결과물도
+              나오고 해서 뿌듯해요.
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid-container-fourth"
+        style="
+          margin-top: 1rem;
+        "
+      >
+        <div style="margin-bottom: 2rem;">
+          <h2>8.8배</h2>
+          <h6>기존 교육 콘텐츠 대비 완주율</h6>
+        </div>
+        <div style="margin-bottom: 2rem;">
+          <h2>1000+</h2>
+          <h6>인증된 성과물 갯수</h6>
+        </div>
+        <div style="margin-bottom: 2rem;">
+          <h2>7일</h2>
+          <h6>완강에 필요한 시간</h6>
+        </div>
+        <div style="margin-bottom: 2rem;">
+          <h2>84%</h2>
+          <h6>첫 번째 미션 달성률</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- 콘텐츠 -->
+        <div class="flex-container" style="margin-top: 1rem">
+          <div>
+            <div >
+              <h5 style="color: #439ff5">콘텐츠</h5>
+              <h3 style="margin-bottom: 0.5rem">
+                차근차근 따라하고
+                <br />
+                미션을 인증하며 배우는
+                <br />
+                경험 학습 솔루션
+              </h3>
+              <h5>
+                나에게 필요없는 이론까지 꼭 배워야 할까요?
+                <br />
+                투두몰은 해야 할 것만 쏙쏙 뽑아서 알려드립니다
+                <br />
+                유저들은 투두리스트를 따라하고 미션을 인증하면서
+                <br />
+                능동적으로 서비스를 이용하게 되어요
+              </h5>
+            </div>
+          </div>
+          <img
+            src="img/trophys.png"
+            alt="트로피 사진"
+            loading="lazy"
+            width="880"
+            height="880"
+            decoding="async"
+            data-nimg="1"
+            style="color: transparent; width: 320px; height: 320px; float: right;margin-bottom: 4rem"
+          />
+        </div>
+        <!-- 차별화 -->
+        <div class="container">
+          <div style="margin-bottom: 2rem">
+            <h5 style="color: #439ff5">차별화</h5>
+            <h2 style="margin-bottom: 0.5rem">
+              투두몰의
+              <br />
+              경험 마케팅은
+              <br />
+              다릅니다
             </h2>
-                <!-- <a href="https://tally.so/r/3lajDv"> 
-                    <h3>유저들의 미션 이미지 보러가기</h3>
-                        <img src="img/arrowicon_black.png" class="arrow_icon">
-                </a> -->
-        </div>
-
-        <div class="solution_imgbox">
-            <img src="img/company_trophy.png" alt="">
-        </div>
-    </div>
-</div>
-
-  <!--투두몰에서 서비스를 직접 경험시키세요-->
-
-  <div class="experience_background">
-    <div class="experience_inner">
-        <div class="experience_innertext">
-            <h1>투두몰에서 서비스를 직접 경험시키세요!</h1>
-            <h2>투두몰 <br>
-                경험 마케팅은<br>
-                다릅니다</h2>
-            <h3>투두몰은 오피스 툴을 익히고 싶은 유저를 대상으로 <br class="brpc">
-                클래스를 통한 서비스의 심도있는 경험을 유도하여 <br class="brpc">
-                보다 높은 유입 및 전환을 기대할 수 있습니다.<br class="brpc">
+            </div>
+          </div>
+          <div class="grid-container">
+            <div style="margin-top: 1rem;
+            margin-bottom: 1rem;">
+              <img
+                src="img/globe.svg"
+                alt="네트워크"
+                loading="lazy"
+                width="160"
+                height="160"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 120px;
+                  height: 120px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>명확한 타겟팅</h4>
+              <h5>
+                불특정 다수에게 제공되는 타 광고들에
+                <br />
+                대비해 높은 유입효과를 기대할 수 있어요
+              </h5>
+            </div>
+            <div style="margin-bottom: 1rem">
+              <img
+                src="img/speech.svg"
+                alt="말풍선"
+                loading="lazy"
+                width="160"
+                height="160"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 120px;
+                  height: 120px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>유저 유입 채널</h4>
+              <h5>
+                서비스에 입문하고 싶은 유저가 자연스럽게 서비스를
+                <br />
+                경험하도록 만들기에 이후 높은 전환율을 기대할 수 있어요
+              </h5>
+            </div>
+          </div>
+          <div class="grid-container">
+            <div style="margin-bottom: 1rem">
+              <img
+                src="img/wallet.svg"
+                alt="지갑 아이콘"
+                loading="lazy"
+                width="160"
+                height="160"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 120px;
+                  height: 120px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>충성고객 달성</h4>
+              <h5>
+                서비스를 보다 깊게 활용하도록 유도하므로
+                <br />
+                소비자와 브랜드 사이에 더 강한 연결이 가능해요
+              </h5>
+            </div>
+            <div style="margin-bottom: 1rem">
+              <img
+                src="img/account.svg"
+                alt="사용자"
+                loading="lazy"
+                width="160"
+                height="160"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 120px;
+                  height: 120px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>쉬운 컨텐츠 제작</h4>
+              <h5>
+                커리큘럼이 결과물 중심이면 클래스를 수강 시
+                <br />
+                위와 같은 경험 마케팅의 효과들을 경험할 수 있어요
+              </h5>
+            </div>
+          </div>
+          <!-- 강점 -->
+          <div style="height: 4rem"></div>
+          <div class="container" style="margin-bottom: 2rem">
+            <h5 style="color: #439ff5">강점</h5>
+            <h3>
+              2030 유저를 서비스 가입부터 락인까지
             </h3>
-        </div>
-        <div class="experience_innercard">
-            <div class="experience_innercardtop">
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience1.png" alt="">
-                        <h4>명확한 타겟을 대상으로 하여</h4>
-                        <h5>불특정 다수에게 제공되는 타 광고
-                            대비 높은 유입효과를 기대합니다.</h5>
-                    </div>
-                </div>
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience2.png" alt="">
-                        <h4>경험을 원하는 유저의 유입으로</h4>
-                        <h5>서비스를 자세히, 세세히 경험하게 하여
-                            보다 높은 전환율을 기대합니다.</h5>
-                    </div>
-                </div>
-
+          </div>
+          <div class="container">
+          <div class="grid-container-third" style="margin-bottom: 3rem">
+            <div style="border-radius: 2.25rem; border-width: 10px">
+              <img
+                src="img/photo4.png"
+                alt="고민하는 사람의 사진"
+                loading="lazy"
+                width="768"
+                height="518"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  display: block;
+                  height: 220px;
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 2.25rem 2.25rem 0rem 0rem;
+                "
+              />
+              <div
+                style="
+                  display: block;
+                  padding: 1.5rem 1.5rem;
+                  border: none;
+                  border-radius: 0rem 0rem 2.25rem 2.25rem;
+                  background-color: #f7f9fc;
+                  margin-bottom: 1rem;
+                "
+              >
+                <h5 style="margin-bottom: 0.125rem; color: #333333">
+                  2030 타겟 유저에 집중
+                </h5>
+                <h6>
+                  2030 사회초년생부터 대학생과 취준생까지 모두 타겟팅 해보세요.
+                </h6>
+              </div>
             </div>
-            <div class="experience_innercardbottom">
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience3.png" alt="">
-                        <h4>서비스를 보다 깊게 사용하도록</h4>
-                        <h5>유도하여 소비자와 브랜드 사이에
-                            더 강한 연결로 충성고객을 유치합니다.</h5>
-                    </div>
-                </div>
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience4.png" alt="">
-                        <h4>쉽고 빠른 컨텐츠 제작으로</h4>
-                        <h5>영상 광고보다 빠르고 저렴한 비용으로
-                            다양한 효과를 볼 수 있습니다.</h5>
-                    </div>
-                </div>
+            <div
+              style="
+                display: block;
+                border-radius: 2.25rem 2.25rem 0rem 0rem;
+                border-color: #eef6fa;
+              "
+            >
+              <img
+                src="img/photo5.png"
+                alt="여러가지 활동을 하는 사람의 사진"
+                loading="lazy"
+                width="768"
+                height="518"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  display: block;
+                  height: 220px;
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 2.25rem 2.25rem 0rem 0rem;
+                "
+              />
+              <div
+                style="
+                  display: block;
+                  padding: 1.5rem 1.5rem;
+                  border-radius: 0rem 0rem 2.25rem 2.25rem;
+                  background-color: #f7f9fc;
+                  margin-bottom: 1rem;
+                "
+              >
+                <h5 style="margin-bottom: 0.125rem; color: #333333">
+                  다양한 시나리오 경험
+                </h5>
+                <h6>
+                  자사 서비스를 주제로 클래스를 만들면 고객에게 원하는 다양한
+                  경험을 제공할 수 있습니다.
+                </h6>
+              </div>
             </div>
+            <div
+              style="
+                display: block;
+                border-radius: 2.25rem;
+                border-color: #eef6fa;
+              "
+            >
+              <img
+                src="img/photo6.png"
+                alt="고민하고 있는 사람의 사진"
+                loading="lazy"
+                width="772"
+                height="518"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  display: block;
+                  height: 220px;
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 2.25rem 2.25rem 0rem 0rem;
+                "
+              />
+              <div
+                style="
+                  display: block;
+                  padding: 1.5rem 1.5rem;
+                  border-radius: 0rem 0rem 2.25rem 2.25rem;
+                  background-color: #f7f9fc;
+                  margin-bottom: 1rem;
+                "
+              >
+                <h5 style="margin-bottom: 0.125rem; color: #333333">
+                  서비스의 활용 유도
+                </h5>
+                <h6>
+                  클래스를 수강하는 과정에서 유저가 서비스를 설치하고 직접
+                  사용하도록 유도합니다
+                </h6>
+              </div>
+            </div>
+          </div>
         </div>
+          <!-- 솔루션 -->
+          <div class="container">
+          <div style="margin-bottom: 1rem">
+            <h5 style="color: #439ff5">솔루션</h5>
+            <h2>
+              투두몰과 함께
+              <br />
+              고민을 해결하세요
+            </h2>
+          </div>
+        </div>
+          </div>
+          <div class="grid-container">
+            <div style="margin-top: 0.5rem">
+              <img
+                src="img/company_noworries1.png"
+                alt="노트 그래픽"
+                loading="lazy"
+                width="160"
+                height="160"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 160px;
+                  height: 160px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>고객 서비스 사용 추적</h4>
+              <h5>
+                고객이 우리 서비스를 어떻게 사용하고
+                <br />
+                어떤 부분을 사용하기 어려워하는지 알고 싶어요
+              </h5>
+            </div>
+            <div>
+              <img
+                src="img/company_noworries2.png"
+                alt="쌓여있는 책 그래픽"
+                loading="lazy"
+                width="160px"
+                height="160px"
+                decoding="async"
+                data-nimg="1"
+                style="
+                  color: transparent;
+                  width: 160px;
+                  height: 160px;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4>효과적인 전달</h4>
+              <h5>
+                우리만의 콘텐츠를 유저에게
+                <br />
+                효과적으로 전달하고싶어요
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- 하단 CTA -->
+    <div class="center-container" style="margin-top: 6rem; margin-bottom: 8rem">
+        <div>
+          <h2>
+            투두몰은
+            <br />
+            모든 경험이 쉬워지는
+            <br />
+            세상을 만들고 있습니다
+          </h2>
+          <div style="height: 1rem"></div>
+          <img
+            src="img/app-image-line.svg"
+            alt="오피스 툴 아이콘들"
+            loading="lazy"
+            width="1564"
+            height="124"
+            decoding="async"
+            data-nimg="1"
+            style="color:transparent;max-width:100%;min-width:800px;object-fit:contain;margin-bottom:1rem"
+          />
+          <div>
+            <button
+            type="button" 
+            onclick="window.location.href='https://tally.so/r/3lajDv';"
+            style="
+              margin-right: 1rem;
+              background-color: #e8f7ff;
+              color: #43a0f5;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+          <div style="display:flex; align-items: center;">
+            <h5 style="color: #43a0f5">서비스 소개서 받기</h5>
+            <img src="img/arrowicon_blue.png" width="24"
+            height="24"/>
+          </div>
+          </button>
+          <button
+          type="button" 
+            onclick="window.location.href='https://calendly.com/myplanit/meeting?month=2023-07';"
+            style="
+              background-color: #333333;
+              color: #ffffff;
+              padding: 1rem 1.5rem;
+              border-radius: 2.25rem;
+              border: 0;
+            "
+          >
+          <div style="display:flex;align-items: center;">
+            <h5 style="color: #ffffff">미팅하기</h5>
+            <img src="img/arrowicon_white.png" width="24"
+            height="24"/></div>
+          </button>
+          </div>
+        </div>
+      </div>
+     <!-- footer -->
+    <div
+    style="
+      width: 100%;
+      background-color: #f7f9fc;
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    "
+  >
+    <div class="container">
+      <img
+        style="width:100px;color: #8a93ab; margin-bottom: 1rem"
+        src="img/todomall_logo_footer.svg"
+        alt="logo"
+        loading="lazy"
+        width="105"
+        height="20"
+        decoding="async"
+        data-nimg="1"
+      />
+      <h6>
+        마이플랜잇 │ 사업자등록번호 : 274-12-01980 │ 대표 : 최현권 │
+        개인정보담당자 : 이명성
+      </h6>
+      <h6>
+        주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL :
+        010-2154-3992 │ 메일 : hello@todomall.kr
+      </h6>
+      <h6 style="font-weight: 700" color="#6C7487">
+        Copyright ⓒ 2022 myplanit. All rights reserved.
+      </h6>
     </div>
   </div>
-
-
-   <!--2030 유저를 대상으로 서비스 가입부터 락인까지!-->
-
-<div class="onlytodomall_background">
-    <div class="onlytodomall_inner">
-        <div class="onlytodomall_text">
-            <h1>투두몰에서만 경험할 수 있는</h1>
-            <h2>2030 유저를 대상으로 <br> 서비스 가입부터 락인까지!</h2>
-        </div>
-        <div class="onlytodomall_cardbox">
-
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>01.</h3>
-                    <h4>2030 <span class="blue">사회초년생부터</span><br>
-                        <span class="blue"> 대학생</span>과 <span class="blue">취준생</span>까지 모두!</h4>
-                </div>
-            </div>
-
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>02.</h3>
-                    <h4><span class="blue">자사 서비스를 주제</span>로 클래스를 만들어<br>
-                        고객에게 <span class="blue">다양한 경험</span>을 제공할 수 있습니다.</h4>
-                </div>
-            </div>
-
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>03.</h3>
-                    <h4>클래스를 통해 유저가 <span class="blue">서비스를 설치하고<br>
-                        직접 사용</span>하도록 유도할 수 있습니다.</h4>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-   <!--투두몰과 함께 고민을 해결하세요!-->
-
-<div class="noworries_background">
-    <div class="noworries_inner">
-        <div class="noworries_text">
-            <h1>아직도 효과 없는 노출 광고에 의존하시나요?</h1>
-            <h2>투두몰과 함께 고민을 해결하세요!</h2>
-        </div>
-        <div class="noworries_cardbox">
-
-            <div class="noworries_cardbackground">
-                <div class="noworries_cardinner">
-                    <img src="img/company_noworries1.png" alt="">
-                    <h3>고객이 우리 서비스를 <br>
-                        어떻게 사용하는지 보고싶어요</h3>
-                </div>
-            </div>
-
-                <div class="noworries_cardbackground">
-                    <div class="noworries_cardinner">
-                        <img src="img/company_noworries2.png" alt="">
-                        <h3>우리만의 콘텐츠를 유저에게<br>
-                            효과적으로 전달하고 싶어요</h3>
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-
-
-  <!--투두몰은 모든 경험이 쉬워지는 세상을-->
-
-  <div class="bottombanner_background">
-    <div class="bottombanner_inner">
-        <div class="bottombanner_text">
-            <h1>투두몰은</h1>
-            <h2>모든 경험이 쉬워지는 </h2>
-            <h3>세상을 만들고 있습니다</h3>
-        </div>
-        <div class="bottombanner_button">
-            <a href="https://tally.so/r/3lajDv">
-                <h4>서비스 소개서 받기</h4>
-                <img src="/img/arrowicon_white.png">
-            </a>
-
-            <a href="https://calendly.com/myplanit/meeting">
-                <h4>미팅하기</h4>
-                <img src="/img/arrowicon_white.png">
-            </a>
-
-        </div>
-    </div>
-  </div>
-
-  <!--footer-->
-
-<footer> 
-    <div class="footer_outside">
-        <div class="footer_inner">
-        <img src="img/todomall_logo_footer.svg" alt="">
-            <p> 마이플랜잇 │ 사업자등록번호 :  274-12-01980 │ 대표 : 최현권 │ 개인정보담당자 : 이명성<br>
-            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL : 010-2154-3992 │ 메일 : hello@todomall.kr</p>
-                <h1>마이플랜잇</h1>
-                <h2>
-                 대표 : 최현권 │ 사업자등록번호 :  274-12-01980 <br> 주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br>
-                 TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br>
-                 개인정보담당자 : 이명성
-                </h2>
-            <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
-        </div>
-    </div>
-</footer>
-
-
-</body>
+ </body>
 </html>

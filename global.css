@@ -1,0 +1,393 @@
+#mobile_navigation {
+  height: 56px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1080px) {
+  #mobile_navigation {
+    display: none;
+  }
+  #mobile_modal {
+    display: none;
+  }
+
+  .CTA {
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    font-family: "pretendard", sans-serif;
+    overflow-x: hidden;
+    text-align: left;
+  }
+
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+  }
+
+  .grid-container-third {
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .grid-container-fourth {
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+
+  .flex-container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .center-container {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 4.75rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.25rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #6c7487;
+    letter-spacing: -0.01;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #6c7487;
+    letter-spacing: -0.01;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Carousel PC 시작 */
+
+  .swiper-container {
+    display: flex;
+    width: 539px;
+    height: 570px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 36px;
+    border: 1px solid #e8f7ff;
+  }
+
+  .classInfoBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 28px 33px 43px 33px;
+  }
+
+  h4,
+  h6 {
+    margin: 0;
+  }
+  /* Carousel PC 끝 */
+}
+
+/*
+  1080 이하 크기의 화면
+*/
+@media screen and (max-width: 1080px) {
+  #desktop_navigation {
+    display: none;
+  }
+  #desktop_modal {
+    display: none;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .CTA {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .HERO {
+    display: none;
+  }
+
+  #MAINHERO {
+    margin-top: -6rem;
+  }
+
+  .SURPLUS {
+    display: none;
+  }
+
+  .INTERVIEWCARD div {
+    padding: 0.5rem;
+  }
+
+  html,
+  body {
+    font-family: "pretendard", sans-serif;
+    overflow-x: hidden;
+    text-align: left;
+  }
+  .container {
+    width: calc(100%-4rem);
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1.5rem;
+  }
+
+  .grid-container {
+    display: flex;
+    width: calc(100%-4rem);
+    flex-direction: column;
+    margin: 0rem 1.5rem;
+    height: auto;
+  }
+
+  .grid-container-third {
+    display: flex;
+    width: calc(100%-4rem);
+    margin: 0rem;
+    flex-direction: column;
+  }
+
+  .CARDLIST {
+    display: flex;
+    width: calc(100%-4rem);
+    flex-direction: column;
+  }
+
+  .CARDLIST > img {
+    margin: 0rem 1.5rem;
+  }
+
+  .CARDLIST > h6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .grid-container-fourth {
+    width: calc(100%-4rem);
+    margin: 0rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: left;
+  }
+
+  .flex-container {
+    display: flex;
+    width: calc(100%-4rem);
+    margin: 0 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .center-container {
+    display: flex;
+    width: calc(100%-4rem);
+    margin: 0rem 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    width: calc(100%-4rem);
+    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3.75rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #333333;
+    letter-spacing: -0.01;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #6c7487;
+    letter-spacing: -0.01;
+  }
+  h6 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #6c7487;
+    letter-spacing: -0.01;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Carousel Mobile 시작 */
+@media screen and (max-width: 480px) {
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 480px;
+    height: auto;
+  }
+
+  .swiper-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 28px;
+    padding-left: 20px;
+  }
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .classInfoBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 14px 16px 18px 18px;
+  }
+}
+/* Carousel Mobile 끝 */

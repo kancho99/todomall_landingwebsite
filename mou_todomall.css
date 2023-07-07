@@ -1255,7 +1255,7 @@ letter-spacing: -0.2px;
 
 
 
-/* 짧게 쪼개진 투두리스트로 학습해요*/
+/* 프로덕트의 시장검증을 빠르게 하고 싶다면?*/
 
 .short_background {
     display: flex;
@@ -1283,11 +1283,34 @@ letter-spacing: -0.2px;
 }
 
 .short_cardboxtext {
-    padding-top: 166px;
+    padding-top: 53px;
 }
 .short_cardboxtext_mid{
-    padding-top: 166px;
+    padding-top: 53px;
 }
+
+.short_cardboxtextlink {
+    display: flex;
+    padding-top:64px;
+
+}
+
+.short_cardboxtextlink img{
+    width: 32px;
+    height: 32px;
+   
+}
+.short_cardboxtextlink a{
+    color: #FFF;
+text-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.01);
+font-size: 20px;
+font-family: Pretendard;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.2px;
+
+}
+
 
 
 .short_cardboxinner{
@@ -1389,15 +1412,15 @@ letter-spacing: -0.2px;
  
 .shortimg_notion {
     width: 480px;
-    height: 457.99px;
+    height: 340px;
 }
 .shortimg_figma {
     width: 480px;
-    height: 488px;
+    height: 340px;
 }
 .shortimg_figma_login {
     width: 480px;
-    height: 480px;
+    height: 340px;
 }
 
 
@@ -1495,6 +1518,27 @@ line-height: 29=8px;
         max-width: 342px;
         width: 100%;
         height: auto;
+    }
+
+    .short_cardboxtextlink{
+        padding: 16px 0px 24px;
+
+    }
+    
+    .short_cardboxtextlink img{
+        width: 24px;
+        height: 24px;
+       
+    }
+    .short_cardboxtextlink a{
+        color: #FFF;
+        text-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.01);
+        font-size: 16px;
+        font-family: Pretendard;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.16px;
+    
     }
 }
 
@@ -1626,11 +1670,10 @@ line-height: 29=8px;
     gap:4px;
     padding: 12px 12px 12px 16px;
     border-radius: 4px;
-    background: #43A0F5;
+    background: #FFF;
 
-    color: #FFF;
-    align-items: center;
-    vertical-align: center;
+    color: var(--main-blue-500, #43A0F5);
+    text-align: center;
     font-size: 16px;
     font-family: Pretendard;
     font-weight: 700;
@@ -1643,11 +1686,10 @@ line-height: 29=8px;
     gap:4px;
     padding: 12px 12px 12px 16px;
     border-radius: 4px;
-    border: 1px solid #43A0F5;
+    border: 1px solid #FFF;
    
-    color: #43A0F5;
-    align-items: center;
-    vertical-align: center;
+    color: #FFF;
+    text-align: center;
     font-size: 16px;
     font-family: Pretendard;
     font-weight: 700;

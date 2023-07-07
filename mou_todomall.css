@@ -359,11 +359,11 @@ h6 {
   }
 
   /* Carousel Mobile 시작 */
+
   .swiper-container {
     display: flex;
     width: 100%;
-    height: 100%;
-    max-height: 450px;
+    height: 520px;
     background-color: #fff;
     overflow: hidden;
   }
@@ -372,19 +372,52 @@ h6 {
   }
   .swiper-slide {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+  .swiper-slide .swiper-slide-thumbnail {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+  }
 
-  .classInfoBox {
+  .swiper-slide .classInfoBox {
     display: flex;
+    max-height: 222px;
     flex-direction: column;
     text-align: left;
+    width: 100%;
+    height: 100%;
   }
+
+  .swiper-slide a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  .swiper-slide h4 {
+    padding: 0 24px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+  .swiper-slide h6 {
+    color: #6c7487;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   /* Carousel Mobile 끝 */
 }
 
@@ -392,8 +425,6 @@ h6 {
 
 .swiper-container {
   display: flex;
-  width: 539px;
-  height: 570px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -403,16 +434,26 @@ h6 {
 }
 
 .swiper-slide {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  max-width: 400px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 12px;
-  border: 1px solid #e8f7ff;
+  border: 1px solid #eaeef5;
   overflow: hidden;
+}
+
+.swiper-slide-thumbnail {
+  width: 100%;
+  max-width: 400px;
+  height: 266px;
+  min-height: 175px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
 }
 
 .swiper-slide h6 {
@@ -424,24 +465,43 @@ h6 {
   letter-spacing: -0.16px;
   margin-top: 4px;
   margin-bottom: 16px;
+  padding: 0 24px;
+}
+
+.swiper-slide h4 {
+  padding: 0 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.swiper-slide a {
+  padding: 0 0 0 24px;
 }
 
 .swiper-slide-next {
   /* if want set blur next slide, write here */
 }
 
-.classInfoBox {
+.swiper-slide .classInfoBox {
+  width: 100%;
+  max-width: 400px;
+  max-height: 196px;
+  min-height: 196px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 20px 24px;
+  padding: 20px 0;
   white-space: normal;
 }
 
-h4,
-h6 {
-  margin: 0;
+.swiper-slide h6 {
+  color: #6c7487;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
+
 /* Carousel PC 끝 */
 
 /*광고 이미지*/

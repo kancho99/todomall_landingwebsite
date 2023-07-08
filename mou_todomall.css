@@ -893,7 +893,12 @@ letter-spacing: -0.18px;
 .different_imagebox img {
     display: flex;
     max-width: 540px;
-    height: 260px;
+    height:auto;
+
+}
+.different_imagebox_mobile{
+    display: none;
+    
 
 }
 
@@ -951,10 +956,19 @@ letter-spacing: -0.18px;
         
 
     .different_imagebox img {
+      
+        display: none;
+    }
+    .different_imagebox_mobile{
+        display: block;
+        
+    
+    }
+    .different_imagebox_mobile img{
+        display: flex;
         padding-top: 52px;
-       align-items: center;
-        width: 304px;
-        height: 144px;
+        align-items: center;
+        max-width: 100%;
     }
 }
 
@@ -1612,7 +1626,7 @@ line-height: 29=8px;
     }
     .easystart_mobile_img {
         display: block;
-        max-width: 342px;
+        max-width: 100%;
     }
 }
 

@@ -404,18 +404,14 @@ h6 {
     height: 100%;
   }
 
-  .swiper-slide a {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-  }
-
   .swiper-slide h4 {
-    padding: 0 24px;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 24px;
+    color: #333;
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -0.2px;
   }
   .swiper-slide h6 {
     color: #6c7487;
@@ -423,9 +419,22 @@ h6 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden;
+    color: #6c7487;
+    font-family: SUIT;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 160%;
+    letter-spacing: -0.16px;
+  }
+  .swiper-slide a {
+    color: #439ff5;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.304px;
   }
   /* Carousel Mobile 끝 */
 }
@@ -510,12 +519,37 @@ h6 {
   white-space: normal;
 }
 
+.swiper-slide h4 {
+  color: #333;
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: -0.2px;
+}
 .swiper-slide h6 {
   color: #6c7487;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
   overflow: hidden;
+  color: #6c7487;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.16px;
+}
+.swiper-slide a {
+  color: #439ff5;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.304px;
 }
 /* Carousel PC 끝 */
 

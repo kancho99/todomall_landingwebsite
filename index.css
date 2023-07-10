@@ -1350,7 +1350,7 @@ h1 {
 .check_innerbutton {
   display: flex;
   align-items: center;
-  background: #43a0f5;
+  background: #31363e;
   border-radius: 8px;
   width: fit-content;
   white-space: nowrap;

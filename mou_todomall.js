@@ -44,7 +44,7 @@ function populateCarousel() {
         linkContainer.style.color = "#439FF5";
 
         link.href = `https://edu.todomall.kr/store_todoclass/${item._id}`;
-        link.textContent = "클래스 정보 보러가기 ";
+        link.textContent = "클래스 보러가기 ";
         link.style.color = "#439FF5";
 
         arrowIcon.src = "img/arrowicon_blue.png";

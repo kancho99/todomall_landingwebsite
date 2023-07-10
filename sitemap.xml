@@ -9,27 +9,22 @@
 
 <url>
   <loc>https://todomall.kr/</loc>
-  <lastmod>2023-07-08T12:30:05+00:00</lastmod>
+  <lastmod>2023-07-10T07:57:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://todomall.kr/index.html</loc>
-  <lastmod>2023-07-08T12:30:05+00:00</lastmod>
+  <loc>https://todomall.kr/pro_todomall</loc>
+  <lastmod>2023-07-10T07:57:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://todomall.kr/pro_todomall.html</loc>
-  <lastmod>2023-07-08T12:30:05+00:00</lastmod>
+  <loc>https://todomall.kr/company_todomall</loc>
+  <lastmod>2023-07-10T07:57:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://todomall.kr/company_todomall.html</loc>
-  <lastmod>2023-07-08T12:30:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://todomall.kr/mou_todomall.html</loc>
-  <lastmod>2023-07-08T12:30:05+00:00</lastmod>
+  <loc>https://todomall.kr/mou_todomall</loc>
+  <lastmod>2023-07-10T07:57:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

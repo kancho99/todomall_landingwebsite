@@ -1,387 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="company_todomall.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="company_todomall.css" />
     <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
 
     <!-- Google Analaytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XV8GEGT7TW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XV8GEGT7TW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-XV8GEGT7TW');
-</script>
+      gtag("config", "G-XV8GEGT7TW");
+    </script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMMZ4VG');</script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NMMZ4VG");
+    </script>
 
-<!-- Hotjar Tracking Code-->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3004690,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <!-- Hotjar Tracking Code-->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3004690, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <meta property="og:url" content="todomall.kr">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png">
-    <meta property = "og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta property = "og:description" content="사수가 없는 당신을 위한 성장 체크리스트">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta property="og:url" content="todomall.kr" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png"
+    />
+    <meta property="og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      property="og:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
-    <meta name = "description" content = "사수가 없는 당신을 위한 성장 체크리스트">
-    <meta name = "keywords" content = "교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터">
-    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta name="twitter:description" content="사수가 없는 당신을 위한 성장 체크리스트">
+    <meta
+      name="description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <meta
+      name="keywords"
+      content="교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터"
+    />
+    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      name="twitter:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+  </head>
+  <body>
+    <!--카카오채널톡-->
+    <a
+      href="http://pf.kakao.com/_xhSxjExj/chat"
+      id="kakao_channeltalk"
+      style="
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: auto;
+      "
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="img/kakao_channeltalk.png"
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+        "
+      />
+    </a>
 
-</head>
-<body>
-
-      <!--카카오채널톡-->
-  <a href="http://pf.kakao.com/_xhSxjExj/chat" id="kakao_channeltalk"style="width:56px;height:56px;position:fixed;bottom:16px;right:16px;pointer-events:auto" target="_blank" rel="noreferrer">
-    <img src="img/kakao_channeltalk.png" style="width:100%;height:100%;border-radius:100%;box-shadow:0 0 12px 4px rgba(0,0,0,0.1)">
-</a>
-
-      <!--네비게이션바-->
-<nav class="navbackground">
-
-    <nav class="navbar">
+    <!--네비게이션바-->
+    <nav class="navbackground">
+      <nav class="navbar">
         <div class="navbar_logo">
-           <a href="index.html"><img src="img/todomall_logo.svg" alt="logo"></a>
+          <a href="index.html"
+            ><img src="img/todomall_logo.svg" alt="logo"
+          /></a>
         </div>
-            <ul class="navbar_menu">
-                    <li><a href="https://edu.todomall.kr/">투두몰</a></li>
-                    <li><a href="pro_todomall.html">프로지원</a></li>
-                    <li><a href="company_todomall.html">기업제휴</a></li>
-                    <li><a href="mou_todomall.html">기업교육</a></li>
-                    <!-- <li><a href="https://myplanit.oopy.io/">회사소개</a></li> -->
-                    <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
-            </ul>
+        <ul class="navbar_menu">
+          <li><a href="https://edu.todomall.kr/">투두몰</a></li>
+          <li><a href="pro_todomall.html">프로지원</a></li>
+          <li><a href="company_todomall.html">기업제휴</a></li>
+          <li><a href="mou_todomall.html">기업교육</a></li>
+          <!-- <li><a href="https://myplanit.oopy.io/">회사소개</a></li> -->
+          <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
+        </ul>
 
-        <a href="#" class="navbar_toggleButton"><img src="img/icn_menu.svg" alt="toggle"></a>
+        <a href="#" class="navbar_toggleButton"
+          ><img src="img/icn_menu.svg" alt="toggle"
+        /></a>
+      </nav>
     </nav>
-</nav>
 
-  <!--모바일 네비게이션-->
+    <!--모바일 네비게이션-->
 
-  <nav class="nav_mobile">
-    <a href="index.html"><img src="Img/todomall_logo.svg" alt=""></a>
+    <nav class="nav_mobile">
+      <a href="index.html"><img src="Img/todomall_logo.svg" alt="" /></a>
 
-<input type="checkbox" id="nav_toggle">
-<label for="nav_toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
+      <input type="checkbox" id="nav_toggle" />
+      <label for="nav_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-<div class="nav_sidebar">
-    <ul class="nav_sidebartext">
-        <a href="https://edu.todomall.kr/">투두몰</a>
-        <a href="pro_todomall.html">프로지원</a>
-        <a href="company_todomall.html">기업제휴</a>
-        <a href="mou_todomall.html">기업교육</a>
-        <!-- <a href="https://myplanit.oopy.io/">회사소개</a> -->
-        <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
-    </ul>
-</div>
-<div id="background_nav"></div>
-</nav>
+      <div class="nav_sidebar">
+        <ul class="nav_sidebartext">
+          <a href="https://edu.todomall.kr/">투두몰</a>
+          <a href="pro_todomall.html">프로지원</a>
+          <a href="company_todomall.html">기업제휴</a>
+          <a href="mou_todomall.html">기업교육</a>
+          <!-- <a href="https://myplanit.oopy.io/">회사소개</a> -->
+          <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
+        </ul>
+      </div>
+      <div id="background_nav"></div>
+    </nav>
 
+    <!--배너-->
 
-<!--배너-->
-
-<div class="banner_background">
-    <div class="banner_inner">
+    <div class="banner_background">
+      <div class="banner_inner">
         <div class="banner_innertext">
-            <h1>Office Tool 경험 마케팅으로</h1>
-            <h2> 
-                2030 사회초년생이<br class="banner_brpc">
-                <span class="yellow">서비스를 직접 경험</span>하도록 <br class="banner_brpc">
-                만들어보세요
-            </h2>
+          <h1>Office Tool 경험 마케팅으로</h1>
+          <h2>
+            2030 사회초년생이<br class="banner_brpc" />
+            <span class="yellow">서비스를 직접 경험</span>하도록
+            <br class="banner_brpc" />
+            만들어보세요
+          </h2>
 
-
-                <div class="banner_innerbutton">
-                    <a href="https://tally.so/r/3lajDv" class="banner_innerbutton_file"> 
-                        <h3>서비스 소개서 받기</h3>
-                        <img src="img/arrowicon_blue.png" class="arrow_icon">
-                    </a>
-                    <a href="https://calendly.com/myplanit/meeting" class="banner_innerbutton_meet"> 
-                        <h3>미팅하기</h3>
-                        <img src="img/arrowicon_white.png" class="arrow_icon">
-                    </a>
-                </div>
+          <div class="banner_innerbutton">
+            <a href="https://tally.so/r/3lajDv" class="banner_innerbutton_file">
+              <h3>서비스 소개서 받기</h3>
+              <img src="img/arrowicon_blue.png" class="arrow_icon" />
+            </a>
+            <a
+              href="https://calendly.com/myplanit/meeting"
+              class="banner_innerbutton_meet"
+            >
+              <h3>미팅하기</h3>
+              <img src="img/arrowicon_white.png" class="arrow_icon" />
+            </a>
+          </div>
         </div>
 
         <div class="banner_imgbox">
-            <img src="img/company_bannermockup.png" alt="">
+          <img src="img/company_bannermockup.png" alt="" />
         </div>
+      </div>
     </div>
-</div>
 
-    
-<!--투두몰과 성장하고 있습니다-->
+    <!--투두몰과 성장하고 있습니다-->
 
-<section class="growth_background">
-    <div class="growth_backgroundinner">
+    <section class="growth_background">
+      <div class="growth_backgroundinner">
         <div class="growth_text">
-            <h4>오늘도 많은 2030 사회초년생이</h4>
-            <h2>투두몰과 함께 성장하고 있습니다</h2>
+          <h4>오늘도 많은 2030 사회초년생이</h4>
+          <h2>투두몰과 함께 성장하고 있습니다</h2>
         </div>
 
-       <div class="growth_numbers">
-            <div class="growth_numbersbox1">
-                <div class="growth_numbersbox1top">
-                    <h1>6.4</h1>
-                    <p>&nbsp;배</p>
-                </div>
-                <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+        <div class="growth_numbers">
+          <div class="growth_numbersbox1">
+            <div class="growth_numbersbox1top">
+              <h1>6.4</h1>
+              <p>&nbsp;배</p>
             </div>
+            <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+          </div>
 
-            <div class="growth_numbersbox2">
-                <div class="growth_numbersbox2top">
-                    <h1>174</h1>
-                    <p>&nbsp;명</p>
-                </div>
-                <h3>주간 클래스 도전 유저</h3>
+          <div class="growth_numbersbox2">
+            <div class="growth_numbersbox2top">
+              <h1>174</h1>
+              <p>&nbsp;명</p>
             </div>
-            <div class="growth_numbersbox3">
-                <div class="growth_numbersbox3top">
-                    <h1>146</h1>
-                    <p>&nbsp;개</p>
-                </div>
-                <h3>주간 미션 인증 수</h3>
+            <h3>주간 클래스 도전 유저</h3>
+          </div>
+          <div class="growth_numbersbox3">
+            <div class="growth_numbersbox3top">
+              <h1>146</h1>
+              <p>&nbsp;개</p>
             </div>
-            <div class="growth_numbersbox4">
-                <div class="growth_numbersbox4top">
-                    <h1>84</h1>
-                    <p>&nbsp;%</p>
-                </div>
-                <h3>첫 번째 미션 달성율</h3>
+            <h3>주간 미션 인증 수</h3>
+          </div>
+          <div class="growth_numbersbox4">
+            <div class="growth_numbersbox4top">
+              <h1>84</h1>
+              <p>&nbsp;%</p>
             </div>
+            <h3>첫 번째 미션 달성율</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       </div>
-               
-    </div>
-</section>
+    <!--차근차근 따라하고 학습하는 경험학습솔루션-->
 
-
-<!--차근차근 따라하고 학습하는 경험학습솔루션-->
-
-<div class="solution_background">
-    <div class="solution_inner">
+    <div class="solution_background">
+      <div class="solution_inner">
         <div class="solution_innertext">
-            <h1>차근차근 따라하고 <br>미션을 인증하며 배우는<br> 경험 학습 솔루션</h1>
-            <h2> 
-                쓸모없는 이론을 꼭 배워야 할까요? 투두몰은 해야 할 것만 쏙쏙 뽑아서 알려드립니다.
-                <br>유저들은 투두리스트를 따라하고 미션을 인증하며 능동적으로 서비스를 이용해요.
-            </h2>
-                <!-- <a href="https://tally.so/r/3lajDv"> 
+          <h1>
+            차근차근 따라하고 <br />미션을 인증하며 배우는<br />
+            경험 학습 솔루션
+          </h1>
+          <h2>
+            쓸모없는 이론을 꼭 배워야 할까요? 투두몰은 해야 할 것만 쏙쏙 뽑아서
+            알려드립니다.
+            <br />유저들은 투두리스트를 따라하고 미션을 인증하며 능동적으로
+            서비스를 이용해요.
+          </h2>
+          <!-- <a href="https://tally.so/r/3lajDv"> 
                     <h3>유저들의 미션 이미지 보러가기</h3>
                         <img src="img/arrowicon_black.png" class="arrow_icon">
                 </a> -->
         </div>
 
         <div class="solution_imgbox">
-            <img src="img/company_trophy.png" alt="">
+          <img src="img/company_trophy.png" alt="" />
         </div>
+      </div>
     </div>
-</div>
 
-  <!--투두몰에서 서비스를 직접 경험시키세요-->
+    <!--투두몰에서 서비스를 직접 경험시키세요-->
 
-  <div class="experience_background">
-    <div class="experience_inner">
+    <div class="experience_background">
+      <div class="experience_inner">
         <div class="experience_innertext">
-            <h1>투두몰에서 서비스를 직접 경험시키세요!</h1>
-            <h2>투두몰 <br>
-                경험 마케팅은<br>
-                다릅니다</h2>
-            <h3>투두몰은 오피스 툴을 익히고 싶은 유저를 대상으로 <br class="brpc">
-                클래스를 통한 서비스의 심도있는 경험을 유도하여 <br class="brpc">
-                보다 높은 유입 및 전환을 기대할 수 있습니다.<br class="brpc">
-            </h3>
+          <h1>투두몰에서 서비스를 직접 경험시키세요!</h1>
+          <h2>
+            투두몰 <br />
+            경험 마케팅은<br />
+            다릅니다
+          </h2>
+          <h3>
+            투두몰은 오피스 툴을 익히고 싶은 유저를 대상으로 <br class="brpc" />
+            클래스를 통한 서비스의 심도있는 경험을 유도하여 <br class="brpc" />
+            보다 높은 유입 및 전환을 기대할 수 있습니다.<br class="brpc" />
+          </h3>
         </div>
         <div class="experience_innercard">
-            <div class="experience_innercardtop">
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience1.png" alt="">
-                        <h4>명확한 타겟을 대상으로 하여</h4>
-                        <h5>불특정 다수에게 제공되는 타 광고
-                            대비 높은 유입효과를 기대합니다.</h5>
-                    </div>
-                </div>
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience2.png" alt="">
-                        <h4>경험을 원하는 유저의 유입으로</h4>
-                        <h5>서비스를 자세히, 세세히 경험하게 하여
-                            보다 높은 전환율을 기대합니다.</h5>
-                    </div>
-                </div>
-
+          <div class="experience_innercardtop">
+            <div class="experience_innercard_background">
+              <div class="experience_innercard_text">
+                <img src="img/company_experience1.png" alt="" />
+                <h4>명확한 타겟을 대상으로 하여</h4>
+                <h5>
+                  불특정 다수에게 제공되는 타 광고 대비 높은 유입효과를
+                  기대합니다.
+                </h5>
+              </div>
             </div>
-            <div class="experience_innercardbottom">
 
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience3.png" alt="">
-                        <h4>서비스를 보다 깊게 사용하도록</h4>
-                        <h5>유도하여 소비자와 브랜드 사이에
-                            더 강한 연결로 충성고객을 유치합니다.</h5>
-                    </div>
-                </div>
-
-                <div class="experience_innercard_background">
-                    <div class="experience_innercard_text">
-                        <img src="img/company_experience4.png" alt="">
-                        <h4>쉽고 빠른 컨텐츠 제작으로</h4>
-                        <h5>영상 광고보다 빠르고 저렴한 비용으로
-                            다양한 효과를 볼 수 있습니다.</h5>
-                    </div>
-                </div>
+            <div class="experience_innercard_background">
+              <div class="experience_innercard_text">
+                <img src="img/company_experience2.png" alt="" />
+                <h4>경험을 원하는 유저의 유입으로</h4>
+                <h5>
+                  서비스를 자세히, 세세히 경험하게 하여 보다 높은 전환율을
+                  기대합니다.
+                </h5>
+              </div>
             </div>
+          </div>
+          <div class="experience_innercardbottom">
+            <div class="experience_innercard_background">
+              <div class="experience_innercard_text">
+                <img src="img/company_experience3.png" alt="" />
+                <h4>서비스를 보다 깊게 사용하도록</h4>
+                <h5>
+                  유도하여 소비자와 브랜드 사이에 더 강한 연결로 충성고객을
+                  유치합니다.
+                </h5>
+              </div>
+            </div>
+
+            <div class="experience_innercard_background">
+              <div class="experience_innercard_text">
+                <img src="img/company_experience4.png" alt="" />
+                <h4>쉽고 빠른 컨텐츠 제작으로</h4>
+                <h5>
+                  영상 광고보다 빠르고 저렴한 비용으로 다양한 효과를 볼 수
+                  있습니다.
+                </h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
+    <!--2030 유저를 대상으로 서비스 가입부터 락인까지!-->
 
-   <!--2030 유저를 대상으로 서비스 가입부터 락인까지!-->
-
-<div class="onlytodomall_background">
-    <div class="onlytodomall_inner">
+    <div class="onlytodomall_background">
+      <div class="onlytodomall_inner">
         <div class="onlytodomall_text">
-            <h1>투두몰에서만 경험할 수 있는</h1>
-            <h2>2030 유저를 대상으로 <br> 서비스 가입부터 락인까지!</h2>
+          <h1>투두몰에서만 경험할 수 있는</h1>
+          <h2>
+            2030 유저를 대상으로 <br />
+            서비스 가입부터 락인까지!
+          </h2>
         </div>
         <div class="onlytodomall_cardbox">
-
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>01.</h3>
-                    <h4>2030 <span class="blue">사회초년생부터</span><br>
-                        <span class="blue"> 대학생</span>과 <span class="blue">취준생</span>까지 모두!</h4>
-                </div>
+          <div class="onlytodomall_cardbackground">
+            <div class="onlytodomall_cardtext">
+              <h3>01.</h3>
+              <h4>
+                2030 <span class="blue">사회초년생부터</span><br />
+                <span class="blue"> 대학생</span>과
+                <span class="blue">취준생</span>까지 모두!
+              </h4>
             </div>
+          </div>
 
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>02.</h3>
-                    <h4><span class="blue">자사 서비스를 주제</span>로 클래스를 만들어<br>
-                        고객에게 <span class="blue">다양한 경험</span>을 제공할 수 있습니다.</h4>
-                </div>
+          <div class="onlytodomall_cardbackground">
+            <div class="onlytodomall_cardtext">
+              <h3>02.</h3>
+              <h4>
+                <span class="blue">자사 서비스를 주제</span>로 클래스를
+                만들어<br />
+                고객에게 <span class="blue">다양한 경험</span>을 제공할 수
+                있습니다.
+              </h4>
             </div>
+          </div>
 
-            <div class="onlytodomall_cardbackground">
-                <div class="onlytodomall_cardtext">
-                    <h3>03.</h3>
-                    <h4>클래스를 통해 유저가 <span class="blue">서비스를 설치하고<br>
-                        직접 사용</span>하도록 유도할 수 있습니다.</h4>
-                </div>
+          <div class="onlytodomall_cardbackground">
+            <div class="onlytodomall_cardtext">
+              <h3>03.</h3>
+              <h4>
+                클래스를 통해 유저가
+                <span class="blue"
+                  >서비스를 설치하고<br />
+                  직접 사용</span
+                >하도록 유도할 수 있습니다.
+              </h4>
             </div>
-
-
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-   <!--투두몰과 함께 고민을 해결하세요!-->
+    <!--투두몰과 함께 고민을 해결하세요!-->
 
-<div class="noworries_background">
-    <div class="noworries_inner">
+    <div class="noworries_background">
+      <div class="noworries_inner">
         <div class="noworries_text">
-            <h1>아직도 효과 없는 노출 광고에 의존하시나요?</h1>
-            <h2>투두몰과 함께 고민을 해결하세요!</h2>
+          <h1>아직도 효과 없는 노출 광고에 의존하시나요?</h1>
+          <h2>투두몰과 함께 고민을 해결하세요!</h2>
         </div>
         <div class="noworries_cardbox">
-
-            <div class="noworries_cardbackground">
-                <div class="noworries_cardinner">
-                    <img src="img/company_noworries1.png" alt="">
-                    <h3>고객이 우리 서비스를 <br>
-                        어떻게 사용하는지 보고싶어요</h3>
-                </div>
+          <div class="noworries_cardbackground">
+            <div class="noworries_cardinner">
+              <img src="img/company_noworries1.png" alt="" />
+              <h3>
+                고객이 우리 서비스를 <br />
+                어떻게 사용하는지 보고싶어요
+              </h3>
             </div>
+          </div>
 
-                <div class="noworries_cardbackground">
-                    <div class="noworries_cardinner">
-                        <img src="img/company_noworries2.png" alt="">
-                        <h3>우리만의 콘텐츠를 유저에게<br>
-                            효과적으로 전달하고 싶어요</h3>
-                    </div>
-                </div>
+          <div class="noworries_cardbackground">
+            <div class="noworries_cardinner">
+              <img src="img/company_noworries2.png" alt="" />
+              <h3>
+                우리만의 콘텐츠를 유저에게<br />
+                효과적으로 전달하고 싶어요
+              </h3>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <!--투두몰은 모든 경험이 쉬워지는 세상을-->
 
-  <!--투두몰은 모든 경험이 쉬워지는 세상을-->
-
-  <div class="bottombanner_background">
-    <div class="bottombanner_inner">
+    <div class="bottombanner_background">
+      <div class="bottombanner_inner">
         <div class="bottombanner_text">
-            <h1>투두몰은</h1>
-            <h2>모든 경험이 쉬워지는 </h2>
-            <h3>세상을 만들고 있습니다</h3>
+          <h1>투두몰은</h1>
+          <h2>모든 경험이 쉬워지는</h2>
+          <h3>세상을 만들고 있습니다</h3>
         </div>
         <div class="bottombanner_button">
-            <a href="https://tally.so/r/3lajDv">
-                <h4>서비스 소개서 받기</h4>
-                <img src="/img/arrowicon_white.png">
-            </a>
+          <a href="https://tally.so/r/3lajDv">
+            <h4>서비스 소개서 받기</h4>
+            <img src="/img/arrowicon_white.png" />
+          </a>
 
-            <a href="https://calendly.com/myplanit/meeting">
-                <h4>미팅하기</h4>
-                <img src="/img/arrowicon_white.png">
-            </a>
-
+          <a href="https://calendly.com/myplanit/meeting">
+            <h4>미팅하기</h4>
+            <img src="/img/arrowicon_white.png" />
+          </a>
         </div>
+      </div>
     </div>
-  </div>
 
-  <!--footer-->
+    <!--footer-->
 
-<footer> 
-    <div class="footer_outside">
+    <footer>
+      <div class="footer_outside">
         <div class="footer_inner">
-        <img src="img/todomall_logo_footer.svg" alt="">
-            <p> 마이플랜잇 │ 사업자등록번호 :  274-12-01980 │ 대표 : 최현권 │ 개인정보담당자 : 이명성<br>
-            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL : 010-2154-3992 │ 메일 : hello@todomall.kr</p>
-                <h1>마이플랜잇</h1>
-                <h2>
-                 대표 : 최현권 │ 사업자등록번호 :  274-12-01980 <br> 주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br>
-                 TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br>
-                 개인정보담당자 : 이명성
-                </h2>
-            <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
+          <img src="img/todomall_logo_footer.svg" alt="" />
+          <p>
+            마이플랜잇 │ 사업자등록번호 : 274-12-01980 │ 대표 : 최현권 │
+            개인정보담당자 : 이명성<br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL
+            : 010-2154-3992 │ 메일 : hello@todomall.kr
+          </p>
+          <h1>마이플랜잇</h1>
+          <h2>
+            대표 : 최현권 │ 사업자등록번호 : 274-12-01980 <br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br />
+            TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br />
+            개인정보담당자 : 이명성
+          </h2>
+          <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-
-</body>
+  </body>
 </html>

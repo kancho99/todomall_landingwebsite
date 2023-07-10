@@ -1,148 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pro_todomall.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pro_todomall.css" />
     <script src="todomall_prov2.js" defer></script>
     <title>투두몰 | 전문가의 투두리스트를 훔치다</title>
 
-<!-- Google Analaytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XV8GEGT7TW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Analaytics-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XV8GEGT7TW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-XV8GEGT7TW');
-</script>
+      gtag("config", "G-XV8GEGT7TW");
+    </script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMMZ4VG');</script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NMMZ4VG");
+    </script>
 
-<!-- Hotjar Tracking Code-->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3004690,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <!-- Hotjar Tracking Code-->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3004690, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta property="og:url" content="todomall.kr" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png"
+    />
+    <meta property="og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      property="og:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
+    <meta
+      name="description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
+    <meta
+      name="keywords"
+      content="교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터"
+    />
+    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다" />
+    <meta
+      name="twitter:description"
+      content="사수가 없는 당신을 위한 성장 체크리스트"
+    />
 
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <meta property="og:url" content="todomall.kr">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://todomall-website.s3.ap-northeast-2.amazonaws.com/preview_banner.png">
-    <meta property = "og:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta property = "og:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-
-    <meta name = "description" content = "사수가 없는 당신을 위한 성장 체크리스트">
-    <meta name = "keywords" content = "교육, 강의, 온라인교육, 온라인강의, 교육플랫폼, 부트캠프, 스터디, 인강, 인터넷강의, 자기계발, 성장, 가이드, 공부, 갓생, 개발자, 디자이너, 기획자, 마케터">
-    <meta name="twitter:title" content="투두몰ㅣ일잘러의 투두리스트를 훔치다">
-    <meta name="twitter:description" content="사수가 없는 당신을 위한 성장 체크리스트">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+  </head>
+  <body>
     <!--카카오채널톡-->
-    <a href="http://pf.kakao.com/_xhSxjExj/chat" id="kakao_channeltalk"style="width:56px;height:56px;position:fixed;bottom:16px;right:16px;pointer-events:auto" target="_blank" rel="noreferrer">
-        <img src="img/kakao_channeltalk.png" style="width:100%;height:100%;border-radius:100%;box-shadow:0 0 12px 4px rgba(0,0,0,0.1)">
+    <a
+      href="http://pf.kakao.com/_xhSxjExj/chat"
+      id="kakao_channeltalk"
+      style="
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: auto;
+      "
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="img/kakao_channeltalk.png"
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+        "
+      />
     </a>
 
     <!--네비게이션바-->
     <nav class="navbackground">
-
-        <nav class="navbar">
-            <div class="navbar_logo">
-               <a href="index.html"><img src="img/todomall_logo.svg" alt="logo"></a>
-            </div>
-                <ul class="navbar_menu">
-                        <li><a href="https://edu.todomall.kr/">투두몰</a></li>
-                        <li><a href="pro_todomall.html">프로지원</a></li>
-                        <li><a href="company_todomall.html">기업제휴</a></li>
-                        <li><a href="mou_todomall.html">기업교육</a></li>
-                        <!-- <li><a href="https://myplanit.oopy.io/">회사소개</a></li> -->
-                        <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
-                </ul>
-    
-            <a href="#" class="navbar_toggleButton"><img src="img/icn_menu.svg" alt="toggle"></a>
-        </nav>
-    </nav>
-    
-      <!--모바일 네비게이션-->
-    
-      <nav class="nav_mobile">
-        <a href="index.html"><img src="Img/todomall_logo.svg" alt=""></a>
-    
-    <input type="checkbox" id="nav_toggle">
-    <label for="nav_toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    
-    <div class="nav_sidebar">
-        <ul class="nav_sidebartext">
-            <a href="https://edu.todomall.kr/">투두몰</a>
-            <a href="pro_todomall.html">프로지원</a>
-            <a href="company_todomall.html">기업제휴</a>
-            <a href="mou_todomall.html">기업교육</a>
-            <!-- <a href="https://myplanit.oopy.io/">회사소개</a> -->
-            <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="index.html"
+            ><img src="img/todomall_logo.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="navbar_menu">
+          <li><a href="https://edu.todomall.kr/">투두몰</a></li>
+          <li><a href="pro_todomall.html">프로지원</a></li>
+          <li><a href="company_todomall.html">기업제휴</a></li>
+          <li><a href="mou_todomall.html">기업교육</a></li>
+          <!-- <li><a href="https://myplanit.oopy.io/">회사소개</a></li> -->
+          <!-- <li><a href="https://www.todomall.kr/myplanit/career">팀원모집</a></li> -->
         </ul>
-    </div>
-    <div id="background_nav"></div>
+
+        <a href="#" class="navbar_toggleButton"
+          ><img src="img/icn_menu.svg" alt="toggle"
+        /></a>
+      </nav>
     </nav>
-    
-<!--헤더-->
 
+    <!--모바일 네비게이션-->
 
-<div class="header_background">
-    <div class="header_inner">
+    <nav class="nav_mobile">
+      <a href="index.html"><img src="Img/todomall_logo.svg" alt="" /></a>
+
+      <input type="checkbox" id="nav_toggle" />
+      <label for="nav_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav_sidebar">
+        <ul class="nav_sidebartext">
+          <a href="https://edu.todomall.kr/">투두몰</a>
+          <a href="pro_todomall.html">프로지원</a>
+          <a href="company_todomall.html">기업제휴</a>
+          <a href="mou_todomall.html">기업교육</a>
+          <!-- <a href="https://myplanit.oopy.io/">회사소개</a> -->
+          <!-- <a href="https://www.todomall.kr/myplanit/career">팀원모집</a> -->
+        </ul>
+      </div>
+      <div id="background_nav"></div>
+    </nav>
+
+    <!--헤더-->
+
+    <div class="header_background">
+      <div class="header_inner">
         <div class="header_menu">
-            <h1>당신의 <strong>전문성 있는</strong> <br> <strong>업무 도구</strong>는 무엇인가요?</h1>
-            <h2>쉽고 빠른 클래스 제작부터 강연 기회까지 <br class="brmobile">얻어가세요!</h2>
-            <a href="https://tally.so/r/3xXj05"> 
-                <h3>프로지원하기</h3>
-                <img src="img/right_arrow.png" alt="">
-            </a>
+          <h1>
+            당신의 <strong>전문성 있는</strong> <br />
+            <strong>업무 도구</strong>는 무엇인가요?
+          </h1>
+          <h2>
+            쉽고 빠른 클래스 제작부터 강연 기회까지
+            <br class="brmobile" />얻어가세요!
+          </h2>
+          <a href="https://tally.so/r/3xXj05">
+            <h3>프로지원하기</h3>
+            <img src="img/right_arrow.png" alt="" />
+          </a>
         </div>
         <div class="header_img">
-            <img src="/Img/mockup_header.png" alt="">
+          <img src="/Img/mockup_header.png" alt="" />
         </div>
+      </div>
     </div>
-</div>
 
-<!--투두몰 프로가 무엇인가요?-->
+    <!--투두몰 프로가 무엇인가요?-->
 
-<section class="whatispro">
-    <div class="whatispro_inner">
+    <section class="whatispro">
+      <div class="whatispro_inner">
         <div class="whatispro_text">
-            <h1>투두몰 프로가 무엇인가요?</h1>
-            <p>투두몰과 함께 지식 교류 생태계를 만드는 사람을 의미합니다</p>
-            <h2>프로님의 입맛에 따라 원하는 방식의 프로 활동을 선택해보세요!</h2>
+          <h1>투두몰 프로가 무엇인가요?</h1>
+          <p>투두몰과 함께 지식 교류 생태계를 만드는 사람을 의미합니다</p>
+          <h2>프로님의 입맛에 따라 원하는 방식의 프로 활동을 선택해보세요!</h2>
         </div>
         <div class="whatispro_card">
-            <div class="whatispro_cardbackground">
-                <div class="whatispro_cardtext">
-                    <h1>Todo-Class</h1>
-                    <h2>투두클래스</h2>
-                    <p>영상 촬영 없이, 오직 글과 그림만으로 제작하는 투두클래스<br>자신의 전문성이 담긴 투두리스트와 가이드를 작성해보세요!</p>
-                </div>
+          <div class="whatispro_cardbackground">
+            <div class="whatispro_cardtext">
+              <h1>Todo-Class</h1>
+              <h2>투두클래스</h2>
+              <p>
+                영상 촬영 없이, 오직 글과 그림만으로 제작하는 투두클래스<br />자신의
+                전문성이 담긴 투두리스트와 가이드를 작성해보세요!
+              </p>
             </div>
+          </div>
 
-            <!-- <div class="whatispro_cardbackground">
+          <!-- <div class="whatispro_cardbackground">
                 <div class="whatispro_cardtext">
                 <h1>Todo-Chat</h1>
                 <h2>투두챗</h2>
@@ -150,87 +215,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <br>구매한 후에 제작하는 간단한 투두리스트와 짧은 온라인 코칭!</p>
                 </div>
             </div> -->
-            
-            <div class="whatispro_cardbackground">
-                <div class="whatispro_cardtext">
-                    <h1>Lecture proposal</h1>
-                    <h2>강연제안</h2>
-                    <p>투두에 특화된 기업 교육 및 강연
-                        <br>투두몰 프로가 되어 누구보다 빠르게 제안을 받아보세요!</p>
-                </div>
+
+          <div class="whatispro_cardbackground">
+            <div class="whatispro_cardtext">
+              <h1>Lecture proposal</h1>
+              <h2>강연제안</h2>
+              <p>
+                투두에 특화된 기업 교육 및 강연 <br />투두몰 프로가 되어
+                누구보다 빠르게 제안을 받아보세요!
+              </p>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--투두몰과 성장하고 있습니다-->
+    <!--투두몰과 성장하고 있습니다-->
 
-<section class="growth_background">
-    <div class="growth_backgroundinner">
+    <section class="growth_background">
+      <div class="growth_backgroundinner">
         <div class="growth_text">
-            <h4>오늘도 많은 2030 사회초년생이</h4>
-            <h2>투두몰과 함께 성장하고 있습니다</h2>
+          <h4>오늘도 많은 2030 사회초년생이</h4>
+          <h2>투두몰과 함께 성장하고 있습니다</h2>
         </div>
 
-       <div class="growth_numbers">
-            <div class="growth_numbersbox1">
-                <div class="growth_numbersbox1top">
-                    <h1>6.4</h1>
-                    <p>&nbsp;배</p>
-                </div>
-                <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+        <div class="growth_numbers">
+          <div class="growth_numbersbox1">
+            <div class="growth_numbersbox1top">
+              <h1>6.4</h1>
+              <p>&nbsp;배</p>
             </div>
+            <h3>기존 교육 콘텐츠 대비 클래스 완주율</h3>
+          </div>
 
-            <div class="growth_numbersbox2">
-                <div class="growth_numbersbox2top">
-                    <h1>174</h1>
-                    <p>&nbsp;명</p>
-                </div>
-                <h3>주간 클래스 도전 유저</h3>
+          <div class="growth_numbersbox2">
+            <div class="growth_numbersbox2top">
+              <h1>174</h1>
+              <p>&nbsp;명</p>
             </div>
-            <div class="growth_numbersbox3">
-                <div class="growth_numbersbox3top">
-                    <h1>146</h1>
-                    <p>&nbsp;개</p>
-                </div>
-                <h3>주간 미션 인증 수</h3>
+            <h3>주간 클래스 도전 유저</h3>
+          </div>
+          <div class="growth_numbersbox3">
+            <div class="growth_numbersbox3top">
+              <h1>146</h1>
+              <p>&nbsp;개</p>
             </div>
-            <div class="growth_numbersbox4">
-                <div class="growth_numbersbox4top">
-                    <h1>84</h1>
-                    <p>&nbsp;%</p>
-                </div>
-                <h3>첫 번째 미션 달성율</h3>
+            <h3>주간 미션 인증 수</h3>
+          </div>
+          <div class="growth_numbersbox4">
+            <div class="growth_numbersbox4top">
+              <h1>84</h1>
+              <p>&nbsp;%</p>
             </div>
+            <h3>첫 번째 미션 달성율</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       </div>
-               
-    </div>
-</section>
-
-<!--투두몰 프로들은 이런 활동을 하게 됩니다.-->
-<div class="activity_background">
-    <div class="activity_inner">
+    <!--투두몰 프로들은 이런 활동을 하게 됩니다.-->
+    <div class="activity_background">
+      <div class="activity_inner">
         <div class="activity_titletext">
-            <h1>투두몰 프로는 어떤 활동을 하나요?</h1>
-            <h2>업무도구(엑셀, 포토샵, 피그마 등)에 대한 나만의 지식과 경험을 다양한 방법으로 공유할 수 있습니다.
-                <br class="brpc">Todo에 기반한 학습을 추구하며, 배우는 유저들이 능동적으로 성과물을 만들 수 있도록 합니다. </h2>
-
+          <h1>투두몰 프로는 어떤 활동을 하나요?</h1>
+          <h2>
+            업무도구(엑셀, 포토샵, 피그마 등)에 대한 나만의 지식과 경험을 다양한
+            방법으로 공유할 수 있습니다. <br class="brpc" />Todo에 기반한 학습을
+            추구하며, 배우는 유저들이 능동적으로 성과물을 만들 수 있도록 합니다.
+          </h2>
         </div>
-        
 
         <div class="activity_todoclass">
-            <img src="img/todoclass2.png">
-            <div class="activity_todoclasstext">
-                <div class="activity_todoclasstexttop">
-                    <h3>투두클래스</h3>
-                    <h4>(Todo-Class)</h4>
-                </div>
-                <p>글과 이미지로 제작한 가이드를 목차에 맞춰 클래스로 구성하여 유저에게 제공합니다.
-                    <br class="brpc">브런치나 블로그 등 기존에 발행하신 콘텐츠가 있으시다면 재가공하여 더욱 빠르게 제작이 가능합니다.</p>
+          <img src="img/todoclass2.png" />
+          <div class="activity_todoclasstext">
+            <div class="activity_todoclasstexttop">
+              <h3>투두클래스</h3>
+              <h4>(Todo-Class)</h4>
             </div>
+            <p>
+              글과 이미지로 제작한 가이드를 목차에 맞춰 클래스로 구성하여
+              유저에게 제공합니다. <br class="brpc" />브런치나 블로그 등 기존에
+              발행하신 콘텐츠가 있으시다면 재가공하여 더욱 빠르게 제작이
+              가능합니다.
+            </p>
+          </div>
         </div>
-
 
         <!-- <div class="activity_todochat">
             <img src="img/todochat2.png">
@@ -244,153 +313,235 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div> -->
 
-
         <div class="activity_lecture">
-            <img src="img/lecture2.png">
-            <div class="activity_lecturetext">
-                <div class="activity_lecturetexttop">
-                    <h3>강연제안</h3>
-                    <h4>(Lecture proposal)</h4>
-                </div>
-                <p>투두몰에서 오프라인 교육 진행 시, 보유하신 전문성에 맞춰 강연을 제안드립니다.
-                    <br class="brpc">강연에 응하실 경우 담당 매니저가 전반적인 진행을 세심하게 도와드립니다.</p>
+          <img src="img/lecture2.png" />
+          <div class="activity_lecturetext">
+            <div class="activity_lecturetexttop">
+              <h3>강연제안</h3>
+              <h4>(Lecture proposal)</h4>
             </div>
+            <p>
+              투두몰에서 오프라인 교육 진행 시, 보유하신 전문성에 맞춰 강연을
+              제안드립니다. <br class="brpc" />강연에 응하실 경우 담당 매니저가
+              전반적인 진행을 세심하게 도와드립니다.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--투두몰 프로 활동 혜택.-->
+    <!--투두몰 프로 활동 혜택.-->
 
-<div class="profits_background">
-    <div class="profits_inner">
-
+    <div class="profits_background">
+      <div class="profits_inner">
         <div class="profits_innertext">
-            <!-- <h1>투두몰과 함께하면 뭐가 좋은데?</h1> -->
-            <h2>투두몰 프로 활동 혜택</h2>
+          <!-- <h1>투두몰과 함께하면 뭐가 좋은데?</h1> -->
+          <h2>투두몰 프로 활동 혜택</h2>
         </div>
 
-            <div class="profits_innerimgbox">
-                <div>
-                    <img src="img/profits_networking.png">
-                    <h3>네트워킹</h3>
-                    <h4>협력 중인 기업 및 전문지식을 갖춘 사람들과의<br> 교류를 통해 새로운 인맥과 기회를 만들 수 있어요.</h4>
-                </div>
-                <div>
-                    <img src="img/profits_marketing.png">
-                    <h3>홍보 대행</h3>
-                    <h4>플랫폼 선정부터 타겟 분석에서 카피까지,<br> 교육에만 전념하실 수 있도록 도와드릴게요.</h4>
-                </div>
-                <div>
-                    <img src="img/profits_money.png">
-                    <h3>빠르고 쉬운 수익 창출</h3>
-                    <h4>투두몰은 지식교류 생태계 활성화를 위해<br> 보다 쉽고 빠른 제작활동을 추구하고 있어요.</h4>
-                </div>
-                <div>
-                    <img src="img/profits_branding.png">
-                    <h3>퍼스널 브랜딩</h3>
-                    <h4>클래스 제작과 기업 교육 및 강연 활동으로<br> 자신의 가치를 효과적으로 높일 수 있어요.</h4>
-                </div>
-            </div>
-
+        <div class="profits_innerimgbox">
+          <div>
+            <img src="img/profits_networking.png" />
+            <h3>네트워킹</h3>
+            <h4>
+              협력 중인 기업 및 전문지식을 갖춘 사람들과의<br />
+              교류를 통해 새로운 인맥과 기회를 만들 수 있어요.
+            </h4>
+          </div>
+          <div>
+            <img src="img/profits_marketing.png" />
+            <h3>홍보 대행</h3>
+            <h4>
+              플랫폼 선정부터 타겟 분석에서 카피까지,<br />
+              교육에만 전념하실 수 있도록 도와드릴게요.
+            </h4>
+          </div>
+          <div>
+            <img src="img/profits_money.png" />
+            <h3>빠르고 쉬운 수익 창출</h3>
+            <h4>
+              투두몰은 지식교류 생태계 활성화를 위해<br />
+              보다 쉽고 빠른 제작활동을 추구하고 있어요.
+            </h4>
+          </div>
+          <div>
+            <img src="img/profits_branding.png" />
+            <h3>퍼스널 브랜딩</h3>
+            <h4>
+              클래스 제작과 기업 교육 및 강연 활동으로<br />
+              자신의 가치를 효과적으로 높일 수 있어요.
+            </h4>
+          </div>
+        </div>
+      </div>
     </div>
 
-</div>
-
-<!--투두몰 프로 등록 방법.-->
-<div class="proregister">
-    <div class="proregister_inner">
+    <!--투두몰 프로 등록 방법.-->
+    <div class="proregister">
+      <div class="proregister_inner">
         <div class="proregister_innertext">
-            
-            <h2>투두몰 프로 등록 방법</h2>
+          <h2>투두몰 프로 등록 방법</h2>
         </div>
         <div class="proregister_innercard">
-            <div class="proregister_innercardbox">
-                <div class="proregister_innercardboxin">
-                    <div class="proregister_innercardboxhead"> 
-                        <img src="img/apply_look.png" alt="">
-                        <h3>&nbsp;STEP 01</h3>
-                    </div>
-                    <h4>프로 지원하기</h4>
-                    <h5>전문성을 보유한 업무 도구가 있다면 바로 간단하게 지원해보세요.<br> ‘프로 지원하기’를 클릭하여 양식에 맞춰 제출하면 됩니다.</h5>
-                </div>
+          <div class="proregister_innercardbox">
+            <div class="proregister_innercardboxin">
+              <div class="proregister_innercardboxhead">
+                <img src="img/apply_look.png" alt="" />
+                <h3>&nbsp;STEP 01</h3>
+              </div>
+              <h4>프로 지원하기</h4>
+              <h5>
+                전문성을 보유한 업무 도구가 있다면 바로 간단하게
+                지원해보세요.<br />
+                ‘프로 지원하기’를 클릭하여 양식에 맞춰 제출하면 됩니다.
+              </h5>
             </div>
-            <div class="proregister_innercardbox">
-                <div class="proregister_innercardboxin">
-                    <div class="proregister_innercardboxhead"> 
-                        <img src="img/apply_mail.png" alt="">
-                        <h3>&nbsp;STEP 02</h3>
-                    </div>
-                    <h4>심사</h4>
-                    <h5>투두몰에 적합한지 심사를 거친 후 영업일 3일 내에 답변을 드려요.<br> 심사에 통과되면 작성해주신 내용을 바탕으로 관련자료를 보내드립니다.</h5>
-                 </div>
+          </div>
+          <div class="proregister_innercardbox">
+            <div class="proregister_innercardboxin">
+              <div class="proregister_innercardboxhead">
+                <img src="img/apply_mail.png" alt="" />
+                <h3>&nbsp;STEP 02</h3>
+              </div>
+              <h4>심사</h4>
+              <h5>
+                투두몰에 적합한지 심사를 거친 후 영업일 3일 내에 답변을
+                드려요.<br />
+                심사에 통과되면 작성해주신 내용을 바탕으로 관련자료를
+                보내드립니다.
+              </h5>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!--자주 묻는 질문-->
+    <!--자주 묻는 질문-->
 
-<div class="questions_background">
-    <div class="questions_backgroundinner">
-       <h1> 자주 묻는 질문</h1>
+    <div class="questions_background">
+      <div class="questions_backgroundinner">
+        <h1>자주 묻는 질문</h1>
 
-       <div class="questions_toggle">
-            <input type="checkbox" id="answer1">
-            <label for="answer1">정확히 어떤 분야의 프로를 모집하며, <br> 어느정도의 전문성을 가져야 하나요?<img src="img/toggle.png" alt=""></label>
-            <div><h2>Excel, Figma, photoshop, braze등 생산성을 향상시킬 수 있는 Tool 분야의 전문가를 모집합니다. 현업에서 활용가능한 수준의 전문성을 가지면 프로 지원이 가능합니다.</h2></div>
+        <div class="questions_toggle">
+          <input type="checkbox" id="answer1" />
+          <label for="answer1"
+            >정확히 어떤 분야의 프로를 모집하며, <br />
+            어느정도의 전문성을 가져야 하나요?<img src="img/toggle.png" alt=""
+          /></label>
+          <div>
+            <h2>
+              Excel, Figma, photoshop, braze등 생산성을 향상시킬 수 있는 Tool
+              분야의 전문가를 모집합니다. 현업에서 활용가능한 수준의 전문성을
+              가지면 프로 지원이 가능합니다.
+            </h2>
+          </div>
 
-            <input type="checkbox" id="answer2">
-            <label for="answer2">한 번도 클래스를 제작해 본 적이 없는데 <br>괜찮은가요?<img src="img/toggle.png" alt=""></label>
-            <div><h2>네, 괜찮습니다. 글과 사진을 이용하여 빠르고 편하게 제작이 가능할 분더러 클래스 제작을 담당하는 전담부서가 있으므로, 제작중 의문사항이 생길 경우 언제든 피드백이 가능합니다.</h2></div>
+          <input type="checkbox" id="answer2" />
+          <label for="answer2"
+            >한 번도 클래스를 제작해 본 적이 없는데 <br />괜찮은가요?<img
+              src="img/toggle.png"
+              alt=""
+          /></label>
+          <div>
+            <h2>
+              네, 괜찮습니다. 글과 사진을 이용하여 빠르고 편하게 제작이 가능할
+              분더러 클래스 제작을 담당하는 전담부서가 있으므로, 제작중
+              의문사항이 생길 경우 언제든 피드백이 가능합니다.
+            </h2>
+          </div>
 
-            <input type="checkbox" id="answer3">
-            <label for="answer3">투두 클래스를 제작하는데 얼마만큼의 <br>시간과 비용이 발생하나요?<img src="img/toggle.png" alt=""></label>
-            <div><h2>비용은 발생하지 않습니다. 시간의 경우 하루 평균 2시간정도 투자했을 시, 1~2주일 혹은 주말을 풀로 투자했을 시, 끝낼 수 있을만큼 빠르게 제작이 가능합니다.</h2></div>
+          <input type="checkbox" id="answer3" />
+          <label for="answer3"
+            >투두 클래스를 제작하는데 얼마만큼의 <br />시간과 비용이
+            발생하나요?<img src="img/toggle.png" alt=""
+          /></label>
+          <div>
+            <h2>
+              비용은 발생하지 않습니다. 시간의 경우 하루 평균 2시간정도 투자했을
+              시, 1~2주일 혹은 주말을 풀로 투자했을 시, 끝낼 수 있을만큼 빠르게
+              제작이 가능합니다.
+            </h2>
+          </div>
 
-            <input type="checkbox" id="answer4">
-            <label for="answer4">프로가 되면, 개인정보가 노출되는 <br>것인가요?<img src="img/toggle.png" alt=""></label>
-            <div><h2>프로 활동을 하시는 경우, 노출을 원하시는 정보만 부분적으로 노출가능합니다. 그러나, 이름(닉네임)과 경력은 불가피하게 노출해야할 상황이 발생할 수 있습니다.</h2></div>
+          <input type="checkbox" id="answer4" />
+          <label for="answer4"
+            >프로가 되면, 개인정보가 노출되는 <br />것인가요?<img
+              src="img/toggle.png"
+              alt=""
+          /></label>
+          <div>
+            <h2>
+              프로 활동을 하시는 경우, 노출을 원하시는 정보만 부분적으로
+              노출가능합니다. 그러나, 이름(닉네임)과 경력은 불가피하게
+              노출해야할 상황이 발생할 수 있습니다.
+            </h2>
+          </div>
 
-            <input type="checkbox" id="answer5">
-            <label for="answer5">투두몰은 어떤 이유에서 쉽고 빠른가요?<img src="img/toggle.png" alt=""></label>
-            <div><h2>Office 툴 관련 분야를 다루는 만큼 학습 내용과 결과물이 명확하여 커리큘럼 제작에 부담이 적습니다. <br>투두클래스의 경우 글과 사진으로 제작하기에 프로, 유저 모두 빠른 제작과 학습이 가능하며 투두챗의 경우 별도의 강의록 없이, 간단한 체크리스트의 전달만으로 부담없는 코칭준비를 할 수 있습니다. </h2></div>
-       </div>
+          <input type="checkbox" id="answer5" />
+          <label for="answer5"
+            >투두몰은 어떤 이유에서 쉽고 빠른가요?<img
+              src="img/toggle.png"
+              alt=""
+          /></label>
+          <div>
+            <h2>
+              Office 툴 관련 분야를 다루는 만큼 학습 내용과 결과물이 명확하여
+              커리큘럼 제작에 부담이 적습니다. <br />투두클래스의 경우 글과
+              사진으로 제작하기에 프로, 유저 모두 빠른 제작과 학습이 가능하며
+              투두챗의 경우 별도의 강의록 없이, 간단한 체크리스트의 전달만으로
+              부담없는 코칭준비를 할 수 있습니다.
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<!--투두몰 프로로 합류하고 전문성을 확산시켜 보세요!-->
+    <!--투두몰 프로로 합류하고 전문성을 확산시켜 보세요!-->
 
-<div class="bottombanner_background">
-    <div class="bottombanner_inner">
-        <h1>투두몰 프로로 합류하고 <br>전문성을 확산시켜 보세요!</h1>
-        <h2>투두몰은 프로님의 쉽고 편한 활동을 위해 <br>최선을 다하고 있습니다.</h2>
+    <div class="bottombanner_background">
+      <div class="bottombanner_inner">
+        <h1>투두몰 프로로 합류하고 <br />전문성을 확산시켜 보세요!</h1>
+        <h2>
+          투두몰은 프로님의 쉽고 편한 활동을 위해 <br />최선을 다하고 있습니다.
+        </h2>
         <a class="bottombanner_button" href="https://tally.so/r/3xXj05">
-            <h3>&nbsp; 프로지원하기 </h3><img src="img/toggle_white.png" alt="">
+          <h3>&nbsp; 프로지원하기</h3>
+          <img src="img/toggle_white.png" alt="" />
         </a>
+      </div>
     </div>
-</div>
 
-<!--footer-->
+    <!--footer-->
 
-<footer> 
-    <div class="footer_outside">
+    <footer>
+      <div class="footer_outside">
         <div class="footer_inner">
-        <img src="img/todomall_logo_footer.svg" alt="">
-            <p> 마이플랜잇 │ 사업자등록번호 :  274-12-01980 │ 대표 : 최현권 │ 개인정보담당자 : 이명성<br>
-            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL : 010-2154-3992 │ 메일 : hello@todomall.kr</p>
-                <h1>마이플랜잇</h1>
-                <h2>
-                 대표 : 최현권 │ 사업자등록번호 :  274-12-01980 <br> 주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br>
-                 TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br>
-                 개인정보담당자 : 이명성
-                </h2>
-            <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
+          <img src="img/todomall_logo_footer.svg" alt="" />
+          <p>
+            마이플랜잇 │ 사업자등록번호 : 274-12-01980 │ 대표 : 최현권 │
+            개인정보담당자 : 이명성<br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 │ TEL
+            : 010-2154-3992 │ 메일 : hello@todomall.kr
+          </p>
+          <h1>마이플랜잇</h1>
+          <h2>
+            대표 : 최현권 │ 사업자등록번호 : 274-12-01980 <br />
+            주소 : 서울특별시 강남구 역삼동 테헤란로 217 오랜지플래닛 2층 <br />
+            TEL : 010-2154-3992 │ 메일 : hello@todomall.kr <br />
+            개인정보담당자 : 이명성
+          </h2>
+          <h3>Copyright ⓒ 2022 myplanit. All rights reserved.</h3>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMMZ4VG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-</body>
+  </body>
 </html>

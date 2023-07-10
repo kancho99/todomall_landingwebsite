@@ -192,15 +192,14 @@ a {
 .header_background {
   background: linear-gradient(174.16deg, #21a365 15.22%, #0f844c 158.48%);
   color: white;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   white-space: nowrap;
   justify-content: center;
   height: 520px;
-  position: relative;
 }
 .header_inner {
-  padding: 106px 0;
+  padding: 130px 0 0 0;
   display: flex;
   width: 1280px;
   overflow: hidden;
@@ -258,11 +257,10 @@ h3 {
   height: 40px;
   padding-right: 24px;
 }
-
+.header_img {
+  align-self: baseline;
+}
 .header_img img {
-  position: absolute;
-  bottom: 0;
-  right: 72px;
   width: 600px;
 }
 .brmobile {

@@ -63,10 +63,17 @@ function populateCarousel() {
           el: ".swiper-pagination",
         },
         breakpoints: {
+          640: {
+            centeredSlides: false,
+            spaceBetween: 20,
+          },
+
           480: {
+            centeredSlides: true,
             spaceBetween: 8,
           },
           320: {
+            centeredSlides: true,
             spaceBetween: 8,
           },
         },

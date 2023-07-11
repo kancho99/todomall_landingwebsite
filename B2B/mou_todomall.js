@@ -4,7 +4,6 @@ function populateCarousel() {
     .then((data) => {
       const carouselData = data.carousel_data;
       const swiperWrapper = document.querySelector(".swiper-wrapper");
-      const mediaQuery = window.matchMedia("(max-width: 480px)");
 
       carouselData.forEach((item) => {
         const slide = document.createElement("div"); // root parent
@@ -47,7 +46,7 @@ function populateCarousel() {
         link.textContent = "클래스 보러가기 ";
         link.style.color = "#439FF5";
 
-        arrowIcon.src = "img/arrowicon_blue.png";
+        arrowIcon.src = "/img/arrowicon_blue.png";
         arrowIcon.alt = "arrowicon_blue";
         arrowIcon.style.width = "24px";
         arrowIcon.style.height = "24px";

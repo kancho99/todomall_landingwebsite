@@ -203,7 +203,7 @@ h5 {
   height: 720px;
   background-repeat: none;
   background-size: cover;
-  background-image: url(img/company_background.png);
+  background-image: url(/img/company_background.png);
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -766,7 +766,7 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  background-image: url(img/company_onlytodomall_background.png);
+  background-image: url(/img/company_onlytodomall_background.png);
   background-size: cover;
   color: white;
   display: flex;
@@ -1026,7 +1026,7 @@ h1 {
 /* 투두몰은 모든 경험이 쉬워지는 세상을*/
 
 .bottombanner_background {
-  background-image: url(img/company_bottom_banner.png);
+  background-image: url(/img/company_bottom_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
